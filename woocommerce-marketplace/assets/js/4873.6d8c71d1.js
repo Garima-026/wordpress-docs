@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwoocommerce_multivendor_marketplace_docs=self.webpackChunkwoocommerce_multivendor_marketplace_docs||[]).push([[4873],{24873(e,c,r){r.d(c,{createArchitectureServices:()=>o.b});var o=r(55572);r(8548),r(19218),r(66259),r(78517),r(98840)}}]);
