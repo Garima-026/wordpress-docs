@@ -1,0 +1,1 @@
+var e=`/erp-for-woocommerce/images/woocommerce-erp/erp-dashboard.webp`;export{e as t};
