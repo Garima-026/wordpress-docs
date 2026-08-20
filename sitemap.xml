@@ -38,6 +38,9 @@
     <sitemap>
       <loc>https://wpdoc.webkul.com/sitemaps/unopim-connector.xml</loc>
    </sitemap>
+   <sitemap>
+      <loc>https://wpdoc.webkul.com/sitemaps/woocommerce-quickbooks-connector.xml</loc>
+   </sitemap>
 
    
 
