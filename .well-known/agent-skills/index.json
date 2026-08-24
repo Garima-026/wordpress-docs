@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "woocommerce-marketplace-docs",
+      "type": "skill-md",
+      "description": "Answer questions about installing, configuring, and operating Webkul's WooCommerce Multi-Vendor Marketplace plugin using its official documentation.",
+      "url": "https://wpdoc.webkul.com/.well-known/agent-skills/woocommerce-marketplace-docs/SKILL.md",
+      "digest": "sha256:f1295fa83e649b176a76a688f93eaf27510f5d286725a14e1866af9443a5d92e"
+    }
+  ]
+}

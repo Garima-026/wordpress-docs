@@ -1,5 +1,6 @@
 User-agent: *
 
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Disallow: /search/
 Disallow: /*?s=
 Disallow: /*?replytocom=
@@ -9,3 +10,4 @@ Disallow: /author/
 Disallow: /trackback/
 
 Sitemap: https://wpdoc.webkul.com/sitemap.xml
+Agentmap: https://wpdoc.webkul.com/.well-known/ai-catalog.json

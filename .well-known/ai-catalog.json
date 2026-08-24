@@ -1,0 +1,67 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Webkul WordPress & WooCommerce Documentation",
+    "identifier": "did:web:wpdoc.webkul.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:wpdoc.webkul.com:index:portal-llms",
+      "displayName": "Documentation portal index (llms.txt)",
+      "description": "Index of every Webkul WordPress/WooCommerce plugin guide, with when-to-use guidance for agents.",
+      "type": "text/markdown",
+      "url": "https://wpdoc.webkul.com/llms.txt",
+      "representativeQueries": [
+        "which Webkul plugin documentation is available",
+        "where are the docs for Webkul WooCommerce plugins",
+        "list Webkul WordPress plugin guides"
+      ]
+    },
+    {
+      "identifier": "urn:air:wpdoc.webkul.com:index:marketplace-llms",
+      "displayName": "WooCommerce Multi-Vendor Marketplace documentation index",
+      "description": "Annotated index of all 40 pages of the WooCommerce Multi-Vendor Marketplace guide, each available as raw markdown.",
+      "type": "text/markdown",
+      "url": "https://wpdoc.webkul.com/woocommerce-marketplace/llms.txt",
+      "representativeQueries": [
+        "how do I install the WooCommerce multi vendor marketplace plugin",
+        "how do I configure vendor commissions in WooCommerce",
+        "how do vendor payouts and withdrawals work",
+        "how do I approve a vendor registration"
+      ]
+    },
+    {
+      "identifier": "urn:air:wpdoc.webkul.com:corpus:marketplace-full",
+      "displayName": "WooCommerce Multi-Vendor Marketplace full documentation corpus",
+      "description": "The complete marketplace documentation as a single markdown file, for one-shot retrieval.",
+      "type": "text/markdown",
+      "url": "https://wpdoc.webkul.com/woocommerce-marketplace/llms-full.txt",
+      "representativeQueries": [
+        "full WooCommerce marketplace plugin documentation",
+        "everything about Webkul multi vendor marketplace setup"
+      ]
+    },
+    {
+      "identifier": "urn:air:wpdoc.webkul.com:skill:marketplace-docs",
+      "displayName": "WooCommerce Marketplace documentation skill",
+      "description": "Agent skill describing when and how to use the WooCommerce Multi-Vendor Marketplace documentation.",
+      "type": "text/markdown",
+      "url": "https://wpdoc.webkul.com/.well-known/agent-skills/woocommerce-marketplace-docs/SKILL.md",
+      "representativeQueries": [
+        "how should an agent use the Webkul marketplace docs",
+        "skill for WooCommerce multi vendor marketplace documentation"
+      ]
+    },
+    {
+      "identifier": "urn:air:wpdoc.webkul.com:index:sitemap",
+      "displayName": "Site-wide sitemap",
+      "description": "Machine-readable index of every documentation page on the portal.",
+      "type": "application/xml",
+      "url": "https://wpdoc.webkul.com/sitemap.xml",
+      "representativeQueries": [
+        "list all pages on wpdoc.webkul.com",
+        "sitemap for Webkul WordPress documentation"
+      ]
+    }
+  ]
+}

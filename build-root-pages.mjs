@@ -275,3 +275,181 @@ for (const slug of SHIMS) {
     fs.writeFileSync(path.join(ROOT, `${slug}.html`), html);
     console.log(`[root-pages] wrote ${slug}.html (shim, canonical -> ${canonical})`);
 }
+
+/* ---------------- agent discovery: ARD, skills, content signals ---------------- */
+// Only real, reachable resources are advertised here. This site has no HTTP
+// API, no auth server, no MCP server, and no payment endpoints, so no
+// api-catalog, OAuth, MCP or payment manifests are published — advertising
+// endpoints that do not exist would send agents into dead ends.
+
+import crypto from "node:crypto";
+
+const WK = path.join(ROOT, ".well-known");
+const SKILLS_DIR = path.join(WK, "agent-skills", "woocommerce-marketplace-docs");
+fs.mkdirSync(SKILLS_DIR, { recursive: true });
+
+/* --- a real skill: how to use these docs --- */
+const SKILL_MD = `# Using the WooCommerce Multi-Vendor Marketplace documentation
+
+Answer questions about Webkul's **WooCommerce Multi-Vendor Marketplace** WordPress
+plugin — installing it, configuring it, and operating the marketplace it creates.
+
+## When to use this skill
+
+- Installing, updating, or licensing the plugin, including minimum WordPress,
+  WooCommerce, and PHP versions.
+- Configuring marketplace behaviour: commissions, withdrawals and payouts,
+  vendor invoices, endpoints, Seller Central, product settings, vendor flags.
+- Vendor-side workflows: registration, dashboard, products, orders,
+  transactions, payouts, shipping zones, staff, KYC, vacation mode.
+- Admin-side workflows: vendor approval and management, product assignment,
+  commission management, feedback and queries, notifications, email setup.
+
+Do not use it for WooCommerce or WordPress core questions, for marketplace
+plugins from other vendors, or for Webkul's Magento, Shopify, Odoo, or Bagisto
+products.
+
+## How to read the documentation
+
+Every page is published as raw markdown. Two equivalent forms work:
+
+- Append \`.md\` to any page URL —
+  \`${ORIGIN}/woocommerce-marketplace/documentation/installation.md\`
+- Request the HTML URL with \`Accept: text/markdown\`
+
+Start from one of:
+
+- \`${ORIGIN}/woocommerce-marketplace/llms.txt\` — annotated index of every page
+- \`${ORIGIN}/woocommerce-marketplace/llms-full.txt\` — the whole corpus in one file
+- \`${ORIGIN}/woocommerce-marketplace/sitemap.xml\` — machine-readable page list
+
+For a broad question, read \`llms.txt\` first and fetch only the pages you need.
+For a question spanning many features, \`llms-full.txt\` is a single fetch.
+
+## Answering well
+
+- Cite the specific guide page you used.
+- Version-sensitive answers belong to the Installation guide; do not state
+  requirements from memory.
+- The plugin stores all marketplace data on the user's own WordPress site.
+- If the documentation does not answer it, say so and point to
+  https://webkul.uvdesk.com/ rather than guessing.
+`;
+fs.writeFileSync(path.join(SKILLS_DIR, "SKILL.md"), SKILL_MD);
+const digest = `sha256:${crypto.createHash("sha256").update(SKILL_MD).digest("hex")}`;
+
+const skillsIndex = {
+    $schema: "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+    skills: [
+        {
+            name: "woocommerce-marketplace-docs",
+            type: "skill-md",
+            description:
+                "Answer questions about installing, configuring, and operating Webkul's WooCommerce Multi-Vendor Marketplace plugin using its official documentation.",
+            url: `${ORIGIN}/.well-known/agent-skills/woocommerce-marketplace-docs/SKILL.md`,
+            digest,
+        },
+    ],
+};
+fs.writeFileSync(
+    path.join(WK, "agent-skills", "index.json"),
+    `${JSON.stringify(skillsIndex, null, 2)}\n`,
+);
+console.log("[root-pages] wrote .well-known/agent-skills/index.json + SKILL.md");
+
+/* --- ARD capability manifest (ai-catalog data model) --- */
+const FQDN = "wpdoc.webkul.com";
+const aiCatalog = {
+    specVersion: "1.0",
+    host: {
+        displayName: "Webkul WordPress & WooCommerce Documentation",
+        identifier: `did:web:${FQDN}`,
+    },
+    entries: [
+        {
+            identifier: `urn:air:${FQDN}:index:portal-llms`,
+            displayName: "Documentation portal index (llms.txt)",
+            description:
+                "Index of every Webkul WordPress/WooCommerce plugin guide, with when-to-use guidance for agents.",
+            type: "text/markdown",
+            url: `${ORIGIN}/llms.txt`,
+            representativeQueries: [
+                "which Webkul plugin documentation is available",
+                "where are the docs for Webkul WooCommerce plugins",
+                "list Webkul WordPress plugin guides",
+            ],
+        },
+        {
+            identifier: `urn:air:${FQDN}:index:marketplace-llms`,
+            displayName: "WooCommerce Multi-Vendor Marketplace documentation index",
+            description:
+                "Annotated index of all 40 pages of the WooCommerce Multi-Vendor Marketplace guide, each available as raw markdown.",
+            type: "text/markdown",
+            url: `${ORIGIN}/woocommerce-marketplace/llms.txt`,
+            representativeQueries: [
+                "how do I install the WooCommerce multi vendor marketplace plugin",
+                "how do I configure vendor commissions in WooCommerce",
+                "how do vendor payouts and withdrawals work",
+                "how do I approve a vendor registration",
+            ],
+        },
+        {
+            identifier: `urn:air:${FQDN}:corpus:marketplace-full`,
+            displayName: "WooCommerce Multi-Vendor Marketplace full documentation corpus",
+            description:
+                "The complete marketplace documentation as a single markdown file, for one-shot retrieval.",
+            type: "text/markdown",
+            url: `${ORIGIN}/woocommerce-marketplace/llms-full.txt`,
+            representativeQueries: [
+                "full WooCommerce marketplace plugin documentation",
+                "everything about Webkul multi vendor marketplace setup",
+            ],
+        },
+        {
+            identifier: `urn:air:${FQDN}:skill:marketplace-docs`,
+            displayName: "WooCommerce Marketplace documentation skill",
+            description:
+                "Agent skill describing when and how to use the WooCommerce Multi-Vendor Marketplace documentation.",
+            type: "text/markdown",
+            url: `${ORIGIN}/.well-known/agent-skills/woocommerce-marketplace-docs/SKILL.md`,
+            representativeQueries: [
+                "how should an agent use the Webkul marketplace docs",
+                "skill for WooCommerce multi vendor marketplace documentation",
+            ],
+        },
+        {
+            identifier: `urn:air:${FQDN}:index:sitemap`,
+            displayName: "Site-wide sitemap",
+            description: "Machine-readable index of every documentation page on the portal.",
+            type: "application/xml",
+            url: `${ORIGIN}/sitemap.xml`,
+            representativeQueries: [
+                "list all pages on wpdoc.webkul.com",
+                "sitemap for Webkul WordPress documentation",
+            ],
+        },
+    ],
+};
+fs.writeFileSync(path.join(WK, "ai-catalog.json"), `${JSON.stringify(aiCatalog, null, 2)}\n`);
+console.log(`[root-pages] wrote .well-known/ai-catalog.json (${aiCatalog.entries.length} entries)`);
+
+/* --- robots.txt: Content Signals + Agentmap --- */
+// Values mirror the content-signal response header the edge already serves
+// (ai-train=yes, search=yes, ai-input=yes) so the two declarations agree.
+const robotsPath = path.join(ROOT, "robots.txt");
+let robots = fs.readFileSync(robotsPath, "utf8");
+robots = robots
+    .replace(/^Content-Signal:.*\n/gm, "")
+    .replace(/^Agentmap:.*\n/gm, "")
+    .replace(/^# Content usage preferences.*\n/gm, "");
+if (/^User-agent: \*/m.test(robots)) {
+    robots = robots.replace(
+        /^(User-agent: \*\s*\n)/m,
+        `$1Content-Signal: ai-train=yes, search=yes, ai-input=yes\n`,
+    );
+}
+if (!/^Agentmap:/m.test(robots)) {
+    robots = `${robots.trimEnd()}\nAgentmap: ${ORIGIN}/.well-known/ai-catalog.json\n`;
+}
+fs.writeFileSync(robotsPath, robots);
+console.log("[root-pages] updated robots.txt (Content-Signal, Agentmap)");
