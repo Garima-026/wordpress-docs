@@ -442,10 +442,13 @@ robots = robots
     .replace(/^Content-Signal:.*\n/gm, "")
     .replace(/^Agentmap:.*\n/gm, "")
     .replace(/^# Content usage preferences.*\n/gm, "");
-if (/^User-agent: \*/m.test(robots)) {
+// The directive must sit inside the User-agent group: a blank line ends a
+// group in robots.txt, so it goes on the line immediately after, with no
+// blank line between.
+if (/^User-agent: \*[^\S\n]*$/m.test(robots)) {
     robots = robots.replace(
-        /^(User-agent: \*\s*\n)/m,
-        `$1Content-Signal: ai-train=yes, search=yes, ai-input=yes\n`,
+        /^(User-agent: \*[^\S\n]*)\n\s*/m,
+        `$1\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n`,
     );
 }
 if (!/^Agentmap:/m.test(robots)) {
