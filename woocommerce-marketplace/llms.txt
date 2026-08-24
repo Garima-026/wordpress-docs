@@ -1,0 +1,63 @@
+# WooCommerce Multi-Vendor Marketplace Documentation
+
+> Official documentation for Webkul's WooCommerce Multi-Vendor Marketplace plugin, which converts a WooCommerce store into a multi-vendor marketplace with vendor dashboards, commissions, payouts, and shipping.
+
+**When to use this documentation.** Use this site when you need to:
+
+- Install or update the WooCommerce Multi-Vendor Marketplace plugin on a WordPress site (system requirements, upload, activation).
+- Configure marketplace behavior: general settings, product settings, endpoints, commission rates, withdrawal rules, vendor invoices, Seller Central, Google Analytics.
+- Answer how-to questions about vendor workflows: registration, dashboard, product management, orders, transactions, payouts, shipping zones, staff, KYC, vacation mode.
+- Answer how-to questions about admin workflows: vendor approval and management, product assignment, commissions, feedback and queries, notifications, email configuration.
+- Troubleshoot marketplace setup on an existing WooCommerce store using this specific Webkul plugin.
+
+Do not use this site for WooCommerce core documentation, other marketplace plugins, or Webkul's Magento/Shopify products.
+
+**How to consume this site.** Every documentation page is available as raw markdown: append `.md` to the page URL (e.g. `https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.md`), or request any HTML URL with `Accept: text/markdown`. The full corpus in one file: [llms-full.txt](https://wpdoc.webkul.com/woocommerce-marketplace/llms-full.txt). Machine-readable page list: [sitemap.xml](https://wpdoc.webkul.com/woocommerce-marketplace/sitemap.xml).
+
+## Documentation
+
+- [Introduction](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/index.md): The WooCommerce Multi Vendor Marketplace plugin is a powerful solution designed to transform a standard WooCommerce store into a fully functional multi vendor marketplace.
+- [Features](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/features.md): The WooCommerce Multi Vendor Marketplace plugin offers a robust, scalable, and enterprise ready feature set that empowers both marketplace owners and vendors. It is designed to handle high traffic,...
+- [Installation](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.md): This guide explains how to properly install and activate the WooCommerce Multi Vendor Marketplace plugin on your WordPress website.
+- [Elementor Compatibility and Shortcodes](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/elementor-shortcodes.md): WooCommerce Marketplace is fully compatible with Elementor , enabling admins to easily design vendor related pages using shortcodes.
+- [Configuration – General Settings](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-general-settings.md): After successfully installing WooCommerce Marketplace, the admin can configure the core marketplace settings such as vendor registration, approval workflow, default vendor capabilities, and overall...
+- [Configuration – Product Settings](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/product-settings.md): The Product Settings allow the admin to manage how vendors add, edit, and publish products in the marketplace.
+- [Configuration – Assets Visibility](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/assets-visibility.md): The Assets Visibility settings allow the admin to control which vendor details and assets are visible on the Vendor Profile and Vendor Dashboard .
+- [Configuration – Endpoints](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-endpoints.md): The Endpoints configuration allows the admin to manage dynamic URL segments used across the vendor dashboard and related pages in the WooCommerce Multi Vendor Marketplace.
+- [Configuration – Google Analytics](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-google-analytics.md): The Google Analytics feature allows the admin and vendors to track website and product performance using Google Analytics (GA 4).
+- [Configuration – Vendor Flags](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-vendor-flags.md): The Vendor Flags feature allows customers to report vendors from their profile page.
+- [Configuration – Withdrawal](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-withdrawal.md): The Withdrawal feature allows vendors to withdraw their earnings using configured payment methods.
+- [Configuration – Vendor Invoice](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-vendor-invoice.md): The Vendor Invoice feature allows vendors to generate and share invoices for their orders, ensuring transparency between vendors, admin, and customers.
+- [Configuration – Seller Central](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-seller-central.md): The Seller Central settings allow the admin to configure and customize the vendor onboarding page for new sellers.
+- [Vendor Registration Process](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-registration-process.md): Vendors can register on the marketplace using multiple methods provided by the WooCommerce Marketplace plugin.
+- [Admin News](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-news.md): The Admin News feature allows the admin to create and publish news updates for vendors. Admins can also control the visibility of news for sellers based on marketplace requirements.
+- [Vendor Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-mangement.md): The Vendor Badges feature allows marketplace admins to recognize, reward, and showcase vendor performance. Badges act as trust indicators and are displayed on vendor profile pages to improve buyer...
+- [Vendor Dashboard Menu](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-dashboard-menu.md): The Vendor Dashboard allows vendors to manage marketplace activities and access key functionalities similar to the admin panel.
+- [Vendor Product Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-product-management.md): Vendors can manage their products directly from the Vendor Dashboard , including adding, editing, and managing inventory and product details.
+- [Vendor Order Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-order-management.md): Vendors can manage all order related activities directly from the Vendor Dashboard under the Order History section.
+- [Vendor Transaction Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-transaction-management.md): The Vendor Transaction Management section allows vendors to track payments received from the admin for completed orders where the admin has collected payments from buyers.
+- [Vendors Payout Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-payout-management.md): Admins can now review pending payouts, filter and search by vendor or status, and run bulk Mark as Paid or CSV Export in one click — backed by six dedicated REST routes.
+- [Add New Shipping Zone](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-shipping-zone-management.md): Vendors can manage shipping zones and shipping methods directly from their vendor dashboard.
+- [Admin News – Vendor](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-news-vendor.md): The Admin News section allows vendors to stay updated with important announcements shared by the marketplace admin.
+- [Vendor Staff](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-staff.md): The Vendor Staff feature allows vendors to add sub users (store managers) who can log in and manage the store on their behalf. Vendors can grant per task permissions for each section (view, add, ed...
+- [Vendor Profile](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-profile.md): The Vendor Profile displays important information about a vendor and helps customers understand the vendor’s store, policies, and credibility.
+- [Vacation Mode](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-vacation.md): The Vacation Mode allows vendors to temporarily close their store when they are unavailable. When enabled, the storefront displays a vacation notice with the vendor's custom message and blocks cust...
+- [Vendor KYC Verification](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-kyc.md): The Vendor KYC (Know Your Customer) Verification feature allows admins to securely verify the identity of their vendors. It ensures marketplace compliance and builds trust with customers.
+- [Vendor Notification](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-notification.md): The Vendor Notification section keeps vendors informed about important activities and updates in the marketplace.
+- [Vendor Shop Followers](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-shop-followers.md): The Vendor Shop Followers feature allows vendors to engage directly with buyers who follow their shop by sending notifications and updates.
+- [Ask To Admin](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/ask-to-admin.md): The Ask To Admin feature allows vendors to directly communicate with the marketplace admin for queries, clarifications, or support.
+- [Marketplace Admin Panel Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-panel-management.md): After installing the WooCommerce Marketplace plugin , an additional Marketplace tab appears in the WordPress admin panel. From here admin can manage Marketplace vendors, products, reviews etc.
+- [Assign Product to Vendor](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-management-and-product-assignment.md): The admin can assign products to vendors directly from the product edit page .
+- [Commission Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/commission-management.md): The Commission Management feature allows the admin to define how commissions are calculated and distributed between the admin and vendors.
+- [Marketplace Reviews & Ratings](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/manage-feedback-and-vendor-queries.md): The Marketplace Reviews & Ratings feature allows the admin to manage customer reviews and ratings submitted for vendor products across the marketplace.
+- [Vendor Queries Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-queries-management.md): The Vendor Queries Management feature allows vendors to raise questions or concerns directly to the marketplace admin.
+- [Email Configurations](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/email-configurations.md): The WooCommerce Marketplace plugin allows the admin to configure and manage email templates used for marketplace related notifications.
+- [Admin Notifications](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-notifications.md): The Admin Notifications feature keeps the admin informed about important marketplace activities in real time.
+- [Customer Order Placement](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.md): This guide explains the customer order placement process in the WooCommerce Marketplace and highlights how seller information is displayed at different stages.
+- [Get Google Analytics Measurement ID](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/google-analytics.md): ⬅ Back to Google Analytics Configuration
+
+## Optional
+
+- [Product page](https://store.webkul.com/woocommerce-multivendor-marketplace.html): Buy the plugin ($99, USD) on the Webkul store.
+- [Live demo](https://wpdemo.webkul.com/woocommerce-marketplace/): Working demo marketplace.
+- [Webkul support](https://webkul.uvdesk.com/): Ticket-based support for licensed users.

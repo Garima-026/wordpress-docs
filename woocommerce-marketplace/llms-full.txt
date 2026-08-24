@@ -1,0 +1,4066 @@
+# WooCommerce Multi-Vendor Marketplace Documentation (full)
+
+> Official documentation for Webkul's WooCommerce Multi-Vendor Marketplace plugin, which converts a WooCommerce store into a multi-vendor marketplace with vendor dashboards, commissions, payouts, and shipping.
+
+Canonical site: https://wpdoc.webkul.com/woocommerce-marketplace/
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/ -->
+
+<section class="stats">
+  <div class="stat">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-marketplace/assets/woocommerce-featured-author.webp" alt="CodeCanyon Featured Author">
+    <div class="badge-label">CodeCanyon<br><strong>Featured Author</strong></div>
+  </div>
+  <a class="stat" href="https://codecanyon.net/user/webkul" target="_blank" rel="noopener">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-marketplace/assets/author-level-10.webp" alt="CodeCanyon Author Level 10">
+    <div class="badge-label">CodeCanyon<br><strong>Author Level 10</strong></div>
+  </a>
+  <div class="stat">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-marketplace/assets/github.webp" alt="WooCommerce Core Contributor">
+    <div class="badge-label">WooCommerce<br><strong>Core Contributor</strong></div>
+  </div>
+  <a class="stat" href="https://www.google.com/search?q=webkul#lrd=0x390ce561c5555555:0xcfb40ae166ce6c21,1" target="_blank" rel="noopener">
+    <svg class="badge-img g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+    <div class="badge-label"><span class="g-rating">4.5</span> <span class="stars">★★★★★</span><br><strong>Google Review</strong></div>
+  </a>
+</section>
+
+<section class="home-learn" aria-label="Get started and learn more">
+  <div class="home-learn-grid">
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">1</span>
+        <h2>Set up</h2>
+      </div>
+      <p>Install the plugin and configure your marketplace foundations.</p>
+      <nav aria-label="Set up guides">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/">Introduction</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/features.html">Features</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html">Installation</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-general-settings.html">General settings</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">2</span>
+        <h2>Configure the marketplace</h2>
+      </div>
+      <p>Shape commissions, payouts, endpoints, and the seller experience.</p>
+      <nav aria-label="Configure the marketplace guides">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/commission-management.html">Commission management</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-withdrawal.html">Withdrawal settings</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-endpoints.html">Endpoints</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-seller-central.html">Seller Central</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">3</span>
+        <h2>Run day to day</h2>
+      </div>
+      <p>Manage vendors, products, orders, and customer flows.</p>
+      <nav aria-label="Run day to day guides">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-dashboard-menu.html">Vendor dashboard</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-order-management.html">Vendor orders</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-management-and-product-assignment.html">Vendor &amp; product assignment</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.html">Customer order placement</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/ -->
+
+# Introduction
+
+<a class="doc-image-link" href="./assets/dashboard.webp"><img src="./assets/dashboard.webp" alt="Admin Panel" /></a>
+
+
+The **WooCommerce Multi Vendor Marketplace plugin** is a powerful solution designed to transform a standard WooCommerce store into a fully functional multi-vendor marketplace.
+
+With this plugin, you can allow **multiple independent vendors** to register, create their own shops, upload products, manage orders, and track earnings – all from a dedicated vendor dashboard.
+
+This enables you to build marketplaces similar to:
+
+- Amazon
+- Flipkart
+- Etsy
+- eBay
+
+---
+
+## What does this plugin do?
+
+This plugin converts your WooCommerce store into a **multi-seller platform** where:
+
+- Each vendor gets a **separate profile page**
+- Vendors can **add & manage products**
+- Vendors can **process orders**
+- Vendors can **track sales & transactions**
+- Vendors can **communicate with admin**
+- Admin has **full control over marketplace**
+
+---
+
+## Vendor Capabilities
+
+Once registered, vendors get access to a **frontend dashboard** where they can:
+
+- Add new products
+- Edit existing products
+- Delete products
+- View product listings
+- Track sales performance
+- View transactions
+- Manage orders
+- Print invoices
+- Update profile information
+- Change passwords
+- Ask questions to admin
+
+<a class="doc-image-link" href="./assets/general-settings.webp"><img src="./assets/general-settings.webp" alt="Admin Panel" /></a>
+
+---
+
+## Admin Capabilities
+
+Marketplace owners (admins) can:
+
+- Manage vendor list
+- Manage product list
+- Approve or disapprove vendors
+- Approve or disapprove vendor products
+- Assign products to vendors
+- Set **different commission rates** for each vendor
+- Enable or disable **auto vendor approval**
+- Enable or disable **auto product publish**
+- Control all marketplace settings
+
+---
+
+## Theme Compatibility
+
+> ⚠ This module is fully compatible with **all standard WooCommerce themes**.
+
+### Demo Theme
+
+Our [Live Demo](https://wpdemo.webkul.com/woocommerce-marketplace/) is built using: [**WooCommerce Multivendor Marketplace Theme**](https://store.webkul.com/woocommerce-multivendor-marketplace-theme.html).
+
+Known for:
+
+- Clean UI
+- Smooth WooCommerce integration
+- Marketplace-ready layout
+
+🛒 You can also purchase this theme from our store if you want the **same demo design**.
+
+---
+
+### Compatible Themes
+
+In addition to the demo theme, the module also works seamlessly with the following Webkul themes:
+
+- 👉 [WooCommerce Fashion Ethereal Theme](https://store.webkul.com/woocommerce-fashion-ethereal-theme.html)  
+- 👉 [WooCommerce Multivendor Marketplace Theme](https://store.webkul.com/woocommerce-multivendor-marketplace-theme.html)  
+- 👉 [WooCommerce Marketplace Theme](https://store.webkul.com/woocommerce-marketplace-theme.html)  
+
+---
+
+## Plugin Demo
+
+You can check:
+
+- Vendor dashboard
+- Admin controls
+- Storefront view
+- Marketplace workflow
+
+[🔗 **Live Demo**](https://wpdemo.webkul.com/woocommerce-marketplace/)
+[🔗 **Buy Now**](https://store.webkul.com/woocommerce-multivendor-marketplace.html)
+
+---
+
+## Support Information
+
+If you have any questions, raise a support ticket:
+
+🎟 **Support Portal** [https://webkul.uvdesk.com](https://webkul.uvdesk.com)
+
+📧 Email: [support@webkul.com](mailto:support@webkul.com)
+
+> ⚠ Production version is provided by default
+> Development version available at extra cost
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/features.html -->
+
+# Features
+
+<a class="doc-image-link" href="./assets/key-features.webp"><img src="./assets/key-features.webp" alt="Key Features" /></a>
+
+
+The WooCommerce Multi Vendor Marketplace plugin offers a **robust, scalable, and enterprise-ready feature set** that empowers both marketplace owners and vendors. It is designed to handle high traffic, multiple sellers, and complex order workflows with ease.
+
+---
+
+## Core Marketplace Features
+
+### 1. Multi-Vendor Registration
+Allow unlimited vendors to register on your platform. Vendors can sign up using the default WooCommerce registration form or a dedicated Seller Central onboarding page. This helps you easily onboard new sellers without manual intervention.
+
+<a class="doc-image-link" href="./assets/sellercentral.webp"><img src="./assets/sellercentral.webp" alt="Seller Central" /></a>
+
+---
+
+### 2. Separate Vendor Profile Pages
+Each vendor gets a **dedicated shop page** containing:
+- Shop logo
+- Banner image
+- About section
+- Product collection
+- Reviews & ratings
+
+This helps vendors build their own brand identity within your marketplace.
+
+---
+
+### 3. Vendor Shipping Management
+Vendors can configure their own shipping:
+- Create shipping zones
+- Add shipping methods
+- Define shipping costs
+- Manage shipping classes
+
+This allows vendors to control logistics independently.
+
+---
+
+### 4. Featured Products
+Admins can mark specific vendor products as **featured** to:
+- Increase product visibility
+- Boost sales
+- Highlight trending products
+
+---
+
+### 5. Admin-like Vendor Dashboard
+Admins can enable an **advanced dashboard view** for vendors that resembles the WordPress admin panel. Vendors can switch between:
+- Frontend dashboard (simple)
+- Admin-style dashboard (advanced)
+
+This provides flexibility for both beginner and power sellers.
+
+---
+
+### 6. Vendor Query System
+Vendors can submit queries to admins directly from their dashboard. Admins can:
+- Reply to queries
+- Track conversations
+- Maintain a history of communication
+
+This ensures smooth communication and support.
+
+---
+
+### 7. Vendor Profile Management
+Vendors can manage:
+- Personal details
+- Shop information
+- Social media links
+- Return, shipping & privacy policies
+
+This improves transparency and customer trust.
+
+---
+
+### 8. Advanced Product Management
+Vendors can create multiple product types:
+
+- Simple
+- Grouped
+- External/Affiliate
+- Variable
+- Downloadable
+
+They can manage:
+- Pricing
+- Inventory
+- Images
+- Attributes
+- Variations
+
+Admins also retain control to edit or remove any product.
+
+---
+
+### 9. Order Management
+Vendors can:
+- View order details
+- Access billing & shipping info
+- Update order status
+- Print invoices
+- Upload custom invoices
+
+This ensures professional order handling.
+
+---
+
+### 10. Vendor Approval System
+Admins have full control over:
+- Approving new vendors
+- Approving vendor products
+- Blocking suspicious sellers
+
+This protects marketplace quality.
+
+---
+
+### 11. Product Assignment & Transfer
+Admins can:
+- Assign products to vendors
+- Transfer products between vendors
+- Reassign ownership if required
+
+Useful for vendor migration and management.
+
+---
+
+### 12. SEO-Friendly URLs
+Vendor profiles and product pages use **clean URLs**, improving:
+- Google ranking
+- Click-through rate
+- Search visibility
+
+---
+
+### 13. Flexible Commission System
+Admins can configure:
+- Global commission
+- Vendor-specific commission
+- Fixed commission
+- Percentage commission
+- Hybrid (fixed + percentage)
+
+This allows complete revenue control.
+
+---
+
+### 14. Favorite Vendors & Shop Followers
+Customers can:
+- Follow vendors
+- Receive updates
+- Get notified about new products
+
+This increases repeat sales.
+
+---
+
+### 15. Bulk Product Assignment
+Admins can:
+- Assign multiple products to vendors in bulk
+- Save time on large catalogs
+
+---
+
+### 16. Upsell & Cross-Sell Products
+Vendors can:
+- Suggest premium alternatives
+- Promote related products
+- Increase average order value
+
+---
+
+### 17. WordPress Multisite Support
+Fully compatible with:
+- Multisite networks
+- Centralized management
+- Multiple stores
+
+---
+
+### 18. HPOS Compatibility
+Optimized for:
+- WooCommerce High-Performance Order Storage
+- Faster order processing
+- Large-scale stores
+
+---
+
+### 19. WooCommerce Blocks Support
+Compatible with:
+- Cart block
+- Checkout block
+- Latest WooCommerce UI
+
+---
+
+## Advanced Marketplace Features
+
+### 20. Vendor Transactions
+Admins can:
+- Transfer vendor earnings
+- Track payouts
+
+Vendors can:
+- View transaction history
+- Monitor earnings
+
+---
+
+### 21. Vendor-wise Category Control
+Admins can:
+- Assign specific categories to vendors
+- Control what they can sell
+
+---
+
+### 22. Global Product Type Control
+Admins can:
+- Enable/disable product types
+- Maintain marketplace standards
+
+---
+
+### 23. Vendor Review Moderation
+Admins can:
+- Approve reviews
+- Remove fake reviews
+- Maintain platform trust
+
+---
+
+### 24. Email Template Management
+Supports:
+- Default WooCommerce emails
+- Marketplace-specific emails
+- Custom branding
+
+---
+
+### 25. Custom Dashboard Endpoints
+Admins can customize:
+- Dashboard URLs
+- Menu labels
+- Navigation structure
+
+---
+
+### 26. Refund Management
+Vendors can:
+- Initiate refunds
+- Restock products
+- Track refunded amounts
+
+---
+
+### 27. Product Approval Notifications
+Admins get real-time alerts when:
+- Vendors add products
+- Vendors edit products
+
+---
+
+### 28. Google Analytics Integration
+Admins can:
+- Track sales
+- Monitor product performance
+- Analyze customer behavior
+
+---
+
+### 29. WPML Multilingual Support
+Supports:
+- Multi-language marketplaces
+- Vendor product translation
+- Global audience
+
+---
+
+### 30. Google Map Integration
+Displays:
+- Top billing countries
+- Sales geography
+- Location insights
+
+---
+
+### 31. Enhanced Vendor Profiles
+Includes:
+- TinyMCE editor
+- Auto shop name
+- Custom slugs
+
+---
+
+### 32. GA4 Event Tracking
+Tracks:
+- Product views
+- Purchases
+- Conversion events
+
+---
+
+### 33. Global Attributes Access
+Vendors can:
+- Use admin-created attributes
+- Create attribute terms
+- Manage variations easily
+
+---
+
+## Latest Enterprise Features
+
+### 34. Seller Central Onboarding
+Admins can:
+- Design onboarding page
+- Add banners
+- Showcase benefits
+- Control registration flow
+
+---
+
+### 35. Vendor Invoice Upload
+Vendors can:
+- Upload custom invoice files
+- Include product images
+- Attach invoices to emails
+
+---
+
+### 36. Advanced Product Filters
+Vendors can filter products by:
+- Stock status
+- Sale status
+- Draft status
+
+---
+
+### 37. Vendor Policy Sections
+Vendors can add:
+- Return policy
+- Shipping policy
+- Privacy policy
+
+Displayed on profile pages.
+
+---
+
+### 38. Low Stock Alerts
+Automatic emails sent when:
+- Product stock is low
+
+---
+
+### 39. Dashboard Theme Colors
+Admins can:
+- Customize graph colors
+- Match brand identity
+
+---
+
+### 40. Coupon Cost Sharing
+Admins decide:
+- Who bears discount
+- Vendor
+- Admin
+- Both
+
+---
+
+### 41. Product Fulfilment Badge
+Vendors can display:
+- Fulfilment label
+- Delivery branding
+
+---
+
+### 42. Vendor News System
+Admins can:
+- Publish announcements
+- Send updates to vendors
+
+---
+
+### 43. Order Filter Grids
+Vendors can filter orders by:
+- Completed
+- Pending
+- Refunded
+
+---
+
+### 44. Vendor & Product Reporting
+Customers can:
+- Report vendors
+- Flag products
+
+Admins can:
+- Review complaints
+- Take action
+
+---
+
+### 45. Vendor Order Emails
+Custom vendor emails:
+- New order
+- Status updates
+- Branding support
+
+---
+
+### 46. Hybrid Commission Model
+Supports:
+- Fixed fee
+- Percentage fee
+- Combined model
+
+---
+
+### 47. Customer to Vendor Conversion
+Admins can:
+- Convert customers into vendors
+- Reduce onboarding friction
+
+---
+
+### 48. Global Attributes Access
+Vendors can:
+- Use marketplace attributes
+- Maintain consistency
+
+---
+
+### 49. Custom Shipping Email Titles
+Admins can:
+- Customize shipping emails
+- Improve branding
+
+---
+
+### 50. Customer Privacy Controls
+Admins can:
+- Hide customer details
+- Improve data security
+
+---
+
+### 51. Vendor Purchase Restriction
+Prevents:
+- Vendors buying their own products
+- Fake orders & reviews
+
+---
+
+### 52. Product Tags & Brands
+Vendors can:
+- Manage product tags
+- Manage brands
+- Improve product discoverability
+
+### 53 Vendor Badges System
+
+- Create and assign custom badges to vendors
+- Display badges on vendor profiles
+- Highlight trusted and top-performing sellers
+- Improve customer trust and purchase confidence
+
+---
+
+## Tax Handling
+
+> ⚠ For all orders (including vendor orders),
+**Tax amount is credited to admin account.**
+
+---
+
+## Final Summary
+
+WooCommerce Marketplace is a **complete enterprise marketplace solution** offering:
+
+✔ Full vendor independence
+✔ Strong admin control
+✔ Scalable architecture
+✔ Secure transactions
+✔ Advanced reporting
+✔ Automation tools
+
+It is perfect for:
+
+- B2C marketplaces
+- B2B platforms
+- Wholesale stores
+- Service marketplaces
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html -->
+
+# Installation
+
+This guide explains how to properly install and activate the **WooCommerce Multi Vendor Marketplace plugin** on your WordPress website.
+
+Follow each step carefully to ensure a smooth setup.
+
+---
+
+## System Requirements
+
+Before installation, make sure:
+
+| Requirement        | Minimum / Recommended Version |
+|--------------------|--------------------------------|
+| WordPress Version  | 6.7 or higher                  |
+| WooCommerce Version| 10.0 or higher                 |
+| PHP Version        | 7.4+ (recommended)             |
+| Memory Limit       | 256MB or higher                |
+| SSL                | Enabled (recommended)          |
+
+
+---
+
+## Step 1 – Download Plugin
+
+After purchase, you will receive a **ZIP file** of the plugin.
+
+Do NOT unzip the file before uploading.
+
+---
+
+## Step 2 – Upload Plugin
+
+1. Login to your **WordPress Admin Panel**
+2. Navigate to: **Plugins > Add New**
+
+
+3. Click **Upload Plugin** (top of page)
+4. Click **Choose File**
+5. Select the downloaded ZIP file
+
+<a class="doc-image-link" href="./assets/upload-plugin.webp"><img src="./assets/upload-plugin.webp" alt="Upload Plugin" /></a>
+
+---
+
+## Step 3 – Install Plugin
+
+Click the **Install Now** button.
+
+WordPress will upload and install the plugin automatically.
+
+<a class="doc-image-link" href="./assets/install-now.webp"><img src="./assets/install-now.webp" alt="Install Plugin" /></a>
+
+---
+
+## Step 4 – Activate Plugin
+
+Once installed:
+
+- You will see **Plugin installed successfully**
+- Click **Activate Plugin**
+
+<a class="doc-image-link" href="./assets/activate-plugin.webp"><img src="./assets/activate-plugin.webp" alt="Activate Plugin" /></a>
+
+---
+
+## Step 5 – Activate License
+
+- To activate the license, go to **Marketplace > Settings**
+- The wizard will be show to activate the license.
+- Enter the **License Key** and click **Activate License**
+
+<a class="doc-image-link" href="./assets/license-wizard.webp"><img src="./assets/license-wizard.webp" alt="Activate License" /></a>
+
+- **[License Activation Guide](https://wpdoc.webkul.com/license-validator/)** – Step-by-step instructions on activating your plugin license.
+
+---
+
+## Step 6 – Marketplace Menu
+
+After activation:
+
+- A new **Marketplace** menu appears in the admin sidebar
+
+<a class="doc-image-link" href="./assets/general-settings.webp"><img src="./assets/general-settings.webp" alt="Marketplace Menu" /></a>
+
+---
+
+## Step 7 – Update Permalinks
+
+This step is **mandatory**.
+
+   - Go to **Settings > Permalinks**.
+   - Set **Post Name** as the permalink structure.
+   <a class="doc-image-link" href="./assets/flush-permalink.webp"><img src="./assets/flush-permalink.webp" alt="Update Permalinks" /></a>
+
+## Notes
+
+- Always ensure the plugin zip is compatible with your WooCommerce version.
+- Update permalinks after installation to avoid 404 errors.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/elementor-shortcodes.html -->
+
+# Elementor Compatibility and Shortcodes
+
+<a class="doc-image-link" href="./assets/elementor-compatibility.webp"><img src="./assets/elementor-compatibility.webp" alt="Elementor compatibility" /></a>
+
+WooCommerce Marketplace is fully **compatible with Elementor**, enabling admins to easily design vendor-related pages using shortcodes.
+
+---
+
+## Vendor Registration and Login Page
+
+The admin can create a vendor registration and login page using **Elementor’s Shortcode widget**.
+
+### How to Create the Vendor Page
+
+1. Edit a page using **Elementor**.
+2. Drag and drop the **Shortcode** widget onto the page.
+3. Insert the following shortcode:
+
+```text
+[marketplace]
+```
+
+## Display Vendor Name on Single Product Page
+
+To display the vendor’s name on the single product page, use the following shortcode:
+
+```text
+[wkmp_seller_profile_link]
+```
+
+### This Shortcode Displays
+
+- Vendor registration form
+
+- Vendor login form
+
+### After Login, Vendors Can
+
+- View their profile details
+
+- Manage their account information from the same page
+
+<a class="doc-image-link" href="./assets/woocommerce-marketplace-seller-elementor.webp"><img src="./assets/woocommerce-marketplace-seller-elementor.webp" alt="Vendor Page using Elementor" /></a>
+<a class="doc-image-link" href="./assets/woocommerce-marketplace-seller-edit-elementor.webp"><img src="./assets/woocommerce-marketplace-seller-edit-elementor.webp" alt="Vendor Profile Page" /></a>
+### Display Vendor Name on Single Product Page
+
+To show the vendor’s name on the single product page, use the shortcode below:
+
+```text
+[wkmp_seller_profile_link]
+```
+
+### Functionality
+
+- Displays the vendor name on the product page
+
+- Vendor name appears as a clickable link
+
+- Redirects customers to the vendor’s profile page
+
+### How to Use
+
+- Edit the Single Product Page using Elementor
+
+- Add a Shortcode widget where the vendor name should appear
+
+- Paste the shortcode:
+
+```text
+[wkmp_seller_profile_link]
+```
+
+<a class="doc-image-link" href="./assets/shortcode1.webp"><img src="./assets/shortcode1.webp" alt="Vendor Name on Product Page" /></a>
+### Display Vendor List with Search & Product Count
+
+To display a list of all vendors with search and product count, use the shortcode below:
+
+```text
+[wkmp-vendors-list show_search=yes show_heading=1 show_product_count=1]
+```
+
+### Displayed Features
+
+- List of all registered vendors
+
+- Search bar to filter vendors
+
+- Section heading
+
+- Product count for each vendor
+
+### Shortcode Parameters Table
+| Parameter              | Value | Description              |
+|------------------------|-------|--------------------------|
+| `show_search`          | yes   | Show vendor search bar   |
+| `show_search`          | no    | Hide vendor search bar   |
+| `show_heading`         | 1     | Show heading             |
+| `show_heading`         | 0     | Hide heading             |
+| `show_product_count`   | 1     | Show product count       |
+| `show_product_count`   | 0     | Hide product count       |
+
+### How to Use
+
+- Edit any page using Elementor or the WordPress editor
+
+- Add a Shortcode widget or block
+
+- Paste the shortcode:
+
+```text
+[wkmp-vendors-list show_search=yes show_heading=1 show_product_count=1]
+```
+<a class="doc-image-link" href="./assets/vendor-list-shortcode-and-count.webp"><img src="./assets/vendor-list-shortcode-and-count.webp" alt="Vendor List Page" /></a>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-general-settings.html -->
+
+# Configuration – General Settings
+
+<a class="doc-image-link" href="./assets/general-settings.png"><img src="./assets/general-settings.png" alt="Admin Panel" /></a>
+
+After successfully installing WooCommerce Marketplace, the admin can configure the core marketplace settings such as vendor registration, approval workflow, default vendor capabilities, and overall marketplace behavior from:
+
+**Marketplace > Settings > General**
+
+---
+
+## General Settings Options
+
+### Default Commission
+
+The **Default Commission** is applied when no commission is set specifically for a vendor.
+Admins can set a combination of a fixed flat amount and a percentage (e.g., `$0 + 15%`).
+
+#### Example
+
+- Product Price: **$100**
+
+If the default commission is **20%**:
+- Vendor receives: **$80**
+- Admin commission: **$20**
+
+---
+
+### Deduct Discount From
+
+If a discount is applied by the customer, this option defines how the discount amount is adjusted.
+
+Available options:
+
+- Both vendor total amount and admin commission amount
+- Vendor total amount only
+- Admin commission amount only
+
+*Note: If selected from the 'Admin Commission Amount' and the discount amount is more than the commission amount then the difference will also be borne by the admin.*
+
+---
+
+### Auto Approve Vendor
+
+If enabled, vendors will be **automatically approved** after registration.
+
+#### Example
+
+- When enabled, any user signing up as a vendor is instantly converted into a vendor.
+- When disabled, admin approval is required before the user becomes a vendor.
+
+---
+
+### Separate Vendor Dashboard
+
+If enabled, vendors will have a **separate dashboard**, similar to the admin dashboard, for managing their marketplace activities.
+
+---
+
+### Data Delete After Vendor Delete
+
+- If enabled, **all vendor data** will be deleted when the vendor is removed.
+- If disabled, the vendor’s data will be **assigned to the admin** instead.
+
+---
+
+### Applicable Shipping Methods
+
+The admin can select which shipping method will apply at checkout:
+
+- **Admin Shipping Method**
+- **Vendor Shipping Method**
+
+---
+
+#### More About Applicable Shipping Methods
+
+##### Admin Shipping Method Selected
+
+- Admin shipping rates will apply to **all products**, including vendor products.
+- The shipping rate remains the same regardless of whether the cart contains admin or vendor products.
+
+##### Vendor Shipping Method Selected
+
+- Vendor-specific shipping rates will apply to vendor products.
+- Admin shipping applies to admin products.
+
+##### Mixed Cart (Admin + Vendor Products)
+
+If the cart contains products from **both admin and vendor**:
+
+- The total shipping cost will be a **combined rate** of both admin and vendor shipping.
+- This applies regardless of the selected Applicable Shipping Method.
+
+---
+
+### Vendor Page
+
+Select the page to be used as the **Vendor Page** (which shows the vendor listing).
+
+⚠️ **Important Notes**:
+- Updating the vendor page will **erase existing content** of the newly selected page.
+- After changing the page, kindly **update permalinks**.
+
+---
+
+### Seller Central Page
+
+Select the page to be used as the **Seller Central Page**.
+
+⚠️ **Important Notes**:
+- Updating a new seller central page will **erase existing content** of the newly selected page.
+- After changing the page, kindly **update permalinks**.
+
+---
+
+### Shop Name on Registration
+
+- If set to **Required**, vendors must enter a **Shop Name** during registration.
+- If set to **Optional** and left empty, the module will use the **Vendor Name** as the shop name.
+
+---
+
+### Shop Slug on Registration
+
+- If set to **Required**, vendors must enter a **Shop URL** during registration.
+- If set to **Optional** and left empty, the module will use the **Shop Slug** as the vendor’s username.
+
+---
+
+### Vendor Terms & Conditions Page
+
+The admin can select a **Terms & Conditions page** that will be displayed to vendors during registration.
+
+---
+
+### Allow Vendor Registration on My Account
+
+- If enabled, vendor registration fields will appear on the **WooCommerce My Account** signup form.
+- If disabled, a link to the **Seller Central Registration Form** will be displayed instead.
+
+---
+
+### Vendor KYC Verification Settings
+
+Admins can configure the KYC settings directly from the General tab:
+- **Enable Vendor KYC Verification**: A master toggle to enable or disable the feature globally.
+- **KYC Document Types**: Admins can define the types of documents allowed (e.g., Business License, Government ID, Utility Bill).
+- **Allowed KYC Formats**: Restrict document uploads to specific formats (PDF, JPG, JPEG, PNG, WEBP).
+- **Restrict KYC Document Size**: Optionally define minimum and maximum file size limits (in KB) for the document uploads.
+
+---
+
+### Admin-configurable Upload Restrictions
+
+Admins can set global upload restrictions for every vendor image, including:
+- Avatar
+- Logo
+- Fulfillment
+- Banner
+
+For each image type, admins can define:
+- Allowed file types
+- Optional file size limits
+- Optional dimension limits (width/height)
+
+<!-- <a class="doc-image-link" href="./assets/placeholder-upload-restrictions.png"><img src="./assets/placeholder-upload-restrictions.png" alt="Upload Restrictions" /></a> -->
+
+---
+
+### "Sold by" Visibility Control
+
+Admins have full control over whether the "Sold by" text is visible to customers.
+- **Global Setting**: A master toggle to hide the vendor name and store links across the shop, cart, checkout, orders, emails, and invoices.
+- **Per-Vendor Override**: Admins can override the global setting on a per-vendor basis if certain vendors need their names displayed or hidden.
+
+<!-- <a class="doc-image-link" href="./assets/placeholder-sold-by-visibility.png"><img src="./assets/placeholder-sold-by-visibility.png" alt="Sold By Visibility Settings" /></a> -->
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/product-settings.html -->
+
+# Configuration – Product Settings
+
+<a class="doc-image-link" href="./assets/product-settings.webp"><img src="./assets/product-settings.webp" alt="Product Settings" /></a>
+<a class="doc-image-link" href="./assets/fulfillment.webp"><img src="./assets/fulfillment.webp" alt="Product Settings" /></a>
+
+
+The **Product Settings** allow the admin to manage how vendors add, edit, and publish products in the marketplace.
+
+**Path:**
+Marketplace > Settings > Product
+
+---
+
+### Vendor product settings
+
+- **Allow Vendor to Publish**
+  - Enable to auto-approve and publish vendor products.
+  - Disable to require admin approval for all vendor-added or edited products.
+  - *Flow:* Vendor adds/edits product → Status becomes **Draft** → Admin reviews and publishes.
+
+- **Allow Vendors to Translate Products (WPML)**
+  - Enables vendors to translate products from their dashboard.
+  - Available only when **WPML** is installed and activated.
+
+- **Allowed Product Types**
+  - Admin selects which product types vendors can create.
+  - Examples:
+    - Simple
+    - Variable
+    - Grouped
+    - External
+    - Downloadable
+
+- **Allowed Categories**
+  - Admin selects which product categories vendors can use while adding products.
+
+- **Minimum Order Amount Setting**
+  - Enable to enforce a minimum purchase amount for vendor products.
+  - Admin can define a default minimum value.
+  - If **Amount Value for Vendor** is enabled and vendor leaves it empty, the admin value is applied.
+
+- **Product Quantity Limit Setting**
+  - Enable to allow vendors to set maximum purchase quantity.
+  - Admin can define a global default maximum quantity for vendor products.
+
+---
+
+## Product Fulfilment Settings
+
+- When enabled, vendors can manage their own product fulfilment details.
+- Vendors can add a fulfilment label, image, and description from their dashboard.
+- Vendor-specific fulfilment information is displayed on the product page.
+- When disabled, fulfilment details are managed and shown only by the admin.
+
+<a class="doc-image-link" href="./assets/fulfillment.webp"><img src="./assets/fulfillment.webp" alt="Product Settings" /></a>
+
+
+- Allows buyers to see **who will fulfil product delivery**.
+- **Admin can:**
+  - Enable fulfilment for marketplace vendors
+  - Upload a fulfilment image
+  - Add fulfilment label and descriptive text
+- **Vendor Support:**
+  - Vendors can configure fulfilment details from their dashboard.
+  - Vendor-specific fulfilment details appear on the product page.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/assets-visibility.html -->
+
+# Configuration – Assets Visibility
+
+<a class="doc-image-link" href="./assets/asset-visibility.webp"><img src="./assets/asset-visibility.webp" alt="Seller Central Banner" /></a>
+
+The **Assets Visibility** settings allow the admin to control which vendor details and assets are visible on the **Vendor Profile** and **Vendor Dashboard**.
+
+---
+
+## Assets Visibility Path
+
+- Marketplace > Settings > Assets Visibility
+
+---
+
+## Vendor Profile Visibility Settings
+<a class="doc-image-link" href="./assets/assets-visibility.webp"><img src="./assets/assets-visibility.webp" alt="Seller Central Banner" /></a>
+
+
+- **Email**
+  - Show or hide the vendor’s email address on the vendor profile
+
+- **Phone Number**
+  - Enable or disable the display of the vendor’s phone number
+
+- **Address**
+  - Control whether the vendor’s address is visible on the profile page
+
+- **Social Links**
+  - Show or hide vendor social media links on the vendor profile
+
+- **Hide Customer Details From Vendor**
+  - Restricts vendors from viewing customer billing details
+  - Restricts vendors from viewing customer shipping details
+  - Helps maintain customer privacy
+
+- **Show Legacy Vendor Profile**
+  - Enable to display the vendor profile using the legacy layout
+  - Disable to use the new optimized layout
+    - Includes Report Flag section
+    - Improved UI and performance
+
+  <a class="doc-image-link" href="./assets/show-lagecy-vendor.webp"><img src="./assets/show-lagecy-vendor.webp" alt="show legacy vendor profile" /></a>
+
+
+---
+
+## Vendor Dashboard Statistics Data Style
+
+- **Primary Color Code**
+  - Defines the primary color used in vendor dashboard statistics
+
+- **Secondary Color Code**
+  - Defines the secondary color used in vendor dashboard statistics
+
+<a class="doc-image-link" href="./assets/dashboard.webp"><img src="./assets/dashboard.webp" alt="Vendor Dashboard Orders" /></a>
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-endpoints.html -->
+
+# Configuration – Endpoints
+
+<a class="doc-image-link" href="./assets/endpoints.webp"><img src="./assets/endpoints.webp" alt="Endpoints" /></a>
+
+The **Endpoints** configuration allows the admin to manage dynamic URL segments used across the vendor dashboard and related pages in the WooCommerce Multi-Vendor Marketplace.
+
+---
+
+## Endpoints Overview
+
+- Endpoints add an extra segment to a page URL
+- Used to load different sections without creating separate pages
+- Commonly used for:
+  - Vendor dashboard pages
+  - Vendor profile pages
+  - Orders, settings, and other vendor actions
+- Fully configurable by the admin
+
+---
+
+## What is an Endpoint?
+
+- An endpoint is an additional URL segment appended to a page
+- Example:
+  - Base URL: `example.com/vendorprofile`
+  - With endpoint: `example.com/vendorprofile/edit-vendor-profile`
+- Helps display specific sections such as:
+  - Edit Profile
+  - Dashboard
+  - Order History
+  - Settings pages
+
+---
+
+## Admin Configuration
+
+- Navigate to:
+  - **Marketplace > Settings > Endpoints**
+- The admin can configure:
+  - **Endpoint** – URL slug appended to the page
+  - **Title** – Menu label shown in the vendor dashboard
+
+---
+
+## Endpoint Customization
+
+- Each endpoint URL can be customized
+- Endpoints must be **unique** to avoid conflicts
+- Any changes reflect immediately in vendor dashboard URLs
+- **Hide Dashboard Sections**: Admins can easily hide individual vendor dashboard sections directly from the Endpoints settings by disabling their respective endpoints.
+- Recommended practice:
+  - Use a prefix such as **`vendor-`** to avoid collisions
+
+---
+
+## Examples
+
+- **Dashboard**
+  - Endpoint: `dashboard`
+  - Title: `Dashboard`
+
+- **Order History**
+  - Endpoint: `order-history`
+  - Title: `Order History`
+
+---
+
+## Vendor Dashboard Menu
+
+<a class="doc-image-link" href="./assets/dashboard.webp"><img src="./assets/dashboard.webp" alt="Vendor Dashboard Endpoints" /></a>
+
+- Endpoint **Titles** appear as menu items in the vendor dashboard
+- Clicking a menu item loads the corresponding page using its endpoint
+
+---
+
+## Hide Customer WooCommerce Endpoints
+
+- Admin can hide **customer-related WooCommerce endpoints** from the vendor dashboard
+- Prevents vendors from seeing irrelevant customer menu items
+- Improves vendor dashboard clarity and usability
+
+### Already Registered WooCommerce Endpoints
+
+- `dashboard`
+- `orders`
+- `downloads`
+- `edit-address`
+- `payment-methods`
+- `edit-account`
+- `customer-logout`
+- `order-pay`
+- `order-received`
+- `view-order`
+- `lost-password`
+- `add-payment-method`
+- `delete-payment-method`
+- `set-default-payment-method`
+
+### Behavior
+
+- These customer endpoints can be hidden across **all vendor endpoint pages**
+- Only vendor-relevant endpoints remain visible in the dashboard
+- **Re-show Logout Endpoint**: If customer endpoints are hidden, admins can use a specific option to keep the **Logout** endpoint visible, ensuring vendors can still log out easily.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-google-analytics.html -->
+
+# Configuration – Google Analytics
+
+<a class="doc-image-link" href="./assets/google-analytics-map.webp"><img src="./assets/google-analytics-map.webp" alt="Google Analytics and Map" /></a>
+
+
+The **Google Analytics** feature allows the admin and vendors to track website and product performance using Google Analytics (GA-4).
+
+---
+
+## Google Analytics Overview
+
+- Helps analyze customer behavior and store performance
+- Tracks product views, purchases, and sales data
+- Supports real-time analytics and debug mode
+
+---
+
+## Google Analytics Settings
+
+### Enable Google Analytics
+
+- Enable to populate Google Analytics data on the marketplace
+
+---
+
+### Measurement ID
+
+- Enter the Google Analytics **GA-4 Measurement ID**
+- Can be obtained from the Google Analytics account
+- [Click here to learn how to get the Measurement ID](https://wpdoc.webkul.com/documentation/google-analytics.md)
+
+
+### Allow Vendor to Use Google Analytics
+
+- Enables vendors to connect and use their own GA account
+- Vendors can track their individual store performance
+
+---
+
+### Enable Tracking Events
+
+- Enable required tracking events:
+  - View Item Event
+  - Purchase Event
+
+---
+
+### Enable Debug Mode
+
+- Enables real-time event tracking
+- Allows admin and vendors to:
+  - Verify events instantly
+  - View data in GA-4 Debug View
+
+<a class="doc-image-link" href="./assets/gc-4-debug.webp"><img src="./assets/gc-4-debug.webp" alt="GA-4 Debug Mode" /></a>
+
+<a class="doc-image-link" href="./assets/gc-4-debug-b.webp"><img src="./assets/gc-4-debug-b.webp" alt="Real-Time Purchase Data" /></a>
+
+---
+
+## Google Map API
+
+- Admin can add the Google Map API key
+- API key must be generated from the Google Cloud Console
+
+---
+
+## Supported Analytics Data
+
+### Product Performance
+
+- Product revenue
+- Unique purchases
+- Quantity sold
+- Average price
+- Average quantity
+
+### Sales Performance
+
+- Transaction ID
+- Revenue
+- Tax
+- Shipping cost
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-vendor-flags.html -->
+
+# Configuration – Vendor Flags
+
+<a class="doc-image-link" href="./assets/vendor-flags.webp"><img src="./assets/vendor-flags.webp" alt="Vendor Flags" /></a>
+
+
+The **Vendor Flags** feature allows customers to report vendors from their profile page.
+
+The admin can manage this from:
+
+**Marketplace > Settings > Vendor Flags**
+
+---
+
+## Vendor Flags Overview
+
+- Enables customers to report vendors for issues or concerns
+- Helps maintain marketplace quality and trust
+
+---
+
+## Vendor Flags Settings
+
+### Enable
+
+- Toggle to enable or disable the vendor flag feature
+
+---
+
+### Vendor Flag Text
+
+- Text displayed on the vendor profile for flagging
+- Example: *Report this vendor*
+
+---
+
+### Guest Can Flag
+
+- Allows guest (non-logged-in) users to flag vendors
+
+---
+
+### Accept Other Reasons
+
+- Enables customers to submit custom reasons
+- Allows more detailed feedback beyond predefined options
+
+---
+
+### Other Field Placeholder
+
+- Text shown in the “Other Reason” input field
+- Example: *Please specify your reason*
+
+---
+
+## Vendor Flag Reasons
+
+- Admin can manage predefined flag reasons
+- Available actions:
+  - Add new reasons
+  - Edit existing reasons
+  - Delete reasons
+
+<a class="doc-image-link" href="./assets/vendor-flags-reasons.webp"><img src="./assets/vendor-flags-reasons.webp" alt="Vendor Flag Reasons" /></a>
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-withdrawal.html -->
+
+# Configuration – Withdrawal
+
+<a class="doc-image-link" href="./assets/withdrawal-settings.webp"><img src="./assets/withdrawal-settings.webp" alt="Admin Withdrawal Settings" /></a>
+
+The **Withdrawal** feature allows vendors to withdraw their earnings using configured payment methods.
+
+The admin can configure this from:
+
+**Marketplace > Settings > Withdrawal**
+
+---
+
+## Withdrawal Overview
+
+- Enables vendors to withdraw their available balance
+- Supports both manual and automatic withdrawal methods
+- Admin can define limits, charges, and payment methods
+
+---
+
+## Withdrawal Settings
+
+### Enable Withdrawal
+
+- Toggle to enable or disable the withdrawal functionality for vendors
+
+---
+
+### Withdrawal Limit
+
+- Minimum balance required to create a withdrawal request
+- **Note:** This limit does not apply to automatic withdrawals
+
+---
+
+### Withdrawal Type
+
+- Choose how withdrawals are processed:
+
+#### Manual
+- Vendors manually create withdrawal requests
+- Vendors can:
+  - Select eligible completed orders
+  - Update withdrawal payment method
+  - View applicable charges
+  - See the final withdrawable amount before submitting
+
+#### Automatic
+- Withdrawal requests are auto-generated:
+  - For all active vendors
+  - On the last date of every month
+- Vendors must select a default payment method
+- Withdrawal charges (if any) are applied automatically
+
+---
+
+### Withdrawal Method
+
+- Enable or disable available withdrawal payment methods
+
+---
+
+### Withdrawal Charges
+
+- Define charges for each withdrawal method as required
+
+---
+
+## Save Configuration
+
+- Click **Save** to apply the withdrawal settings
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-vendor-invoice.html -->
+
+# Configuration – Vendor Invoice
+
+<a class="doc-image-link" href="./assets/vendor-invoice.webp"><img src="./assets/vendor-invoice.webp" alt="Vendor Invoice" /></a>
+
+The **Vendor Invoice** feature allows vendors to generate and share invoices for their orders, ensuring transparency between vendors, admin, and customers.
+
+The admin can configure this section from:
+
+**Marketplace > Settings > Vendor Invoice**
+
+---
+
+## Vendor Invoice Overview
+
+- Allows vendors to generate invoices for their orders
+- Helps maintain transparency in vendor earnings
+- Invoices can be shared with customers as proof of purchase
+- Both admin and vendors can send invoices to customers
+
+
+---
+
+## Invoice Details Included
+
+A vendor invoice contains the following information:
+
+- Product price
+- Vendor commission
+- Shipping charges
+- Applicable taxes
+- Final vendor earnings
+
+---
+
+## Vendor Invoice Settings
+
+### Allow for the Vendor
+
+- Enables vendors to generate and access invoices
+- Invoices are available from the vendor dashboard
+
+---
+
+### Attach in the Mail
+
+- Automatically attaches the invoice to order confirmation emails
+- Ensures customers receive invoices without manual effort
+
+---
+
+### Allow File Types
+
+- Defines the supported file formats for invoice uploads
+- Common supported formats include:
+  - PDF
+  - JPG
+  - webp
+
+---
+
+### Allow File Size
+
+- Sets the maximum allowed file size for invoice attachments
+- Helps manage storage and performance efficiently
+
+---
+
+## Save Configuration
+
+- After configuring the invoice settings, click **Save**
+- Changes will apply immediately
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-seller-central.html -->
+
+# Configuration – Seller Central
+
+<a class="doc-image-link" href="./assets/sellercentral.webp"><img src="./assets/sellercentral.webp" alt="Seller Central" /></a>
+
+The **Seller Central** settings allow the admin to configure and customize the **vendor onboarding page** for new sellers.
+
+The admin can access this section from:
+
+**Marketplace > Settings > Seller Central**
+
+---
+
+## Seller Central Overview
+
+- Provides a dedicated onboarding page for new vendors
+- Helps vendors understand marketplace features and benefits
+- Improves vendor sign-up and conversion rate
+- Fully customizable by the admin
+- **Page Selectors**: Admins can easily select the Seller Central page. The selectors for Vendor, Seller Central, and Terms & Conditions pages are now **searchable**, making it easy to find the right page.
+- **Collision Prevention**: To prevent issues, saving is automatically blocked if two selectors point to the same page, or if a selected page slug clashes with an existing marketplace endpoint.
+
+---
+
+## Banner Section
+
+- Displays at the top of the Seller Central page
+- Admin can configure:
+  - Seller Central Logo
+  - Seller Central Title
+  - Banner heading
+  - Banner description
+  - Banner image
+
+<a class="doc-image-link" href="./assets/seller-central-banner.webp"><img src="./assets/seller-central-banner.webp" alt="Seller Central Banner" /></a>
+
+---
+
+## Features Section
+
+- Highlights important marketplace features
+- Helps vendors understand available tools and functionality
+- Attracts new vendors by showcasing platform capabilities
+
+<a class="doc-image-link" href="./assets/seller-central-features.webp"><img src="./assets/seller-central-features.webp" alt="Seller Central Features" /></a>
+
+---
+
+## Reviews Section
+
+- Displays vendor or customer testimonials
+- Builds trust and credibility for new vendors
+- Encourages vendors to join the marketplace
+
+<a class="doc-image-link" href="./assets/seller-central-reviews.webp"><img src="./assets/seller-central-reviews.webp" alt="Seller Central Reviews" /></a>
+
+---
+
+## Workflow Section
+
+- Explains the step-by-step process to start selling
+- Makes vendor onboarding simple and clear
+- Helps reduce confusion during registration
+
+<a class="doc-image-link" href="./assets/seller-central-workflows.webp"><img src="./assets/seller-central-workflows.webp" alt="Admin Withdrawal Settings" /></a>
+
+---
+
+## Benefits Section
+
+- Lists the key advantages of joining the marketplace
+- Helps vendors quickly understand the value proposition
+- Encourages vendor registration
+
+<a class="doc-image-link" href="./assets/seller-central-benefits.webp"><img src="./assets/seller-central-benefits.webp" alt="Seller Central Benefits" /></a>
+
+---
+
+## Registration Section
+
+- Allows the admin to configure vendor registration settings
+- Controls onboarding options for new sellers
+- Manages how vendors sign up on the marketplace
+
+<a class="doc-image-link" href="./assets/seller-central-registration.webp"><img src="./assets/seller-central-registration.webp" alt="Seller Central Registration" /></a>
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-registration-process.html -->
+
+# Vendor Registration Process
+<a class="doc-image-link" href="./assets/Registration.webp"><img src="./assets/Registration.webp" alt="Vendor Registration" /></a>
+
+Vendors can register on the marketplace using multiple methods provided by the WooCommerce Marketplace plugin.
+
+---
+
+## Method 1: Registration via Vendor Menu
+
+- Vendor clicks on the **Vendor** menu item.
+- The page displays two options:
+  - **Login Here**
+  - **Register**
+
+  <a class="doc-image-link" href="./assets/seller-login.webp"><img src="./assets/seller-login.webp" alt="Vendor Menu" /></a>
+
+- Clicking **Login Here** redirects to the vendor login page.
+- Clicking **Register** redirects to the vendor registration page.
+
+<a class="doc-image-link" href="./assets/vendor-menu.webp"><img src="./assets/vendor-menu.webp" alt="Vendor Menu" /></a>
+
+---
+
+## Method 2: Registration via Seller Central Page
+
+- Vendor visits the **Seller Central** page.
+- Clicks on the **Become a Seller** button.
+
+
+<a class="doc-image-link" href="./assets/sellercentral.webp"><img src="./assets/sellercentral.webp" alt="Seller Central" /></a>
+
+- The vendor registration form opens.
+- Vendor completes and submits the registration form.
+
+<a class="doc-image-link" href="./assets/sellercentral-registration-form.webp"><img src="./assets/sellercentral-registration-form.webp" alt="Seller Central Registration Form" /></a>
+
+---
+
+## Method 3: Registration via My Account Page
+
+If the admin enables **Allow Vendor Registration on My Account**:
+
+- A **vendor registration option** is available on the **My Account** sign-up page.
+- The user selects the **“I am a Vendor”** radio button during registration.
+- Additional **vendor-specific registration fields** are displayed automatically.
+
+<a class="doc-image-link" href="./assets/seller-registration-page.webp"><img src="./assets/seller-registration-page.webp" alt="Seller Registration Page" /></a>
+
+---
+
+## Vendor Registration Form Fields
+
+The vendor must enter the following details:
+
+- Email Address
+- Password
+- First Name
+- Last Name
+- Shop Name
+- Shop URL
+- Phone Number
+- Accept Terms & Conditions
+
+After entering the details, click the **Register** button.
+
+<a class="doc-image-link" href="./assets/registration-details.webp"><img src="./assets/registration-details.webp" alt="Registration Details" /></a>
+
+---
+
+## Shop URL Availability Check
+
+- The **Shop URL** field uses an **AJAX-based availability check**.
+- Displays **“Available”** if the URL is unused.
+- Displays **“Already Exists”** if the URL already exists.
+
+<a class="doc-image-link" href="./assets/registration-details.webp"><img src="./assets/registration-details.webp" alt="Shop URL Availability" /></a>
+
+---
+
+## Registration Using Email & Password
+
+- Vendor registration is completed using **email and password**.
+- Vendor access is granted based on admin approval settings.
+
+<a class="doc-image-link" href="./assets/register-as-vendor.webp"><img src="./assets/register-as-vendor.webp" alt="Register as Vendor" /></a>
+
+---
+
+## Become a Vendor from Customer Account
+
+- Existing customers can upgrade to a vendor account.
+- A **Become a Vendor** option is available in the **My Account** panel.
+- Clicking it initiates the vendor registration process.
+
+<a class="doc-image-link" href="./assets/customer-account-become-vendor.webp"><img src="./assets/customer-account-become-vendor.webp" alt="Become Vendor from Account" /></a>
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-news.html -->
+
+# Admin News
+
+<a class="doc-image-link" href="./assets/all-news.webp"><img src="./assets/all-news.webp" alt="All News List" /></a>
+
+The **Admin News** feature allows the admin to create and publish news updates for vendors.
+Admins can also control the **visibility of news for sellers** based on marketplace requirements.
+
+---
+
+## Access Path
+
+- **Marketplace → Admin News**
+
+---
+
+## Create News
+
+- Click on **Add New News** to create a new announcement.
+- Enter the required news details such as:
+  - News title
+  - Description/content
+  - Visibility options
+
+<a class="doc-image-link" href="./assets/settings.webp"><img src="./assets/settings.webp" alt="Admin News Settings" /></a>
+
+- Click **Publish** to make the news live.
+- Admin can also **edit previously published news** at any time.
+
+<!-- <a class="doc-image-link" href="./assets/admin-edit-news.webp"><img src="./assets/admin-edit-news.webp" alt="Add New News" /></a> -->
+
+---
+
+## News Visibility Options
+
+While creating or editing news, the admin can control which sellers can see the announcement using the following options:
+
+### Show News to Sellers
+
+- When this option is enabled:
+  - The news is visible to **all sellers** in the marketplace.
+  - Sellers can view the news from their **Vendor Account Panel**.
+- Suitable for:
+  - General marketplace announcements
+  - Policy updates
+  - Feature releases
+  - Maintenance notifications
+
+---
+
+### Hide News from Sellers
+
+- When this option is enabled:
+  - The news is **hidden from sellers**.
+  - Only the admin can view the news in the admin panel.
+- Useful for:
+  - Draft announcements
+  - Internal testing
+  - Temporarily disabling outdated or irrelevant news
+  - Preparing announcements for future publishing
+
+> **Note:** The admin can toggle these options anytime by editing the news item.
+
+---
+
+## View All News
+
+- Click on **See All News** to view the complete list of created news.
+- Displays:
+  - Active news
+  - Hidden news
+  - Previously published announcements
+
+<a class="doc-image-link" href="./assets/all-news.webp"><img src="./assets/all-news.webp" alt="All News List" /></a>
+
+---
+
+## Vendor Visibility
+
+- Published and visible news appears in the vendor’s **Vendor Account Panel**.
+- Sellers can:
+  - View the announcement title
+  - Read the full news content
+
+<a class="doc-image-link" href="./assets/vendor-new.webp"><img src="./assets/vendor-new.webp" alt="Vendor News View" /></a>
+
+---
+
+## Use Cases
+
+- Marketplace-wide announcements
+- Vendor onboarding updates
+- Policy or commission changes
+- New feature releases
+- Scheduled maintenance notifications
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-mangement.html -->
+
+# Vendor Management
+
+<a class="doc-image-link" href="./assets/vendor-profile-badge-display.webp"><img src="./assets/vendor-profile-badge-display.webp" alt="Vendor Badges Frontend View" /></a>
+
+The **Vendor Badges** feature allows marketplace admins to recognize, reward, and showcase vendor performance. Badges act as trust indicators and are displayed on vendor profile pages to improve buyer confidence.
+
+
+---
+
+## Admin Badge Management
+
+Admins can manage all vendor badges from the marketplace admin panel.
+
+<a class="doc-image-link" href="./assets/badges-settings.webp"><img src="./assets/badges-settings.webp" alt="Badges Settings" /></a>
+
+*(Marketplace → Badges section)*
+
+- Create unlimited custom vendor badges
+- Control badge visibility using status (Enabled/Disabled)
+- Assign priority using badge ranking
+- Upload custom badge images for visual recognition
+
+---
+
+## Add New Badge
+
+<a class="doc-image-link" href="./assets/add-badge.webp"><img src="./assets/add-badge.webp" alt="Add New Badges" /></a>
+
+
+Admins can create a new badge by filling in the following fields:
+
+- **Badge Name**
+  - Alphanumeric name (e.g., Gold, Silver, Platinum)
+- **Badge Description**
+  - Short explanation of eligibility
+  - Example: *For 10,000 sales and above*
+- **Rank**
+  - Determines badge priority when multiple badges exist
+- **Status**
+  - Enable or disable the badge instantly
+- **Badge Image**
+  - Upload a custom badge icon
+
+This allows full control over how badges appear and function in the marketplace.
+
+---
+
+## Update Existing Badge
+
+<a class="doc-image-link" href="./assets/update-badge.webp"><img src="./assets/update-badge.webp" alt="Edit Badges" /></a>
+
+
+Admins can update badge details at any time:
+
+- Edit badge name or description
+- Change badge rank
+- Replace badge image
+- Enable or disable the badge without deleting it
+
+This ensures badge criteria remain relevant as the marketplace evolves.
+
+---
+
+## Assign Badge to Vendor
+
+<a class="doc-image-link" href="./assets/vendor-details-badge.webp"><img src="./assets/vendor-details-badge.webp" alt="Vendor Detail Badge" /></a>
+
+*(Vendor → Details section)*
+
+- Admins can assign badges directly from the vendor profile page
+- Multiple badges can be assigned based on vendor performance
+- Assigned badges are immediately linked to the vendor account
+
+**Example:**
+A vendor completing **10,000+ successful sales** can be awarded the **Gold Badge**.
+
+---
+
+## Badge Display on Vendor Profile
+
+The assigned badges are **visible to the customer at the vendor profile at the frontend**. This ensures that customers can immediately recognize verified and high-performing sellers directly from the shop page.
+
+<a class="doc-image-link" href="./assets/vendor-profile-badges.webp"><img src="./assets/vendor-profile-badges.webp" alt="Vendor Profile Badge Display" /></a>
+
+- Customers can view specific certifications such as **Top Rated Vendor** and **On Time Delivery**.
+- The badges help customers quickly identify trusted and reliable marketplace partners.
+- This visibility improves transparency and helps customers make faster, more confident purchase decisions.
+
+
+
+---
+
+## Benefits of Vendor Badges
+
+- ✔ Builds trust and credibility
+- ✔ Rewards top-performing vendors
+- ✔ Motivates vendors to improve performance
+- ✔ Enhances marketplace professionalism
+- ✔ Improves customer decision-making
+
+---
+
+## Admin Vendors List
+
+The admin can manage all vendors from the marketplace admin panel.
+
+- **Bulk Approve and Disapprove**: Admins can easily perform bulk actions to approve or disapprove multiple vendors directly from the Vendors list.
+
+<!-- <a class="doc-image-link" href="./assets/placeholder-bulk-approve.png"><img src="./assets/placeholder-bulk-approve.png" alt="Bulk Approve Vendors" /></a> -->
+
+---
+
+## Vendor Listing Page
+
+- **Vendor Listing**: The selected Vendor page (configured in general settings) displays a listing of all active vendors on the storefront, allowing customers to easily browse and discover different stores.
+
+<!-- <a class="doc-image-link" href="./assets/placeholder-vendor-listing.png"><img src="./assets/placeholder-vendor-listing.png" alt="Vendor Listing" /></a> -->
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-dashboard-menu.html -->
+
+# Vendor Dashboard Menu
+
+<a class="doc-image-link" href="./assets/dashboard.webp"><img src="./assets/dashboard.webp" alt="Dashboard Print" /></a>
+
+The **Vendor Dashboard** allows vendors to manage marketplace activities and access key functionalities similar to the admin panel.
+
+---
+
+## Vendor Dashboard Sections
+
+- **Reports**
+  - View quick infographic reports
+  - Access recent orders summary
+  - Check sales order history
+  - Monitor:
+    - Lifetime Sales
+    - Total Payout
+    - Remaining Amount
+    - Refunded Amount
+
+- **Order History**
+  - View complete order-related history
+  - Track orders placed by customers
+
+- **Transaction**
+  - View transaction-related details
+  - Includes:
+    - Transaction ID
+    - Date
+    - Transaction Amount
+
+- **Notifications**
+  - View order-related notifications
+  - Receive product-related updates and alerts
+
+- **Shop Followers**
+  - Check the list of followers for the vendor shop
+  - View customer queries related to the shop
+
+- **My Profile**
+  - Manage and update vendor profile information
+  - Edit personal and shop-related details
+
+- **Ask To Admin**
+  - View queries raised with the admin
+  - Track communication and responses from the admin
+
+---
+
+## Purpose
+
+The Vendor Dashboard helps vendors efficiently manage their store, track performance, and communicate with the admin from a single interface.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-product-management.html -->
+
+# Vendor Product Management
+
+<a class="doc-image-link" href="./assets/product-management.webp"><img src="./assets/product-management.webp" alt="Product Management" /></a>
+
+<!-- <a class="doc-image-link" href="./assets/product-list.webp"><img src="./assets/product-list.webp" alt="Product List" /></a> -->
+
+Vendors can manage their products directly from the **Vendor Dashboard**, including adding, editing, and managing inventory and product details.
+
+---
+
+## Product Types Supported
+
+Vendors can add the following **5 product types**:
+
+- Simple Product
+- Grouped Product
+- External / Affiliate Product
+- Variable Product
+- Downloadable Product
+
+---
+
+## Vendor Product List
+
+- Vendors can view all their products under **Product List**
+- Available actions:
+  - Search products
+  - Edit products
+  - Delete products
+- Product status counters available:
+  - Published
+  - Low Stock
+  - Out of Stock
+  - Draft
+  - On Sale
+
+> Vendors can only see **admin-published products** if auto-publish is disabled by the admin.
+
+---
+
+## Edit Product
+
+- Vendors can edit:
+  - Basic product details
+  - Inventory settings
+  - Product status
+- Edit options become available after product creation.
+
+---
+
+## Add Product
+
+- Vendor clicks on **Add Product** from the dashboard menu.
+- Select:
+  - Product Category
+  - Product Type
+- Click **Next** to proceed.
+
+<a class="doc-image-link" href="./assets/add-product.webp"><img src="./assets/add-product.webp" alt="Add Product" /></a>
+
+---
+
+## Product Details
+
+Vendors must enter the following details:
+
+- Product Name
+- About Product
+- Product Thumbnail
+- Product SKU
+- Regular Price
+- Sale Price
+- **Scheduled Sale Price**: For simple products, vendors can now schedule a sale price directly from the product add and edit pages.
+- Short Description
+
+Click **Save** after entering details.
+
+<a class="doc-image-link" href="./assets/product-detail.webp"><img src="./assets/product-detail.webp" alt="Product Details" /></a>
+
+---
+
+## Minimum Order & Quantity Settings
+
+- Vendors can manage:
+  - Minimum order amount for checkout
+  - Maximum purchase quantity
+- Accessible via **Change Product Miscellaneous Settings**
+
+<a class="doc-image-link" href="./assets/miscellaneous-setting.webp"><img src="./assets/miscellaneous-setting.webp" alt="Miscellaneous Settings" /></a>
+
+---
+
+## Inventory Management
+
+- Enable **Stock Management at Product Level**
+- Configure:
+  - Stock Quantity
+  - Backorders (Allow / Not Allow / Allow but Notify)
+  - Low Stock Threshold
+  - Sell Individually option
+  - Max Purchasable Quantity
+
+<a class="doc-image-link" href="./assets/edit-seller-product.webp"><img src="./assets/edit-seller-product.webp" alt="Inventory Settings" /></a>
+
+---
+
+## Shipping Details
+
+- Vendors can enter product-specific shipping information.
+
+<a class="doc-image-link" href="./assets/seller-product-shipping.webp"><img src="./assets/seller-product-shipping.webp" alt="Product Shipping" /></a>
+
+---
+
+## Linked Products
+
+- Vendors can add:
+  - Upsell products
+  - Cross-sell products
+
+<a class="doc-image-link" href="./assets/seller-linked-product.webp"><img src="./assets/seller-linked-product.webp" alt="Linked Products" /></a>
+
+---
+
+## Attributes Management
+
+- Vendors can add multiple attributes as required.
+- Options include:
+  - Use existing attributes
+  - Make attributes visible on product page
+
+<a class="doc-image-link" href="./assets/seller-attribute.webp"><img src="./assets/seller-attribute.webp" alt="Attributes" /></a>
+
+<a class="doc-image-link" href="./assets/seller-add-attribute.webp"><img src="./assets/seller-add-attribute.webp" alt="Add Attribute" /></a>
+
+- Attributes appear under **Additional Information** section.
+
+<a class="doc-image-link" href="./assets/washable.webp"><img src="./assets/washable.webp" alt="Attribute Display" /></a>
+
+---
+
+## Attributes Tab (UX Improvement)
+
+- While editing products:
+  - An **Ajax loader** appears on the Attributes tab
+  - Indicates attribute terms are being fetched
+  - Prevents repeated clicks
+
+- Vendors can:
+  - Use admin-created attributes
+  - Request new or updated attributes via **Ask Admin**
+
+<a class="doc-image-link" href="./assets/attribute.webp"><img src="./assets/attribute.webp" alt="Attributes Tab" /></a>
+
+---
+
+## Product Tags & Brands
+
+- Vendors can add and manage:
+  - Product Tags
+  - Product Brands
+- Helps improve:
+  - Product categorization
+  - Search visibility
+
+<a class="doc-image-link" href="./assets/tag-and-brands.webp"><img src="./assets/tag-and-brands.webp" alt="Tags and Brands" /></a>
+
+> Tags and brands are visible on the product page.
+
+---
+
+## Product Status
+
+- Vendors can set product status as:
+  - **Online**
+  - **Draft**
+- If set to **Online**:
+  - Product is published only if admin permission is granted
+
+<a class="doc-image-link" href="./assets/product-status.webp"><img src="./assets/product-status.webp" alt="Product Status" /></a>
+
+---
+
+## Virtual & Downloadable Products
+
+- Vendors can mark products as:
+  - Virtual
+  - Downloadable
+
+### Downloadable Product Settings
+
+- File Name
+- File URL
+- Download Limit
+- Expiry Date
+
+<a class="doc-image-link" href="./assets/downloadable-product.webp"><img src="./assets/downloadable-product.webp" alt="Downloadable Product" /></a>
+
+---
+
+## Final Product Creation
+
+- After saving:
+  - Product appears in **Product List**
+
+<a class="doc-image-link" href="./assets/product-list.webp"><img src="./assets/product-list.webp" alt="Final Product Created" /></a>
+
+- Product is live on the frontend for customers.
+
+---
+
+## Product Translations (WPML)
+
+Vendors can easily translate their products into configured WPML languages directly from the frontend product edit page.
+
+- A new **Translations** tab is available when editing a product.
+- Supports translating simple products and variable-product variations.
+- *Note: Requires WPML and WooCommerce Multilingual. The separate Marketplace WPML Integration add-on is no longer needed.*
+
+<!-- <a class="doc-image-link" href="./assets/placeholder-wpml-translations.png"><img src="./assets/placeholder-wpml-translations.png" alt="WPML Product Translations" /></a> -->
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-order-management.html -->
+
+# Vendor Order Management
+
+<a class="doc-image-link" href="./assets/order-management.webp"><img src="./assets/order-management.webp" alt="order-management" /></a>
+
+<!-- <a class="doc-image-link" href="./assets/order-history.webp"><img src="./assets/order-history.webp" alt="Order History" /></a> -->
+
+Vendors can manage all order-related activities directly from the **Vendor Dashboard** under the **Order History** section.
+
+---
+
+## Access Order History
+
+- Vendors navigate to **Order History** from the Vendor Dashboard.
+- Displays a list of all orders related to the vendor’s products.
+
+---
+
+## View Order Details
+
+- Click on the **View** button to open complete order details.
+- Vendors can:
+  - View customer and product information
+  - View an **Order summary line and subtotal** to quickly understand the order's financial details
+  - Upload a **custom invoice** for the order
+  - Manage order-related actions
+
+<a class="doc-image-link" href="./assets/order-details.jpeg"><img src="./assets/order-details.jpeg" alt="Order Details View" /></a>
+
+---
+
+## Upload Custom Invoice
+
+- Vendors can upload their **personalized invoice file** directly from the order details page.
+- Supported if invoice upload is enabled by the admin.
+
+---
+
+## Update Order Status
+
+- Vendors can update the **order status** as required.
+
+<a class="doc-image-link" href="./assets/woocommerce-marketplace.webp"><img src="./assets/woocommerce-marketplace.webp" alt="Order Status Update" /></a>
+
+- After updating:
+  - The change is recorded automatically in **Order Notes**.
+
+<a class="doc-image-link" href="./assets/order-notes.webp"><img src="./assets/order-notes.webp" alt="Order Notes" /></a>
+
+---
+
+## Print Invoice
+
+- Vendors can print the invoice by clicking the **Print Invoice** button.
+- The button is available at the **top-right corner** of the order details page.
+
+<a class="doc-image-link" href="./assets/invoice-button.webp"><img src="./assets/invoice-button.webp" alt="Seller Invoice button" /></a>
+
+**Invoice Preview**
+
+<a class="doc-image-link" href="./assets/seller-invoice.webp"><img src="./assets/seller-invoice.webp" alt="Seller Invoice Print" /></a>
+
+---
+
+## Generate Refund (Vendor End)
+
+Vendors can generate refund requests for eligible orders.
+
+### Steps to Generate a Refund
+
+1. Navigate to **Order History** in the Vendor Dashboard.
+2. Click **View** for the order to be refunded.
+
+<a class="doc-image-link" href="./assets/order-history.webp"><img src="./assets/order-history.webp" alt="Order History" /></a>
+
+3. On the order details page, click the **Refund** tab (visible at the top).
+
+<a class="doc-image-link" href="./assets/order-details.jpeg"><img src="./assets/order-details.jpeg" alt="Refund Tab" /></a>
+
+
+4. Configure the refund options:
+   - Refund Quantity
+   - Refund Shipping (optional)
+   - Restock Refunded Items (optional)
+
+5. Click on **Refund Manually**.
+
+<a class="doc-image-link" href="./assets/approve-refund.webp"><img src="./assets/approve-refund.webp" alt="Approve Refund" /></a>
+
+---
+
+## Refund Confirmation
+
+- After successful refund:
+  - A message **“Refunded successfully”** appears at the top of the page.
+  - The refunded amount is reflected under the **Order Total** section.
+
+  <a class="doc-image-link" href="./assets/refunded.webp"><img src="./assets/refunded.webp" alt="Approve Refund" /></a>
+
+
+---
+
+## Summary
+
+- Vendors can:
+  - View and manage orders
+  - Upload and print invoices
+  - Update order status
+  - Generate refunds manually
+- All actions are tracked and updated in the order history and notes.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-transaction-management.html -->
+
+# Vendor Transaction Management
+
+<a class="doc-image-link" href="./assets/admin-transaction.webp"><img src="./assets/admin-transaction.webp" alt="Seller Transactions" /></a>
+
+The **Vendor Transaction Management** section allows vendors to track payments received from the admin for completed orders where the admin has collected payments from buyers.
+
+---
+
+## Access Transactions
+
+- Vendors can access transactions from the **Vendor Dashboard**.
+- This section displays all transactions processed by the admin for vendor orders.
+
+<a class="doc-image-link" href="./assets/seller-transactions.webp"><img src="./assets/seller-transactions.webp" alt="Seller Transactions" /></a>
+
+---
+
+## Transaction Overview
+
+Vendors can view the following transaction-related details:
+
+- **Total Earning** – Total amount earned from completed orders
+- **Total Withdrawal** – Total amount already withdrawn
+- **Total Pending** – Amount pending for withdrawal
+- **Total Refunded** – Total refunded amount
+- **Last Withdrawal** – Details of the most recent withdrawal
+- **Minimum Withdrawal Amount** – Minimum balance required to request a withdrawal
+
+---
+
+## Create a Withdrawal Request
+
+- Click on the **Withdrawal** button to initiate a withdrawal request.
+- Vendor is redirected to the **Withdrawal Request** page.
+
+<a class="doc-image-link" href="./assets/webkul-woocommerce-marketplace-withdrawal.webp"><img src="./assets/webkul-woocommerce-marketplace-withdrawal.webp" alt="Withdrawal Page" /></a>
+
+---
+
+## Withdrawal Management
+
+From the withdrawal page, vendors can:
+
+- View available **withdrawal payment methods**
+- Set a **default withdrawal method**
+- Check **recent withdrawal requests**
+
+To request a new withdrawal:
+
+- Click on **Request Withdrawal**
+
+
+<a class="doc-image-link" href="./assets/vendor-create-withdrawal-request.webp"><img src="./assets/vendor-create-withdrawal-request.webp" alt="Create Withdrawal Request" /></a>
+
+---
+
+## Submit Withdrawal Request
+
+- Enter the required withdrawal details.
+- Click on **Submit Request** to send the withdrawal request to the admin.
+
+---
+
+## View Transaction Details
+
+- Vendors can click on the **View** option for any transaction.
+- This displays:
+  - Vendor’s earned amount
+  - Admin commission for the order
+
+
+<a class="doc-image-link" href="./assets/transaction-details.webp"><img src="./assets/transaction-details.webp" alt="Transaction Details" /></a>
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-payout-management.html -->
+
+# Vendors Payout Management
+
+<a class="doc-image-link" href="./assets/vendors-payout-management.webp"><img src="./assets/vendors-payout-management.webp" alt="Vendors Payout Management" /></a>
+
+Admins can now review pending payouts, filter and search by vendor or status, and run bulk Mark-as-Paid or CSV Export in one click — backed by six dedicated REST routes.
+
+This also ships:
+- **Category Filter**: Inline product count and product search on the seller profile.
+- **Frontend Bulk Actions**: Assign Categories and Publish actions directly on the seller product list.
+- **Data-Driven Seller-Profile Tabs**: Optimized profile tabs for addons.
+---
+
+## Vendors Payout Dashboard Features
+
+The new Vendors Payout Management dashboard provides a centralized view for admins to track vendor orders, commissions, payment methods, and seller payouts.
+
+### Dashboard Highlights
+
+- **Payable Withdrawals & Unpaid Amounts**: View total pending payable requests and total unpaid payout amounts at a glance.
+- **Total Commission Earned**: Monitor total marketplace commission earnings.
+- **Unpaid Vendors**: Track the number of vendors with unpaid payouts.
+
+### Payout Management Capabilities
+
+- **Review Pending Payouts**: Easily review all requested withdrawals from vendors.
+
+#### Filter and Search
+
+<a class="doc-image-link" href="./assets/vendor-payout-filter.webp"><img src="./assets/vendor-payout-filter.webp" alt="Vendor Payout Filters" /></a>
+
+Admins can use the advanced filtering and searching tools to locate specific payout records quickly:
+- **Filter by Vendor**: Select a specific vendor from the dropdown (e.g., "Blue Heaven's Store" or "ElectroMart") to view only their pending or completed payout requests.
+- **Filter by Status**: View payouts by their current status, such as "Pending", to isolate pending requests.
+- **Search by Withdrawal ID**: Quickly find a specific withdrawal request by entering its unique ID in the search bar.
+
+#### Bulk Actions
+
+<a class="doc-image-link" href="./assets/vendor-payout-bulk-actions.webp"><img src="./assets/vendor-payout-bulk-actions.webp" alt="Vendor Payout Bulk Actions" /></a>
+
+For efficient management of multiple withdrawal requests, admins can utilize the bulk actions menu:
+- **Mark as Paid**: Select multiple pending withdrawals using the checkboxes on the left, then run the "Mark as Paid" bulk action to clear them all in a single click.
+- **Export CSV**: Download a comprehensive CSV file containing the selected payout records for offline accounting and external record-keeping.
+
+#### Individual Payouts
+
+- **Pay Now**: Admins can also manage transactions individually by clicking the **Pay Now** button located next to any withdrawal request to quickly process a specific payout.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-shipping-zone-management.html -->
+
+# Add New Shipping Zone
+
+<a class="doc-image-link" href="./assets/Shipping.webp"><img src="./assets/Shipping.webp" alt="Shipping" /></a>
+
+<!-- <a class="doc-image-link" href="./assets/shipping-created.webp"><img src="./assets/shipping-created.webp" alt="Shipping Created" /></a> -->
+
+
+Vendors can manage shipping zones and shipping methods directly from their vendor dashboard.
+
+---
+
+## Add New Shipping Zone
+
+To create a new shipping zone:
+
+1. Navigate to **Shipping** from the vendor dashboard.
+
+<a class="doc-image-link" href="./assets/before-shipping-created.webp"><img src="./assets/before-shipping-created.webp" alt="Before Shipping Created" /></a>
+
+2. Click on **Add New Shipping Zone**.
+3. Enter the following details:
+   - **Zone Name**
+   - **Zone Regions**
+4. Click on **Add Shipping Zone** to save the zone.
+
+<a class="doc-image-link" href="./assets/shipping-zone.webp"><img src="./assets/shipping-zone.webp" alt="Shipping Zone" /></a>
+
+---
+
+## Edit Shipping Zone
+
+After creating the shipping zone:
+
+1. Go back to the **Shipping** section.
+2. Click the **Edit** button for the shipping zone where you want to add shipping methods.
+
+<a class="doc-image-link" href="./assets/edit-shipping-zone.webp"><img src="./assets/edit-shipping-zone.webp" alt="Edit Shipping Zone" /></a>
+
+---
+
+## Add Shipping Method
+
+1. On the Shipping Zone edit page, click on **Add Shipping Method**.
+2. A popup window will appear to select a shipping method.
+
+<a class="doc-image-link" href="./assets/add-shipping.webp"><img src="./assets/add-shipping.webp" alt="Add Shipping" /></a>
+
+---
+
+## Select Shipping Method
+
+1. Choose a shipping method from the dropdown list in the popup.
+2. Click **Add Shipping Method** to assign it to the shipping zone.
+
+<a class="doc-image-link" href="./assets/seller-shipping-popup.webp"><img src="./assets/seller-shipping-popup.webp" alt="Seller Shipping Popup" /></a>
+
+---
+
+## Configure Shipping Method
+
+1. After adding the shipping method, you will be redirected back to the **Shipping Zone** page.
+2. Click on the **shipping method name** to configure its cost.
+
+<a class="doc-image-link" href="./assets/seller-shipping2.webp"><img src="./assets/seller-shipping2.webp" alt="Seller Shipping" /></a>
+
+---
+
+## Set Shipping Cost
+
+A configuration popup will appear where the vendor can:
+
+- Enter the **Shipping Cost**
+- Configure **Shipping Class Costs**
+- Add any additional shipping-related details
+
+Click **Save Changes** after configuration.
+
+<a class="doc-image-link" href="./assets/add-shipping-method.webp"><img src="./assets/add-shipping-method.webp" alt="Add Shipping Method" /></a>
+<a class="doc-image-link" href="./assets/shipping-additional-details.webp"><img src="./assets/shipping-additional-details.webp" alt="Shipping Additional Details" /></a>
+
+---
+
+## Save Shipping Method
+
+- After saving the changes, the shipping method will be successfully added.
+- The configured shipping method will now be visible under the respective shipping zone.
+
+---
+
+## Summary
+
+- Vendors can create and manage shipping zones.
+- Multiple shipping methods can be added per zone.
+- Shipping costs and class-based charges can be customized per method.
+- All configurations are manageable from the vendor dashboard.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-news-vendor.html -->
+
+# Admin News – Vendor
+
+<a class="doc-image-link" href="./assets/news.webp"><img src="./assets/news.webp" alt="Admin News – Vendor" /></a>
+
+The **Admin News** section allows vendors to stay updated with important announcements shared by the marketplace admin.
+
+---
+
+## View Admin News
+
+- Vendors can view all the news sent by the admin from their vendor dashboard.
+- Only news assigned or made visible to vendors will appear, and vendors can click on any news item to read the full details.
+
+<a class="doc-image-link" href="./assets/admin-news.webp"><img src="./assets/admin-news.webp" alt="Admin News – Vendor" /></a>
+
+---
+
+## View News Details
+
+- By tapping on any news item, the vendor can view the complete description and details of that news.
+- This helps vendors stay informed about marketplace updates, policies, or announcements.
+
+---
+
+## Summary
+
+- Vendors can access admin-published news from their dashboard.
+- Each news item opens with full details on selection.
+- Ensures clear communication between admin and vendors.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-staff.html -->
+
+# Vendor Staff
+
+The **Vendor Staff** feature allows vendors to add sub-users (store managers) who can log in and manage the store on their behalf. Vendors can grant per-task permissions for each section (view, add, edit, delete, and more) based on the capabilities allowed by the admin.
+
+---
+
+## Managing Vendor Staff
+
+Vendors can view a list of all their staff members from the Vendor Dashboard.
+
+<a class="doc-image-link" href="./assets/vendor-staff-list.png"><img src="./assets/vendor-staff-list.png" alt="Vendor Staff List" /></a>
+
+### Adding a New Staff Member
+
+To add a new staff member, click on the **Add Staff** button. Fill in the required details such as Name, Email, and Password.
+
+<a class="doc-image-link" href="./assets/add-vendor-staff.png"><img src="./assets/add-vendor-staff.png" alt="Add Vendor Staff" /></a>
+
+### Editing Staff Settings and Permissions
+
+Vendors can edit existing staff settings and define precise permissions for what the staff member is allowed to do. 
+
+<a class="doc-image-link" href="./assets/edit-vedor-staff-setting.png"><img src="./assets/edit-vedor-staff-setting.png" alt="Edit Vendor Staff Setting" /></a>
+
+The permissions can be granularly controlled per section (e.g., Products, Orders, Profile) and per action (e.g., view, add, edit, delete).
+
+<a class="doc-image-link" href="./assets/allowed-staff-to-do.png"><img src="./assets/allowed-staff-to-do.png" alt="Allowed Staff Permissions" /></a>
+
+<a class="doc-image-link" href="./assets/allowed-staff-to-do-2.png"><img src="./assets/allowed-staff-to-do-2.png" alt="Allowed Staff Permissions Continued" /></a>
+
+---
+
+This allows vendors to easily scale their operations by delegating tasks to their team members while maintaining strict control over their store's security and data.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-profile.html -->
+
+# Vendor Profile
+
+The **Vendor Profile** displays important information about a vendor and helps customers understand the vendor’s store, policies, and credibility.
+
+---
+
+## Vendor Profile Overview
+
+- After successful registration, the vendor must complete their profile under **Vendor Profile**.
+- The profile contains essential vendor and shop-related information divided into multiple tabs for easier navigation.
+
+<a class="doc-image-link" href="./assets/profile.png"><img src="./assets/profile.png" alt="Vendor Profile Settings" /></a>
+
+## 1. General Tab
+The **General** tab contains the vendor's basic information:
+- **Personal Details**: Username, First Name, Last Name, and E-Mail.
+- **Read-only Applied Commission**: Vendors can view their currently applied commission rate (falling back to the global default if no specific commission is set).
+
+<a class="doc-image-link" href="./assets/general.png"><img src="./assets/general.png" alt="Seller Profile General Tab" /></a>
+
+---
+
+## 2. Shop Tab
+The **Shop** tab allows the vendor to configure their store details, policies, and SEO settings.
+- Vendors can define their shop title, description, and contact information.
+
+<a class="doc-image-link" href="./assets/shop.png"><img src="./assets/shop.png" alt="Seller Profile Shop Tab" /></a>
+
+---
+
+## 3. Images Tab
+Vendors can upload various images to brand their store from the **Images** tab.
+- Allowed file types typically include: `jpg, jpeg, png, webp, gif`.
+- **User Image**: The vendor's personal avatar.
+- **Shop Logo**: The logo representing the store.
+- **Fulfillment Image**: An image or badge displayed for order fulfillment.
+- **Banner Image**: A large banner for the store. Vendors can choose whether to display it by checking the "Show banner on vendor page" option.
+
+<a class="doc-image-link" href="./assets/vendor-and-store-image.png"><img src="./assets/vendor-and-store-image.png" alt="Seller Profile Images Tab" /></a>
+
+---
+
+## 4. Social Profile Tab
+Vendors can link their social media accounts to their store to build trust and increase engagement.
+- Available optional fields include: **Facebook**, **Instagram**, **X (Formerly Twitter)**, **LinkedIn**, **Youtube**, and **Pinterest**.
+- These links will be displayed on the vendor's public store page.
+
+<a class="doc-image-link" href="./assets/social-profile.png"><img src="./assets/social-profile.png" alt="Seller Profile Social Tab" /></a>
+
+---
+
+## 5. Store Hours Tab
+
+Vendors can set a weekly schedule from the **Store Hours** tab with per-day Open/Closed toggles and multiple time slots per day.
+
+<a class="doc-image-link" href="./assets/seller-profile-store-hour.png"><img src="./assets/seller-profile-store-hour.png" alt="Store Hours Settings" /></a>
+
+<a class="doc-image-link" href="./assets/seller-profile-store-hour-2.png"><img src="./assets/seller-profile-store-hour-2.png" alt="Store Hours Profile View" /></a>
+
+### Features of Store Hours:
+- The schedule is displayed on the vendor profile page and on a hover tooltip when the store is closed.
+- **Optional Blocking**: An admin setting can optionally block purchases while the store is closed.
+- **Closed Notices**: Custom admin-configurable messages can be shown on the listing button and single product notice.
+- **Hide Products**: When the store is closed, products can optionally be hidden from the shop, archive, and search, while remaining visible on the vendor profile.
+
+---
+
+## 6. KYC Tab
+
+The **KYC** (Know Your Customer) tab allows vendors to upload their identity documents for admin verification.
+- For detailed information, see the full [Vendor KYC Verification](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-kyc.html) documentation.
+
+<a class="doc-image-link" href="./assets/seller-kyc-page.png"><img src="./assets/seller-kyc-page.png" alt="Seller Profile KYC Tab" /></a>
+
+---
+
+## 7. Profile View Tab
+
+Vendors can choose how their public store page looks from a dedicated **Profile View** tab.
+- **Live Preview**: The page features a live preview that updates instantly as you switch between styles.
+- **Storefront**: Features a modern store page with an info sidebar (contact details, store hours, map) and a product gallery.
+- **Spotlight**: Features a full-width hero banner with your products front and center, and an "About this Vendor" panel.
+
+<a class="doc-image-link" href="./assets/profile-view.png"><img src="./assets/profile-view.png" alt="Profile View Selection" /></a>
+
+---
+
+## Vendor Dashboard Access
+
+- If the admin enables the **admin-like dashboard** for vendors:
+  - Vendors can see the **Admin Dashboard** option in the left-side account panel.
+
+<a class="doc-image-link" href="./assets/vendor-dashboard.webp"><img src="./assets/vendor-dashboard.webp" alt="Vendor Admin Dashboard Menu" /></a>
+
+---
+
+## Google Analytics for Vendors
+
+- Vendors can add their **own Google Analytics Account ID**.
+- Vendors can enable tracking events such as:
+  - **View Item**
+  - **Purchase Event**
+
+<a class="doc-image-link" href="./assets/account-id.webp"><img src="./assets/account-id.webp" alt="Vendor Google Analytics Settings" /></a>
+
+---
+## Tax System Settings
+
+After configuring **Google Analytics**, vendors can set up their **tax information** directly from the vendor profile edit page.
+
+<a class="doc-image-link" href="./assets/profile-profile.webp"><img src="./assets/profile-profile.webp" alt="Vendor Tax System Settings" /></a>
+
+### Key Points
+
+- Vendors can select their applicable **Tax System** from the dropdown, such as:
+  - **GSTIN**
+  - **SSN**
+  - **VAT**
+- Based on the selected tax system:
+  - A corresponding **Tax Identification Number** field appears (e.g., GSTIN number) on the vendor’s public profile page.
+- Vendors can enter and save their tax details securely
+
+---
+
+## Vendor Policies
+
+- Vendors can add and manage the following policies:
+  - **Return Policy**
+  - **Shipping Policy**
+  - **Privacy Policy**
+- These policies are displayed on the vendor’s public profile page.
+
+---
+
+## Admin-like Vendor Dashboard View
+
+- If the vendor selects the **admin-like view**:
+  - The vendor profile layout changes to match the admin-style dashboard.
+
+<a class="doc-image-link" href="./assets/admin-view.webp"><img src="./assets/admin-view.webp" alt="Vendor Admin View Profile" /></a>
+
+<!-- <a class="doc-image-link" href="./assets/prof.webp"><img src="./assets/prof.webp" alt="Vendor Profile Admin Layout" /></a> -->
+
+---
+
+## Vendor Purchase Restriction
+
+- Vendors are **restricted from purchasing their own products**.
+- This helps prevent:
+  - Fake orders
+  - Fake reviews
+
+- **Edit Product link** added on the vendor’s own product view page
+  - Allows vendors to quickly edit their products from the frontend
+
+<a class="doc-image-link" href="./assets/seller-restriction.webp"><img src="./assets/seller-restriction.webp" alt="Vendor Purchase Restriction" /></a>
+
+---
+
+## Vendor Profile – Frontend View
+
+The vendor profile is displayed on the frontend with the following sections:
+
+### Vendor Profile Page
+
+- Displays vendor shop details and branding.
+- Shows detailed information about the vendor’s shop.
+
+<a class="doc-image-link" href="./assets/seller-profile.webp"><img src="./assets/seller-profile.webp" alt="Vendor Profile Frontend" /></a>
+
+---
+
+### Policies Section
+
+- Displays the vendor’s return, shipping, and privacy policies.
+
+<a class="doc-image-link" href="./assets/seller-profile-policies-section.webp"><img src="./assets/seller-profile-policies-section.webp" alt="Vendor Profile Policies" /></a>
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-vacation.html -->
+
+# Vacation Mode
+
+The **Vacation Mode** allows vendors to temporarily close their store when they are unavailable. When enabled, the storefront displays a vacation notice with the vendor's custom message and blocks customer purchases.
+
+---
+
+## Enabling Vacation Mode
+
+Vendors can schedule a vacation directly from their Vendor Dashboard.
+
+To view current or past vacations, vendors can navigate to the Vacation section to see a sortable list of their vacations.
+
+<a class="doc-image-link" href="./assets/vacation-list.png"><img src="./assets/vacation-list.png" alt="Vacation List" /></a>
+
+### Adding a Vacation
+
+To schedule a new vacation, click on the **Add Vacation** button. Vendors can set the start and end dates, and provide a custom vacation message that will be displayed to customers on the storefront.
+
+<a class="doc-image-link" href="./assets/add-vacation.png"><img src="./assets/add-vacation.png" alt="Add Vacation" /></a>
+
+### Editing a Vacation
+
+Vendors can update an upcoming or ongoing vacation by editing the dates or the display message.
+
+<a class="doc-image-link" href="./assets/edit-vacation.png"><img src="./assets/edit-vacation.png" alt="Edit Vacation" /></a>
+
+---
+
+## Admin Controls for Vacation Mode
+
+Admins have full control over the Vacation Mode feature:
+- Enable or disable the vacation feature globally.
+- Edit a specific vendor's vacation.
+- Bulk enable, disable, or delete vacations from a sortable list in the admin panel.
+- Configure settings and endpoint options for the vacation menu.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-kyc.html -->
+
+# Vendor KYC Verification
+
+The **Vendor KYC (Know Your Customer) Verification** feature allows admins to securely verify the identity of their vendors. It ensures marketplace compliance and builds trust with customers.
+
+---
+
+## KYC Verification Workflow
+
+### Admin Configuration
+Admins have full control over the KYC process:
+- A master toggle to enable or disable KYC verification globally.
+- Admin-managed document types (e.g., Passport, ID Card, Driver's License).
+- Configurable allowed file formats and maximum file size limits for document uploads.
+
+
+
+### Vendor Document Upload
+Vendors can easily upload their KYC documents to get verified. This can be done at two stages:
+1. **At Registration**: During the vendor registration process.
+2. **From My Profile**: After registration, from the "My Profile" tab in their Vendor Dashboard.
+
+<a class="doc-image-link" href="./assets/upload-kyc.png"><img src="./assets/upload-kyc.png" alt="Vendor KYC Upload" /></a>
+
+<a class="doc-image-link" href="./assets/seller-kyc-page.png"><img src="./assets/seller-kyc-page.png" alt="Vendor KYC Upload from Profile" /></a>
+
+### Admin Review and Action
+Admins can review submitted documents from the admin vendor list. A dedicated KYC column and row action are available to streamline this process.
+
+Clicking to review a vendor's KYC opens a review screen offering three actions:
+- **Approve**: Mark the vendor's KYC as verified.
+- **Reject (with reason)**: Reject the document and provide a reason, allowing the vendor to re-upload.
+- **Hard Reject**: Permanently reject the vendor's KYC application.
+
+<a class="doc-image-link" href="./assets/admin-vendor-list-kyc-pending.png"><img src="./assets/admin-vendor-list-kyc-pending.png" alt="Admin Vendor List - KYC Pending" /></a>
+
+<a class="doc-image-link" href="./assets/admin-verify-vendor-kyc.png"><img src="./assets/admin-verify-vendor-kyc.png" alt="Admin Verify Vendor KYC" /></a>
+
+<a class="doc-image-link" href="./assets/admin-approve-vendor-kyc.png"><img src="./assets/admin-approve-vendor-kyc.png" alt="Admin Approve Vendor KYC" /></a>
+
+<a class="doc-image-link" href="./assets/admin-vendor-list-kyc-approve.png"><img src="./assets/admin-vendor-list-kyc-approve.png" alt="Admin Vendor List - KYC Approved" /></a>
+
+### Email Notifications
+To keep vendors informed, automatic emails are sent out during the process:
+- Vendor email on **KYC Approval**.
+- Vendor email on **KYC Rejection** (including the admin's reason).
+- Vendor email on **KYC Hard Rejection**.
+
+Additionally, a vendor email is sent automatically if the admin completely **deletes their account**.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-notification.html -->
+
+# Vendor Notification
+
+<a class="doc-image-link" href="./assets/notifications.webp"><img src="./assets/notifications.webp" alt="Vendor Notifications" /></a>
+
+
+The **Vendor Notification** section keeps vendors informed about important activities and updates in the marketplace.
+
+---
+
+## Vendor Notifications Overview
+
+- Vendors receive notifications for various marketplace actions such as:
+  - New orders placed by customers.
+  - Changes in order status (processing, completed, refunded, etc.).
+  - Product approval or rejection by the admin.
+  - Other important marketplace-related updates.
+
+---
+
+## Notification Display
+
+- All notifications are displayed in the **Notification area** of the vendor dashboard.
+- Vendors can quickly review updates without navigating to different sections.
+
+**Reference Media:**
+
+<a class="doc-image-link" href="./assets/vendor-notification.webp"><img src="./assets/vendor-notification.webp" alt="Vendor Notifications" /></a>
+
+---
+
+## Benefits
+
+- Keeps vendors informed in real time.
+- Helps vendors take quick action on orders and product updates.
+- Improves communication between admin and vendors.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-shop-followers.html -->
+
+# Vendor Shop Followers
+
+<a class="doc-image-link" href="./assets/shop-follower.webp"><img src="./assets/shop-follower.webp" alt="Shop Follower Icon" /></a>
+
+The **Vendor Shop Followers** feature allows vendors to engage directly with buyers who follow their shop by sending notifications and updates.
+
+---
+
+## Shop Followers Overview
+
+- Buyers can follow a vendor’s shop directly from the **product page**.
+- A buyer becomes a shop follower by clicking the **heart-shaped icon** on the product page.
+
+---
+
+## Manage Shop Followers
+
+- Vendors can view all their shop followers under the **Shop Followers** section in the vendor dashboard.
+- This section displays the complete list of followers associated with the vendor’s shop.
+
+**Reference Media:**
+
+<a class="doc-image-link" href="./assets/followers.webp"><img src="./assets/followers.webp" alt="Shop Followers List" /></a>
+
+---
+
+## Send Notifications to Followers
+
+- Vendors can send notifications to their shop followers to:
+  - Share updates.
+  - Promote new products.
+  - Inform about offers or announcements.
+- To send a notification:
+  - Select one or more followers from the list.
+  - Click on **Send Notification**.
+
+<a class="doc-image-link" href="./assets/send-notification.webp"><img src="./assets/send-notification.webp" alt="Shop Followers List" /></a>
+
+
+---
+
+## Notification Popup
+
+- A popup window appears to enter the notification details.
+- After entering the required information:
+  - Click **Send Mail** to dispatch the notification email to the selected followers.
+
+---
+
+## Benefits
+
+- Helps vendors build stronger relationships with customers.
+- Improves engagement through direct communication.
+- Enables quick promotion of products and updates.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/ask-to-admin.html -->
+
+# Ask To Admin
+
+<a class="doc-image-link" href="./assets/question-list.webp"><img src="./assets/question-list.png" alt="Ask To Admin Button" /></a>
+
+The **Ask To Admin** feature allows vendors to directly communicate with the marketplace admin for queries, clarifications, or support.
+
+---
+
+## Ask To Admin Overview
+
+- Vendors can inquire about anything related to the marketplace.
+- This option is available in the **vendor dashboard** under **Ask To Admin**.
+
+---
+
+## How Vendors Ask a Query
+
+- Navigate to **Ask To Admin** from the vendor dashboard.
+- Click on the **Add** button to raise a new query.
+
+<a class="doc-image-link" href="./assets/ask-admin.webp"><img src="./assets/ask-admin.webp" alt="Ask To Admin Button" /></a>
+
+---
+
+## Submit a Query
+
+- Vendors need to:
+  - Enter the **Subject** of the query.
+  - Write the detailed **query/message**.
+- Click on the **Ask** button to submit the query.
+
+---
+
+## Admin Notification & Threaded Chat
+
+- Once the vendor submits the query:
+  - The **admin receives an email notification** regarding the vendor’s query.
+- **Threaded "Ask a Question to Admin"**: Vendor and admin replies form a chat-style thread on both the storefront and the admin panel, keeping the conversation history organized and easy to track.
+
+<a class="doc-image-link" href="./assets/ask-to-admin.png"><img src="./assets/ask-to-admin.png" alt="Ask to Admin Thread" /></a>
+
+---
+
+## Benefits
+
+- Direct communication channel between vendor and admin.
+- Helps vendors resolve issues or doubts quickly.
+- Improves overall marketplace support and transparency.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-panel-management.html -->
+
+# Marketplace Admin Panel Management
+
+<a class="doc-image-link" href="./assets/Product-mangement.webp"><img src="./assets/Product-mangement.webp" alt="Product List – All Products" /></a>
+
+After installing the **WooCommerce Marketplace plugin**, an additional Marketplace tab appears in the WordPress admin panel. From here admin can manage **Marketplace vendors, products, reviews etc.**
+
+---
+
+## Marketplace Overview
+
+From the admin panel, the admin can manage:
+
+- Vendors
+- Products
+- Commissions
+- Marketplace settings (such as product auto-publish and vendor auto-approval)
+
+---
+
+## Product Management by Admin
+
+- The admin can create and publish all types of products:
+  - Simple
+  - Virtual
+  - Downloadable
+  - Grouped
+  - External / Affiliate
+  - Variable
+- Products can be assigned to one or more vendors.
+- The admin has full control over vendor-created products.
+
+---
+
+## Product List (Admin End)
+
+In the **Product List**, the admin can:
+
+- View both **admin** and **vendor** products
+- Edit or delete any product
+- Modify any product specification created by vendors
+- Filter products by vendor
+- Mass-assign products to vendors
+- **Screen Options**: Admins can easily show or hide specific columns on the admin Products listing page using the standard Screen Options menu to customize their view.
+
+<a class="doc-image-link" href="./assets/productlist-1.webp"><img src="./assets/productlist-1.webp" alt="Product List – All Products" /></a>
+
+---
+
+## Filter Products by Vendor
+
+- Admin can filter the product list based on a specific vendor.
+- Once filtered, only the selected vendor’s products will be displayed.
+
+<a class="doc-image-link" href="./assets/filter-by-vendor.webp"><img src="./assets/filter-by-vendor.webp" alt="Product List – Vendor Filtered" /></a>
+
+---
+
+## Assign Products to Vendor
+
+- Select:
+  - One or more products
+  - A vendor from the dropdown
+- Click the **Assign** button to assign selected products to the chosen vendor.
+
+<a class="doc-image-link" href="./assets/assign-vendor.webp"><img src="./assets/assign-vendor.webp" alt="Assign Products to Vendor" /></a>
+
+---
+
+## Vendor Product Approval (Manual Publish)
+
+If the admin has configured **Allow Vendor to Publish** as **unchecked**:
+
+- Vendor-added products will be created in **Draft** status.
+- Admin must manually review and publish the product.
+
+<a class="doc-image-link" href="./assets/allow-seller-woocommerce-marketplace.webp"><img src="./assets/allow-seller-woocommerce-marketplace.webp" alt="Allow Vendor to Publish Setting" /></a>
+
+---
+
+## Draft Product Visibility
+
+- When a vendor adds a product:
+  - Product status remains **Draft**
+  - Product is visible in the admin product list
+
+<a class="doc-image-link" href="./assets/Productlist-3.webp"><img src="./assets/Productlist-3.webp" alt="Draft Product in Admin List" /></a>
+
+---
+
+## Publish Vendor Product
+
+- Admin edits the draft product.
+- Clicks the **Publish** button.
+- Product becomes live on the storefront.
+
+<a class="doc-image-link" href="./assets/product-list.webp"><img src="./assets/product-list.webp" alt="Publish Vendor Product" /></a>
+
+---
+
+## Frontend Visibility
+
+- Once published, the product is:
+  - Visible to customers on the frontend
+  - Available for purchase like any other WooCommerce product
+
+---
+
+## Key Benefits
+
+- Full administrative control over marketplace products
+- Secure approval workflow for vendor products
+- Easy product-to-vendor assignment
+- Centralized product management for large marketplaces
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-management-and-product-assignment.html -->
+
+# Assign Product to Vendor
+<a class="doc-image-link" href="./assets/assign-product.webp"><img src="./assets/assign-product.webp" alt="assign Product to Vendor" /></a>
+
+The admin can assign products to vendors directly from the **product edit page**.
+
+---
+
+## Assign Product from Product Page
+
+- The admin can assign any product to a vendor from the **right column** of the product edit page.
+- Search and select the vendor name from the vendor list.
+- Assign the product to the selected vendor.
+
+### Key Points
+
+- Admin can assign:
+  - Admin-created products to vendors
+  - One vendor’s product to another vendor
+- If a product is reassigned:
+  - It will no longer appear in the **previous vendor’s product list**
+  - It will appear in the **new vendor’s product list**
+
+<a class="doc-image-link" href="./assets/woocommerce-marketplace-transfer-seller.webp"><img src="./assets/woocommerce-marketplace-transfer-seller.webp" alt="Transfer Product to Vendor" /></a>
+
+---
+
+## Vendor List – WooCommerce Marketplace
+
+The **Vendor List** allows the admin to manage all vendors from the WooCommerce admin panel.
+
+---
+
+### Vendor List Features
+
+- View full vendor bio and profile details
+- Edit vendor profile via the **Username** link
+- Approve or disapprove vendors
+
+### Editable Sections Include
+
+- Personal options
+- Name & contact information
+- About page
+- Account management
+- Billing address
+- Shipping address
+
+---
+
+## Add New Vendor
+
+The admin can add a new vendor manually by navigating to:
+
+**Marketplace → Vendors → Add New**
+
+<a class="doc-image-link" href="./assets/vendors-list.webp"><img src="./assets/vendors-list.webp" alt="Vendors List" /></a>
+
+---
+
+### Vendor Creation Steps
+
+- Fill in vendor details such as:
+  - Username
+  - Email
+  - Role (Seller)
+  - Profile and shop details
+- Save the vendor to add them to the marketplace
+
+<a class="doc-image-link" href="./assets/add-new-vendor.webp"><img src="./assets/add-new-vendor.webp" alt="Add New Vendor Form" /></a>
+
+---
+
+## Manage Vendor
+
+Click the **Manage** button next to a vendor to access vendor management options.
+
+---
+
+## Vendor Details
+
+From the **Details** section, the admin can:
+
+- View vendor information:
+  - Username
+  - Email
+  - Display name
+  - Shop address
+- Enter and update vendor **payment details**
+
+<a class="doc-image-link" href="./assets/admin-end-seller-details.webp"><img src="./assets/admin-end-seller-details.webp" alt="Admin Vendor Details" /></a>
+
+---
+
+## Vendor Orders
+
+- Admin can view all orders related to a vendor.
+- Admin can mark orders as **paid** to the vendor.
+
+### Pay Vendor for an Order
+
+- Click the **Pay** button under the order actions.
+- This creates a transaction for the order.
+
+<a class="doc-image-link" href="./assets/seller-order.webp"><img src="./assets/seller-order.webp" alt="Vendor Orders" /></a>
+
+---
+
+## Transactions in WooCommerce Marketplace
+
+Once payment is made:
+
+- Order is marked as **paid**
+- A transaction entry is created under **Transactions**
+
+### Transaction Details Include
+
+- Order ID
+- Amount
+- Transaction Type
+- Payment Method
+- Date Created
+
+<a class="doc-image-link" href="./assets/admin-end-seller-transactions.webp"><img src="./assets/admin-end-seller-transactions.webp" alt="Admin Seller Transactions" /></a>
+
+---
+
+### View Transaction Details
+
+- Click on a transaction to view complete transaction information.
+
+<a class="doc-image-link" href="./assets/transaction-details.webp"><img src="./assets/transaction-details.webp" alt="Transaction Details" /></a>
+
+---
+
+## Commission Management
+
+- Admin can define and manage vendor commission rates.
+- View:
+  - Total vendor sales
+  - Admin commission earned
+
+<a class="doc-image-link" href="./assets/seller-commission.webp"><img src="./assets/seller-commission.webp" alt="Vendor Commission" /></a>
+
+---
+
+## Miscellaneous Settings (Vendor Level)
+
+The admin can configure vendor-specific settings.
+
+<a class="doc-image-link" href="./assets/miscellaneous-settings.webp"><img src="./assets/miscellaneous-settings.webp" alt="Miscellaneous Settings" /></a>
+
+---
+
+### Product Category Settings
+
+- **Allowed Categories**:
+  - Define which categories the vendor can use when adding products
+
+---
+
+### Order Approval
+
+- **Enable**:
+  - Vendor sees orders and receives notifications only after **admin approval**
+
+---
+
+### Dynamic SKU
+
+- **Enable**:
+  - Automatically prefixes vendor SKU
+- **Product SKU Prefix**:
+  - Define the prefix for vendor SKUs
+
+---
+
+### Translate Products (WPML)
+
+- Allow vendors to translate products using **WPML**
+- Vendors can translate products from their dashboard
+
+> **Note:**
+> This option appears only when the **WPML plugin** is installed and activated.
+
+---
+
+## Reported Flags
+
+- Admin can view all reported flags raised against a vendor.
+
+<a class="doc-image-link" href="./assets/flag-setting.webp"><img src="./assets/flag-setting.webp" alt="Reported Flags" /></a>
+
+---
+
+## Withdrawal Requests Management
+
+- Admin can manage vendor withdrawal requests:
+  - Approve
+  - Reject
+  - Process payments
+- Actions depend on the vendor’s available balance
+
+<a class="doc-image-link" href="./assets/withdrawal-request.webp"><img src="./assets/withdrawal-request.webp" alt="withdrawal request" /></a>
+
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/commission-management.html -->
+
+# Commission Management
+
+<a class="doc-image-link" href="./assets/marketplace-settings.webp"><img src="./assets/marketplace-settings.webp" alt="Marketplace Commission Settings" /></a>
+
+The **Commission Management** feature allows the admin to define how commissions are calculated and distributed between the admin and vendors.
+
+---
+
+## Global Commission Configuration
+
+- The admin can set a **Fixed Commission** and a **Percentage Commission**.
+- These commission rules apply to **all vendors** by default.
+- Configuration path:
+  - **Marketplace → Settings → Commission**
+
+---
+
+## Commission Calculation Example
+
+- Fixed Commission: **5 USD**
+- Percentage Commission: **10%**
+- Product Price: **100 USD**
+
+### Calculation
+
+- Percentage Commission: 10% of 100 USD = **10 USD**
+- Fixed Commission: **5 USD**
+- **Total Admin Commission:** 15 USD
+- **Vendor Earnings:** 85 USD
+
+---
+
+## Order Management (Commission View)
+
+The commission details are visible from the **Orders section** and not from the Commission settings page.
+
+### Navigation Path
+
+- Go to **Marketplace → Orders**
+- This opens the **Marketplace Orders listing page**
+
+### Commission Details in Orders
+
+Under the **Orders** tab, the admin can view detailed commission-related information for each order.
+
+#### Visible Columns
+
+- Order ID
+- Product
+- Quantity
+- Product Total
+- Shipping
+- Discount
+- **Total Commission**
+- **Total Vendor Amount**
+- Action
+
+This section helps the admin track:
+- Commission earned per order
+- Final payable amount to the vendor
+
+<a class="doc-image-link" href="./assets/sellers-orders-list.webp"><img src="./assets/sellers-orders-list.webp" alt="Seller Orders List" /></a>
+
+---
+
+## Vendor-Specific Commission
+
+The admin can configure commission rates for individual vendors from the **Vendor Management** section.
+
+### Navigation Path
+
+- Go to **Marketplace → Vendors**
+- The list of all registered vendors will be displayed
+- Click on the **Vendor Name** to manage commission settings
+
+### Vendor Commission Configuration
+
+- Clicking on the **Vendor Name** redirects the admin to the **Vendor Profile / Commission page**
+- From here, the admin can:
+  - Set a **vendor-specific fixed commission**
+  - Set a **vendor-specific percentage commission**
+  - Override the **global commission settings** if required
+
+> **Note:** Vendor-specific commission settings take precedence over global commission settings.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/manage-feedback-and-vendor-queries.html -->
+
+# Marketplace Reviews & Ratings
+
+<a class="doc-image-link" href="./assets/admin-manage-feedback.webp"><img src="./assets/admin-manage-feedback.webp" alt="Manage Feedback" /></a>
+
+The **Marketplace Reviews & Ratings** feature allows the admin to manage customer reviews and ratings submitted for vendor products across the marketplace.
+
+---
+
+## Manage Customer Reviews & Ratings
+
+The admin can review and control feedback submitted by customers for vendor products.
+
+### Key Features
+
+- Admin can **approve or disapprove**:
+  - Product reviews
+  - Product ratings
+- Only **approved reviews and ratings** are visible on the storefront.
+- Vendors can view approved customer feedback from their **vendor dashboard**.
+- Helps maintain review quality and build customer trust.
+
+### Navigation Path
+
+- **Marketplace → Reviews & Ratings**
+
+---
+
+### Review Management Interface
+
+The review management section displays:
+- Customer name
+- Vendor name
+- Product name
+- Rating
+- Review message
+- Approval status
+- Action options (Approve / Disapprove)
+
+**Reference Media:**
+
+<a class="doc-image-link" href="./assets/manage-feedback.webp"><img src="./assets/manage-feedback.webp" alt="Manage Feedback" /></a>
+
+---
+
+## Summary – Marketplace Reviews & Ratings
+
+- Centralized control over customer reviews and ratings
+- Approval-based visibility ensures quality content
+- Vendors can view feedback related to their products
+- Improves marketplace transparency and credibility
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-queries-management.html -->
+
+# Vendor Queries Management
+
+<a class="doc-image-link" href="./assets/queries.png"><img src="./assets/queries.png" alt="Queries List" /></a>
+
+The **Vendor Queries Management** feature allows vendors to raise questions or concerns directly to the marketplace admin.
+
+---
+
+## Manage Vendor Queries
+
+This section provides a dedicated interface for handling vendor inquiries.
+
+### Navigation Path
+
+- **Marketplace → Queries**
+
+---
+
+### Vendor Query List
+
+The admin can view all queries raised by vendors, including:
+- Vendor name
+- Query subject
+- Query message
+- Date of submission
+
+This helps the admin track and manage vendor communications efficiently.
+
+---
+
+### Reply to Vendor Queries
+
+- Admin can respond to vendor queries directly from the admin panel.
+- Click the **Reply** button against a specific query.
+- The response is sent to the vendor for further communication or clarification.
+- **Threaded View**: Both the vendor and admin can view the entire back-and-forth conversation as a threaded chat history to easily track the context of the issue.
+
+<a class="doc-image-link" href="./assets/admin-answered-to-query.png"><img src="./assets/admin-answered-to-query.png" alt="Admin Answered to Query Thread" /></a>
+
+---
+
+## Summary – Vendor Queries Management
+
+- Vendors can communicate directly with the admin
+- Admin can view and manage all vendor queries from a single location
+- Enables faster resolution of vendor issues
+- Improves vendor–admin communication within the marketplace
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/email-configurations.html -->
+
+# Email Configurations
+
+<a class="doc-image-link" href="./assets/manage-email-listings.webp"><img src="./assets/manage-email-listings.webp" alt="Email Template Settings" /></a>
+
+The WooCommerce Marketplace plugin allows the admin to configure and manage **email templates** used for marketplace-related notifications.
+
+---
+
+## Configuration Path
+
+- Navigate to:
+  **WooCommerce > Settings > Emails**
+
+---
+
+## Email Templates Management
+
+- Admin can **customize email templates** for marketplace-related events.
+- A hyperlink **“Click here to preview your email template”** is available to preview the email layout.
+
+<a class="doc-image-link" href="./assets/webkul-woocommerce-multi-vendor-marketplace-email-template-configuration.webp"><img src="./assets/webkul-woocommerce-multi-vendor-marketplace-email-template-configuration.webp" alt="Email Template Configuration" /></a>
+
+---
+
+## Email Template Preview
+
+- Clicking the preview link displays the **email layout and design**.
+
+<a class="doc-image-link" href="./assets/webkul-woocommerce-multi-vendor-marketplace-email-template-preview.webp"><img src="./assets/webkul-woocommerce-multi-vendor-marketplace-email-template-preview.webp" alt="Email Template Preview" /></a>
+
+---
+
+## Available Marketplace Email Templates
+
+The admin can manage multiple marketplace email templates, such as:
+
+- Ask to Admin
+- Product Publish
+- Vendor Approval
+- Vendor Registration
+- Other marketplace notification emails
+
+These templates are listed under:
+
+- **WooCommerce > Settings > Emails**
+
+<a class="doc-image-link" href="./assets/webkul-woocommerce-multi-vendor-marketplace-email-listings.webp"><img src="./assets/webkul-woocommerce-multi-vendor-marketplace-email-listings.webp" alt="Email Template Listings" /></a>
+
+---
+
+## Configure Individual Email Template
+
+- Click the **Manage** button next to the required email template.
+- The admin can configure:
+  - Enable / Disable email
+  - Email subject
+  - Email heading
+  - Email content and additional settings
+
+<a class="doc-image-link" href="./assets/manage-email-listings.webp"><img src="./assets/manage-email-listings.webp" alt="Email Template Settings" /></a>
+
+---
+
+This feature gives the admin **full control over marketplace email communication** with vendors and customers.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-notifications.html -->
+
+# Admin Notifications
+
+<a class="doc-image-link" href="./assets/product-notification.webp"><img src="./assets/product-notification.webp" alt="Admin Notifications" /></a>
+
+The **Admin Notifications** feature keeps the admin informed about important marketplace activities in real time.
+
+---
+
+## Admin Notification Overview
+
+- Admin receives notifications for key marketplace actions, including:
+  - New orders
+  - Order status changes
+  - Product creation or updates
+  - Product approval requests
+  - Vendor-related activities
+
+---
+
+## Notification Area
+
+- All notifications are displayed in the **admin notification area**.
+- Notifications help the admin take quick actions without navigating through multiple sections.
+
+<a class="doc-image-link" href="./assets/admin-notifications.webp"><img src="./assets/admin-notifications.webp" alt="Admin Notifications" /></a>
+
+---
+
+## Types of Notifications
+
+The admin can view notifications related to:
+
+- **Products**
+  - New product added by vendor
+  - Product awaiting approval
+- **Orders**
+  - New order placed
+  - Order status updated
+- **Vendors**
+  - Vendor registration
+  - Vendor-related updates
+
+<a class="doc-image-link" href="./assets/admin-notifications-types.webp"><img src="./assets/admin-notifications-types.webp" alt="Admin Notifications Types" /></a>
+
+
+---
+
+This system ensures the admin stays updated on all **critical marketplace events** and can manage operations efficiently.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.html -->
+
+# Customer Order Placement
+
+This guide explains the **customer order placement process** in the WooCommerce Marketplace and highlights how **seller information is displayed** at different stages.
+
+<a class="doc-image-link" href="./assets/customer-order-placement.webp"><img src="./assets/customer-order-placement.webp" alt="Customer Order Placement" /></a>
+
+---
+
+## Seller Discovery on Storefront
+
+Before placing an order, customers can identify and choose products from specific sellers.
+
+### Seller Filter on Product Listing Page
+
+- Customers can filter products based on **seller/vendor** on the shop or listing page.
+- This helps customers find products from a preferred seller easily.
+- Seller-based filtering improves product discovery in a multi-vendor marketplace.
+
+<a class="doc-image-link" href="./assets/vendor-filter.png"><img src="./assets/vendor-filter.png" alt="seller Filter" /></a>
+
+---
+
+## Seller Information on Product Page
+
+- Each product page displays **seller information** when the product belongs to a vendor.
+- Seller details may include:
+  - Seller name
+  - Seller store link
+- Customers can click the seller name to visit the **seller profile page**.
+
+---
+
+## Steps to Place an Order
+
+### 1. Add Product to Cart
+- Customer selects the desired product from the storefront.
+- Clicks **Add to Cart**.
+
+<a class="doc-image-link" href="./assets/add-to-cart.webp"><img src="./assets/add-to-cart.webp" alt="Add to Cart" /></a>
+
+---
+
+### 2. View Cart
+
+- After adding products, the customer can view the **cart page**.
+- Seller name is displayed for each product added to the cart.
+- Customers can easily identify which seller each product belongs to.
+
+<a class="doc-image-link" href="./assets/product-added-cart-block.webp"><img src="./assets/product-added-cart-block.webp" alt="Product Added to Cart" /></a>
+
+---
+
+### 3. Proceed to Checkout
+
+- Click **Proceed to Checkout** to navigate to the checkout page.
+- Checkout blocks display:
+  - Order summary
+  - Billing details
+  - Shipping details
+- Seller information remains visible for vendor products.
+
+<a class="doc-image-link" href="./assets/product-checkout-block.webp"><img src="./assets/product-checkout-block.webp" alt="Checkout Page" /></a>
+
+---
+
+### 4. Order Confirmation
+
+- After successful order placement, the **Order Received** page is displayed.
+- Order details include:
+  - Ordered products
+  - Total amount
+  - Shipping information
+  - **Seller name for each product**
+
+<a class="doc-image-link" href="./assets/order-received.webp"><img src="./assets/order-received.webp" alt="Order Received" /></a>
+
+---
+
+## Seller Visibility on Order Details Page
+
+- Customers can view seller information from:
+  - **My Account → Orders**
+  - Order detail page
+- Seller name is displayed against each product in the order.
+- This ensures transparency in multi-vendor order fulfillment.
+
+---
+
+## Notes
+
+- The order placement process works for both **admin products** and **vendor products**.
+- Seller-related information is displayed consistently across:
+  - Product listing page
+  - Product page
+  - Cart page
+  - Checkout page
+  - Order confirmation and order details page
+- This enhances trust and clarity for customers shopping in a multi-vendor marketplace.
+
+## Support & Resources
+
+Thank you for choosing WooCommerce Multi-Vendor Marketplace by Webkul! Here are some useful links to help you get the most out of our product:
+
+- **[Live Demo](https://wpdemo.webkul.com/woocommerce-marketplace/)** – Experience the plugin in action.
+- **[Buy Now](https://store.webkul.com/woocommerce-multivendor-marketplace.html)** – Purchase the plugin from the Webkul store.
+- **[Marketplace Add-ons](https://store.webkul.com/woocommerce-plugins.html)** – Check out compatible add-ons to enhance your marketplace.
+- **[License Activation Guide](https://wpdoc.webkul.com/license-validator/)** – Step-by-step instructions on activating your plugin license.
+- **[Get Support](https://webkul.uvdesk.com/en/customer/create-ticket/)** – Need assistance? Create a ticket and our support team will help you ASAP.
+
+---
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/documentation/google-analytics.html -->
+
+[⬅ Back to Google Analytics Configuration](./configuration-google-analytics.html)
+
+# Get Google Analytics Measurement ID
+
+<a class="doc-image-link" href="./assets/google-analytics-get-started.webp"><img src="./assets/google-analytics-get-started.webp" alt="Google Analytics Get Started" /></a>
+
+This ID helps you track marketplace activity such as visitor traffic, product views, and user interactions, giving you better insights into how your marketplace is performing.
+To get the **Google Analytics Measurement ID**, follow these steps:
+
+---
+
+## Steps to Get Google Analytics Measurement ID
+
+1. **Sign in / Get Started**
+   - Go to Google Analytics.
+   - Click **Sign in to Analytics** or **Get started today**.
+
+2. **Start Measuring**
+   - Click **Start measuring**.
+   - Enter account details and click **Next**.
+   <a class="doc-image-link" href="./assets/google-analytics-start-measuring.webp"><img src="./assets/google-analytics-start-measuring.webp" alt="Google Analytics Start Measuring" /></a>
+
+3. **Create a Property**
+   - Enter **Property name**, **Reporting time zone**, and **Currency**.
+   - Click **Next**.
+   <a class="doc-image-link" href="./assets/google-analytics-create-property.webp"><img src="./assets/google-analytics-create-property.webp" alt="Google Analytics Create Property" /></a>
+
+4. **Describe Your Business**
+   - Select the option that best describes your business.
+   - Click **Next**.
+   <a class="doc-image-link" href="./assets/google-analytics-business-description.webp"><img src="./assets/google-analytics-business-description.webp" alt="Google Analytics Business Description" /></a>
+
+5. **Select Business Objectives**
+   - Choose relevant business objectives.
+   - Click **Next**.
+   <a class="doc-image-link" href="./assets/google-analytics-business-objectives.webp"><img src="./assets/google-analytics-business-objectives.webp" alt="Google Analytics Business Objectives" /></a>
+
+6. **Accept Terms & Conditions**
+   - Read and accept the **Terms & Conditions**.
+   <a class="doc-image-link" href="./assets/google-analytics-terms.webp"><img src="./assets/google-analytics-terms.webp" alt="Google Analytics Terms" /></a>
+
+7. **Choose Platform**
+   - Select **Web** as the platform.
+   <a class="doc-image-link" href="./assets/google-analytics-platform-selection.webp"><img src="./assets/google-analytics-platform-selection.webp" alt="Google Analytics Platform Selection" /></a>
+
+8. **Set Up Data Stream**
+   - Set up the web stream.
+   - Click **Create & Continue**.
+   - Click **Next** after creation.
+   <a class="doc-image-link" href="./assets/google-analytics-data-stream.webp"><img src="./assets/google-analytics-data-stream.webp" alt="Google Analytics Data Stream" /></a>
+
+9. **Copy Measurement ID**
+   - Copy the **Measurement ID** shown on screen.
+   - Paste it into the WooCommerce Marketplace module configuration.
+   <a class="doc-image-link" href="./assets/google-analytics-measurement-id.webp"><img src="./assets/google-analytics-measurement-id.webp" alt="Google Analytics Measurement ID" /></a>
+
+**Note:**
+You can add the Google Analytics Measurement ID at a later stage as well, after the marketplace setup and testing are completed. This step is optional during the initial configuration.
+
+[⬅ Back to Google Analytics Configuration](./configuration-google-analytics.html)
