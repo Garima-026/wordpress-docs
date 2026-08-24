@@ -1,0 +1,49 @@
+# Webkul WordPress & WooCommerce Documentation
+
+> Official documentation for Webkul Software's WordPress and WooCommerce plugins — multi-vendor marketplace, point of sale, barcode and inventory tooling, platform connectors, payment gateways, and tax integrations. Each plugin has its own guide covering requirements, installation, configuration, and day-to-day use.
+
+**When to use this site.** Reach for these docs when you need to:
+
+- Install, update, or license a specific Webkul plugin on a WordPress or WooCommerce site, including minimum WordPress, WooCommerce, and PHP versions.
+- Configure a Webkul plugin's settings: marketplace commissions and payouts, POS terminals and receipts, barcode formats, connector credentials and sync rules, tax or payment gateway options.
+- Answer "how do I…" questions about a Webkul plugin's admin, vendor, or cashier workflows, screen by screen.
+- Troubleshoot a Webkul plugin already installed on a store, or confirm whether a capability exists before recommending or buying it.
+
+Do not use this site for WooCommerce or WordPress core documentation, for plugins from other vendors, or for Webkul's Magento, Shopify, Odoo, or Bagisto products — those live on their own documentation sites linked from webkul.com.
+
+**How to call us.** Guides are static HTML at predictable URLs: `https://wpdoc.webkul.com/<plugin-slug>/`. The WooCommerce Multi-Vendor Marketplace guide publishes every page as raw markdown — append `.md` to any page URL — plus its own [llms.txt](https://wpdoc.webkul.com/woocommerce-marketplace/llms.txt) index and a single-file corpus at [llms-full.txt](https://wpdoc.webkul.com/woocommerce-marketplace/llms-full.txt). Site-wide page list: [sitemap.xml](https://wpdoc.webkul.com/sitemap.xml). For anything not answered here, open a ticket at https://webkul.uvdesk.com/ rather than guessing.
+
+## Plugin documentation
+
+- [Advance Import and Export for WooCommerce](https://wpdoc.webkul.com/advance-import-export-woocommerce/)
+- [Auctions for WooCommerce](https://wpdoc.webkul.com/auctions-for-woocommerce/)
+- [WooCommerce to Bagisto Connector](https://wpdoc.webkul.com/bagisto-connector/)
+- [erp for woocommerce](https://wpdoc.webkul.com/erp-for-woocommerce/)
+- [Import EAN UPC Barcodes](https://wpdoc.webkul.com/import-ean-upc-barcodes/)
+- [license validator](https://wpdoc.webkul.com/license-validator/)
+- [WooCommerce POS](https://wpdoc.webkul.com/pos-for-woocommerce/)
+- [POS Globalpay Terminal Payment](https://wpdoc.webkul.com/pos-globalpay-terminal-payment/)
+- [WooCommerce Print Barcodes](https://wpdoc.webkul.com/print-barcode-for-woocommerce/)
+- [Smart Barcode Scan and Ordering](https://wpdoc.webkul.com/smart-barcode-scan-and-ordering/)
+- [WooCommerce POS Square Reader](https://wpdoc.webkul.com/square-pos-docs/)
+- [Tranzila Payment for Woo POS](https://wpdoc.webkul.com/tranzila-payment-for-woocommerce-pos/)
+- [Turnstile CAPTCHA For WooCommerce](https://wpdoc.webkul.com/turnstile-captcha-for-woocommerce/)
+- [UnoPim Connector](https://wpdoc.webkul.com/unopim-connector/)
+- [Wallet System](https://wpdoc.webkul.com/wallet-system/)
+- [WooCommerce eBay Connector](https://wpdoc.webkul.com/woocommerce-ebay-connector/)
+- [eBay Item Compatibility for WooCommerce](https://wpdoc.webkul.com/woocommerce-ebay-item-compatibility-doc/)
+- [WooCommerce Multi-Vendor Marketplace](https://wpdoc.webkul.com/woocommerce-marketplace/)
+- [Woo PDF Invoices & Packing Slips](https://wpdoc.webkul.com/woocommerce-pdf-invoices-packing-slips/)
+- [WooCommerce POS Avalara Tax Integration](https://wpdoc.webkul.com/woocommerce-pos-avalara-tax/)
+- [WooCommerce Power BI Connector — Official](https://wpdoc.webkul.com/woocommerce-power-bi-connector/)
+- [WooCommerce Pre-Order](https://wpdoc.webkul.com/woocommerce-pre-order/)
+- [QuickBooks Connector](https://wpdoc.webkul.com/woocommerce-quickbooks-connector/)
+- [WooCommerce Shopify Connector](https://wpdoc.webkul.com/woocommerce-shopify-connector/)
+
+## About this publisher
+
+- [About](https://wpdoc.webkul.com/about.html): What this portal covers and who Webkul is.
+- [Contact](https://wpdoc.webkul.com/contact.html): Support, sales, and company contact details.
+- [Privacy](https://wpdoc.webkul.com/privacy.html): How this documentation site handles data.
+
+Published by Webkul Software Private Limited, an eCommerce software company founded in 2010, at H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India. Support: support@webkul.com, +91-9870284067, https://webkul.uvdesk.com/. Plugins are sold at https://store.webkul.com/.

@@ -3,13 +3,82 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Webkul WordPress Modules</title>
+        <title>Webkul WordPress &amp; WooCommerce Plugin Documentation</title>
+        <meta
+            name="description"
+            content="Official documentation for Webkul's WordPress and WooCommerce plugins: multi-vendor marketplace, point of sale, barcode and inventory tools, connectors, payments, and tax integrations."
+        />
+        <link rel="canonical" href="https://wpdoc.webkul.com/" />
         <meta name="google-site-verification" content="yJE_o60JUoXk7z5DEzLaEBgFcFY_iMNMLF2Eieb7ZrU" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Webkul WordPress Documentation" />
+        <meta property="og:title" content="Webkul WordPress &amp; WooCommerce Plugin Documentation" />
+        <meta
+            property="og:description"
+            content="Official documentation for Webkul's WordPress and WooCommerce plugins: multi-vendor marketplace, point of sale, barcode and inventory tools, connectors, payments, and tax integrations."
+        />
+        <meta property="og:url" content="https://wpdoc.webkul.com/" />
+        <meta property="og:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Webkul WordPress and WooCommerce documentation" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Webkul WordPress &amp; WooCommerce Plugin Documentation" />
+        <meta
+            name="twitter:description"
+            content="Official documentation for Webkul's WordPress and WooCommerce plugins."
+        />
+        <meta name="twitter:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png" />
+
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"WebSite","name":"Webkul WordPress Documentation","alternateName":"wpdoc.webkul.com","url":"https://wpdoc.webkul.com/","description":"Official documentation for Webkul's WordPress and WooCommerce plugins.","inLanguage":"en-US","publisher":{"@id":"https://webkul.com/#organization"}}
+        </script>
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@type":"Organization","@id":"https://webkul.com/#organization","name":"Webkul Software","legalName":"Webkul Software Private Limited","url":"https://webkul.com/","logo":"https://cdnwebkul.webkul.com/wp-content/uploads/2021/08/webkul-logo-accent-sq.png","description":"Webkul builds B2B and B2C eCommerce, marketplace, hyperlocal, and mobile application products, and develops extensions for WooCommerce, Magento, Shopify, Odoo, and Bagisto.","foundingDate":"2010","address":{"@type":"PostalAddress","streetAddress":"H-28, ARV Park, Sector 63","addressLocality":"Noida","addressRegion":"Uttar Pradesh","postalCode":"201301","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://webkul.uvdesk.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"sales","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://store.webkul.com/contacts/","availableLanguage":["English"]}],"sameAs":["https://www.facebook.com/webkul","https://x.com/webkul","https://www.instagram.com/webkul/","https://in.linkedin.com/company/webkul","https://www.youtube.com/c/webkul","https://codecanyon.net/user/webkul"]}
+        </script>
+
         <style>
             body {
                 margin: 0px !important;
             }
+            /* Server-rendered index shown until the extensions component
+               replaces its own contents. Styled to stay readable on its own. */
+            .wk-doc-index {
+                max-width: 56rem;
+                margin: 0 auto;
+                padding: 3rem 1.5rem;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Helvetica, Arial, sans-serif;
+                line-height: 1.65;
+                color: #2c3e50;
+            }
+            .wk-doc-index h1 {
+                font-size: 2rem;
+                letter-spacing: -0.02em;
+                margin: 0 0 0.75rem;
+            }
+            .wk-doc-index h2 {
+                font-size: 1.05rem;
+                margin: 2rem 0 0.6rem;
+            }
+            .wk-doc-index ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+                gap: 0.3rem 1.5rem;
+                list-style: none;
+                padding: 0;
+            }
+            .wk-doc-index a {
+                color: #2b6be3;
+                text-decoration: none;
+            }
+            .wk-doc-index a:hover {
+                text-decoration: underline;
+            }
         </style>
+
         <!-- Webkul Extensions Script -->
         <script
             src="https://wpdemo.webkul.com/wk-extensions/client/wk.ext.js"
@@ -18,6 +87,77 @@
     </head>
     <body>
         <!-- Webkul Custom Element -->
-        <webkul-extensions></webkul-extensions>
+        <webkul-extensions>
+            <div class="wk-doc-index">
+                <h1>Webkul WordPress &amp; WooCommerce Documentation</h1>
+                <p>
+                    This is the official documentation portal for Webkul's WordPress and
+                    WooCommerce plugins. Each plugin below has its own guide covering
+                    system requirements, installation, configuration, and day-to-day use,
+                    written both for store owners setting up a site and for developers
+                    integrating a plugin into an existing WooCommerce store.
+                </p>
+                <p>
+                    Webkul Software is an eCommerce software company founded in 2010 and
+                    based in Noida, Uttar Pradesh, India. It builds B2B and B2C eCommerce,
+                    marketplace, hyperlocal, and mobile application products, and develops
+                    extensions for WooCommerce, Magento, Shopify, Odoo, Bagisto, and
+                    UnoPim. Plugins are sold through
+                    <a href="https://store.webkul.com/">store.webkul.com</a> and support is
+                    handled through <a href="https://webkul.uvdesk.com/">webkul.uvdesk.com</a>.
+                </p>
+
+                <h2>Documentation by plugin</h2>
+                <ul>
+                    <li><a href="/advance-import-export-woocommerce/">Advance Import and Export for WooCommerce</a></li>
+                    <li><a href="/auctions-for-woocommerce/">Auctions for WooCommerce</a></li>
+                    <li><a href="/bagisto-connector/">WooCommerce to Bagisto Connector</a></li>
+                    <li><a href="/erp-for-woocommerce/">ERP for WooCommerce</a></li>
+                    <li><a href="/import-ean-upc-barcodes/">Import EAN UPC Barcodes</a></li>
+                    <li><a href="/license-validator/">License Validator</a></li>
+                    <li><a href="/pos-for-woocommerce/">WooCommerce POS</a></li>
+                    <li><a href="/pos-globalpay-terminal-payment/">POS GlobalPay Terminal Payment</a></li>
+                    <li><a href="/print-barcode-for-woocommerce/">WooCommerce Print Barcodes</a></li>
+                    <li><a href="/smart-barcode-scan-and-ordering/">Smart Barcode Scan and Ordering</a></li>
+                    <li><a href="/square-pos-docs/">WooCommerce POS Square Reader</a></li>
+                    <li><a href="/tranzila-payment-for-woocommerce-pos/">Tranzila Payment for Woo POS</a></li>
+                    <li><a href="/turnstile-captcha-for-woocommerce/">Turnstile CAPTCHA for WooCommerce</a></li>
+                    <li><a href="/unopim-connector/">UnoPim Connector</a></li>
+                    <li><a href="/wallet-system/">Wallet System</a></li>
+                    <li><a href="/woocommerce-ebay-connector/">WooCommerce eBay Connector</a></li>
+                    <li><a href="/woocommerce-ebay-item-compatibility-doc/">eBay Item Compatibility for WooCommerce</a></li>
+                    <li><a href="/woocommerce-marketplace/">WooCommerce Multi-Vendor Marketplace</a></li>
+                    <li><a href="/woocommerce-pdf-invoices-packing-slips/">Woo PDF Invoices &amp; Packing Slips</a></li>
+                    <li><a href="/woocommerce-pos-avalara-tax/">WooCommerce POS Avalara Tax Integration</a></li>
+                    <li><a href="/woocommerce-power-bi-connector/">WooCommerce Power BI Connector</a></li>
+                    <li><a href="/woocommerce-pre-order/">WooCommerce Pre-Order</a></li>
+                    <li><a href="/woocommerce-quickbooks-connector/">QuickBooks Connector</a></li>
+                    <li><a href="/woocommerce-shopify-connector/">WooCommerce Shopify Connector</a></li>
+                </ul>
+
+                <h2>For AI agents</h2>
+                <p>
+                    Machine-readable indexes are published at
+                    <a href="/llms.txt">/llms.txt</a> and
+                    <a href="/sitemap.xml">/sitemap.xml</a>. The WooCommerce Multi-Vendor
+                    Marketplace guide additionally publishes
+                    <a href="/woocommerce-marketplace/llms.txt">its own llms.txt</a> and a
+                    single-file corpus at
+                    <a href="/woocommerce-marketplace/llms-full.txt">llms-full.txt</a>; any
+                    page in that guide is available as raw markdown by appending
+                    <code>.md</code> to its URL.
+                </p>
+
+                <h2>Company</h2>
+                <p>
+                    <a href="/about.html">About</a> ·
+                    <a href="/contact.html">Contact</a> ·
+                    <a href="/privacy.html">Privacy</a> ·
+                    <a href="https://webkul.com/">webkul.com</a><br />
+                    Webkul Software Private Limited, H-28, ARV Park, Sector 63, Noida,
+                    Uttar Pradesh 201301, India · support@webkul.com · +91 9870284067
+                </p>
+            </div>
+        </webkul-extensions>
     </body>
 </html>

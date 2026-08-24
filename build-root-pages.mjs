@@ -205,6 +205,60 @@ for (const p of PAGES) {
     console.log(`[root-pages] wrote ${p.slug}.html`);
 }
 
+/* ---------------- root llms.txt ---------------- */
+
+// Product guides, discovered from the directory listing so new guides appear
+// here automatically. Title comes from each guide's own <title>.
+const guides = fs
+    .readdirSync(ROOT, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && !d.name.startsWith(".") && d.name !== "sitemaps")
+    .map((d) => d.name)
+    .sort()
+    .map((slug) => {
+        let title = slug.replace(/-/g, " ");
+        for (const rel of [`${slug}/index.html`, `${slug}/documentation/index.html`]) {
+            const p = path.join(ROOT, rel);
+            if (!fs.existsSync(p)) continue;
+            const m = fs.readFileSync(p, "utf8").match(/<title>([^<]*)<\/title>/);
+            if (m) {
+                const t = m[1].split("|")[0].trim();
+                if (t && t.toLowerCase() !== "home" && t.toLowerCase() !== "guide") title = t;
+                break;
+            }
+        }
+        return { slug, title: title.replace(/\s+Documentation$/i, "") };
+    });
+
+const llms = `# Webkul WordPress & WooCommerce Documentation
+
+> Official documentation for Webkul Software's WordPress and WooCommerce plugins — multi-vendor marketplace, point of sale, barcode and inventory tooling, platform connectors, payment gateways, and tax integrations. Each plugin has its own guide covering requirements, installation, configuration, and day-to-day use.
+
+**When to use this site.** Reach for these docs when you need to:
+
+- Install, update, or license a specific Webkul plugin on a WordPress or WooCommerce site, including minimum WordPress, WooCommerce, and PHP versions.
+- Configure a Webkul plugin's settings: marketplace commissions and payouts, POS terminals and receipts, barcode formats, connector credentials and sync rules, tax or payment gateway options.
+- Answer "how do I…" questions about a Webkul plugin's admin, vendor, or cashier workflows, screen by screen.
+- Troubleshoot a Webkul plugin already installed on a store, or confirm whether a capability exists before recommending or buying it.
+
+Do not use this site for WooCommerce or WordPress core documentation, for plugins from other vendors, or for Webkul's Magento, Shopify, Odoo, or Bagisto products — those live on their own documentation sites linked from webkul.com.
+
+**How to call us.** Guides are static HTML at predictable URLs: \`${ORIGIN}/<plugin-slug>/\`. The WooCommerce Multi-Vendor Marketplace guide publishes every page as raw markdown — append \`.md\` to any page URL — plus its own [llms.txt](${ORIGIN}/woocommerce-marketplace/llms.txt) index and a single-file corpus at [llms-full.txt](${ORIGIN}/woocommerce-marketplace/llms-full.txt). Site-wide page list: [sitemap.xml](${ORIGIN}/sitemap.xml). For anything not answered here, open a ticket at https://webkul.uvdesk.com/ rather than guessing.
+
+## Plugin documentation
+
+${guides.map((g) => `- [${g.title}](${ORIGIN}/${g.slug}/)`).join("\n")}
+
+## About this publisher
+
+- [About](${ORIGIN}/about.html): What this portal covers and who Webkul is.
+- [Contact](${ORIGIN}/contact.html): Support, sales, and company contact details.
+- [Privacy](${ORIGIN}/privacy.html): How this documentation site handles data.
+
+Published by Webkul Software Private Limited, an eCommerce software company founded in 2010, at H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India. Support: support@webkul.com, +91-9870284067, https://webkul.uvdesk.com/. Plugins are sold at https://store.webkul.com/.
+`;
+fs.writeFileSync(path.join(ROOT, "llms.txt"), llms);
+console.log(`[root-pages] wrote llms.txt (${guides.length} guides)`);
+
 /* ---------------- no-redirect shims ---------------- */
 
 const SHIMS = ["woocommerce-marketplace"];
