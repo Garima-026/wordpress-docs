@@ -215,7 +215,19 @@ const guides = fs
     .map((d) => d.name)
     .sort()
     .map((slug) => {
-        let title = slug.replace(/-/g, " ");
+        // Fall back to a title-cased slug, never a raw one, for guides whose
+        // page title is a generic placeholder like "Home".
+        let title = slug
+            .replace(/-/g, " ")
+            .replace(/\b\w/g, (c) => c.toUpperCase())
+            .replace(/\bWoocommerce\b/g, "WooCommerce")
+            .replace(/\bWordpress\b/g, "WordPress")
+            .replace(/\bPos\b/g, "POS")
+            .replace(/\bErp\b/g, "ERP")
+            .replace(/\bEan Upc\b/g, "EAN UPC")
+            .replace(/\bPdf\b/g, "PDF")
+            .replace(/\bUnopim\b/g, "UnoPim")
+            .replace(/\bEbay\b/g, "eBay");
         for (const rel of [`${slug}/index.html`, `${slug}/documentation/index.html`]) {
             const p = path.join(ROOT, rel);
             if (!fs.existsSync(p)) continue;
@@ -456,3 +468,305 @@ if (!/^Agentmap:/m.test(robots)) {
 }
 fs.writeFileSync(robotsPath, robots);
 console.log("[root-pages] updated robots.txt (Content-Signal, Agentmap)");
+
+/* ---------------- OpenAPI + API catalog + auth.md ---------------- */
+// This site has no write API, no accounts and no authentication. What it does
+// have is a real, stable, read-only HTTP interface over the documentation:
+// every page is retrievable as markdown and there are machine-readable
+// indexes. The spec below describes only operations verified to return 200 —
+// nothing aspirational.
+
+const docPages = fs.existsSync(path.join(ROOT, "woocommerce-marketplace", "documentation"))
+    ? fs
+          .readdirSync(path.join(ROOT, "woocommerce-marketplace", "documentation"))
+          .filter((f) => f.endsWith(".md") && !f.endsWith(".html.md"))
+          .map((f) => f.replace(/\.md$/, ""))
+          .sort()
+    : [];
+
+const guideSlugs = guides.map((g) => g.slug);
+
+const openapi = {
+    openapi: "3.1.0",
+    info: {
+        title: "Webkul WordPress Documentation Content API",
+        version: "1.0.0",
+        summary: "Read-only HTTP access to Webkul's WordPress and WooCommerce plugin documentation.",
+        description:
+            "A read-only content API over the documentation published at wpdoc.webkul.com. Every documentation page is retrievable as markdown, and machine-readable indexes list what is available.\n\nThere is no authentication, no registration, and no rate limit to negotiate: every operation is a plain unauthenticated GET over HTTPS, and responses carry `Access-Control-Allow-Origin: *`. There are no write operations — this API cannot create, modify, or delete anything.\n\nThe same content is also reachable by content negotiation: requesting a page's `.html` URL with `Accept: text/markdown` returns the markdown variant.",
+        contact: { name: "Webkul Support", url: "https://webkul.uvdesk.com/", email: "support@webkul.com" },
+        license: { name: "Documentation © Webkul Software", url: `${ORIGIN}/privacy.html` },
+    },
+    servers: [{ url: ORIGIN, description: "Production documentation host" }],
+    externalDocs: { description: "Documentation portal", url: `${ORIGIN}/` },
+    tags: [
+        { name: "discovery", description: "Machine-readable indexes of available content." },
+        { name: "content", description: "Documentation pages as markdown." },
+    ],
+    paths: {
+        "/llms.txt": {
+            get: {
+                tags: ["discovery"],
+                operationId: "getPortalIndex",
+                summary: "Portal index for agents (llms.txt)",
+                description:
+                    "Index of every plugin guide on the portal, with when-to-use guidance, in llmstxt.org format.",
+                responses: {
+                    200: {
+                        description: "The portal index.",
+                        content: { "text/plain": { schema: { type: "string" } } },
+                    },
+                },
+            },
+        },
+        "/sitemap.xml": {
+            get: {
+                tags: ["discovery"],
+                operationId: "getSitemapIndex",
+                summary: "Sitemap index for the whole portal",
+                responses: {
+                    200: {
+                        description: "A sitemapindex XML document.",
+                        content: { "application/xml": { schema: { type: "string" } } },
+                    },
+                },
+            },
+        },
+        "/.well-known/ai-catalog.json": {
+            get: {
+                tags: ["discovery"],
+                operationId: "getAiCatalog",
+                summary: "ARD capability manifest",
+                description: "Lists the machine-readable resources this site publishes.",
+                responses: {
+                    200: {
+                        description: "An ai-catalog manifest.",
+                        content: { "application/json": { schema: { type: "object" } } },
+                    },
+                },
+            },
+        },
+        "/{guide}/llms.txt": {
+            get: {
+                tags: ["discovery"],
+                operationId: "getGuideIndex",
+                summary: "Index of a single plugin guide",
+                description:
+                    "Annotated list of every page in one plugin guide. Currently published for the woocommerce-marketplace guide.",
+                parameters: [
+                    {
+                        name: "guide",
+                        in: "path",
+                        required: true,
+                        description: "Plugin guide slug.",
+                        schema: { type: "string", enum: guideSlugs },
+                        example: "woocommerce-marketplace",
+                    },
+                ],
+                responses: {
+                    200: { description: "The guide index.", content: { "text/plain": { schema: { type: "string" } } } },
+                    404: { description: "That guide does not publish an index." },
+                },
+            },
+        },
+        "/woocommerce-marketplace/llms-full.txt": {
+            get: {
+                tags: ["content"],
+                operationId: "getMarketplaceCorpus",
+                summary: "Entire marketplace documentation in one markdown file",
+                description:
+                    "The complete WooCommerce Multi-Vendor Marketplace documentation concatenated into a single markdown document, for one-shot retrieval instead of fetching pages individually.",
+                responses: {
+                    200: { description: "The full corpus.", content: { "text/plain": { schema: { type: "string" } } } },
+                },
+            },
+        },
+        "/woocommerce-marketplace/documentation/{page}.md": {
+            get: {
+                tags: ["content"],
+                operationId: "getMarketplaceDocPage",
+                summary: "One marketplace documentation page as markdown",
+                description:
+                    "Returns the raw markdown source of a documentation page, with a frontmatter block carrying its title and canonical source URL.",
+                parameters: [
+                    {
+                        name: "page",
+                        in: "path",
+                        required: true,
+                        description: "Page slug. Use `index` for the guide's introduction.",
+                        schema: { type: "string", enum: docPages },
+                        example: "installation",
+                    },
+                ],
+                responses: {
+                    200: {
+                        description: "The page as markdown.",
+                        content: { "text/markdown": { schema: { type: "string" } } },
+                    },
+                    404: { description: "No such page." },
+                },
+            },
+        },
+        "/woocommerce-marketplace/{page}.md": {
+            get: {
+                tags: ["content"],
+                operationId: "getMarketplaceTopLevelPage",
+                summary: "A top-level marketplace page as markdown",
+                parameters: [
+                    {
+                        name: "page",
+                        in: "path",
+                        required: true,
+                        schema: { type: "string", enum: ["index", "about", "contact", "privacy"] },
+                        example: "about",
+                    },
+                ],
+                responses: {
+                    200: {
+                        description: "The page as markdown.",
+                        content: { "text/markdown": { schema: { type: "string" } } },
+                    },
+                    404: { description: "No such page." },
+                },
+            },
+        },
+    },
+    components: { securitySchemes: {} },
+    security: [],
+};
+fs.writeFileSync(path.join(ROOT, "openapi.json"), `${JSON.stringify(openapi, null, 2)}\n`);
+console.log(`[root-pages] wrote openapi.json (${Object.keys(openapi.paths).length} operations, ${docPages.length} doc pages)`);
+
+/* --- RFC 9727 API catalog (RFC 9264 linkset) --- */
+const linkset = {
+    linkset: [
+        {
+            anchor: `${ORIGIN}/`,
+            "service-desc": [
+                { href: `${ORIGIN}/openapi.json`, type: "application/vnd.oai.openapi+json;version=3.1", title: "OpenAPI 3.1 description of the documentation content API" },
+            ],
+            "service-doc": [
+                { href: `${ORIGIN}/llms.txt`, type: "text/markdown", title: "Portal index for agents" },
+                { href: `${ORIGIN}/`, type: "text/html", title: "Documentation portal" },
+            ],
+            describedby: [
+                { href: `${ORIGIN}/.well-known/ai-catalog.json`, type: "application/json", title: "ARD capability manifest" },
+            ],
+            author: [{ href: "https://webkul.com/", title: "Webkul Software" }],
+        },
+        {
+            anchor: `${ORIGIN}/woocommerce-marketplace/`,
+            "service-desc": [
+                { href: `${ORIGIN}/openapi.json`, type: "application/vnd.oai.openapi+json;version=3.1", title: "OpenAPI 3.1 description" },
+            ],
+            "service-doc": [
+                { href: `${ORIGIN}/woocommerce-marketplace/llms.txt`, type: "text/markdown", title: "WooCommerce Multi-Vendor Marketplace documentation index" },
+                { href: `${ORIGIN}/woocommerce-marketplace/`, type: "text/html", title: "WooCommerce Multi-Vendor Marketplace documentation" },
+            ],
+            item: [
+                { href: `${ORIGIN}/woocommerce-marketplace/llms-full.txt`, type: "text/markdown", title: "Full documentation corpus" },
+            ],
+        },
+    ],
+};
+const linksetJson = `${JSON.stringify(linkset, null, 2)}\n`;
+fs.writeFileSync(path.join(WK, "api-catalog"), linksetJson);
+fs.writeFileSync(path.join(WK, "api-catalog.json"), linksetJson);
+console.log("[root-pages] wrote .well-known/api-catalog (+ .json)");
+
+/* --- auth.md: honest, self-contained (no OAuth exists here) --- */
+const authMd = `# auth.md
+
+How automated agents authenticate with **wpdoc.webkul.com**, the documentation
+portal for Webkul's WordPress and WooCommerce plugins.
+
+## Short answer: no authentication is required
+
+This host serves public documentation as static files. There is **no
+authentication of any kind**, and nothing for an agent to register for.
+
+- No API keys, tokens, or credentials exist for this host.
+- There is no registration or provisioning endpoint. Nothing to call, nothing to
+  request, nothing to rotate.
+- No OAuth or OpenID Connect authorization server serves this host, so
+  \`/.well-known/oauth-authorization-server\` and
+  \`/.well-known/oauth-protected-resource\` are deliberately **not** published.
+  An agent that expects them here should stop looking rather than retry.
+- Every resource is world-readable over unauthenticated HTTPS \`GET\`, and
+  responses carry \`Access-Control-Allow-Origin: *\`.
+
+If a request to this host ever returns \`401\` or \`403\`, that is an
+infrastructure fault, not an authentication requirement. Do not attempt to
+obtain credentials in response.
+
+## Agent audience
+
+This host is for agents answering questions about installing, configuring, and
+operating Webkul's WordPress and WooCommerce plugins. See
+[/llms.txt](${ORIGIN}/llms.txt) for when to use it and when not to.
+
+## How to read content
+
+No credentials, no session, no negotiation:
+
+\`\`\`
+GET ${ORIGIN}/llms.txt
+GET ${ORIGIN}/woocommerce-marketplace/llms.txt
+GET ${ORIGIN}/woocommerce-marketplace/documentation/installation.md
+\`\`\`
+
+Append \`.md\` to any page URL for markdown, or request the \`.html\` URL with
+\`Accept: text/markdown\`. The machine-readable description of these operations
+is at [/openapi.json](${ORIGIN}/openapi.json), catalogued at
+[/.well-known/api-catalog](${ORIGIN}/.well-known/api-catalog).
+
+Please identify your agent in the \`User-Agent\` header. There is no rate limit
+to negotiate, but the corpus is small — prefer
+[llms-full.txt](${ORIGIN}/woocommerce-marketplace/llms-full.txt) in one request
+over crawling every page.
+
+## Where authentication does apply
+
+Authentication belongs to systems documented *by* this site, not to this site:
+
+- **The plugin itself** runs on your own WordPress installation. Its accounts,
+  vendor logins, and API credentials are yours and are never held by Webkul.
+- **Buying or licensing** a plugin happens at
+  [store.webkul.com](https://store.webkul.com/), which has its own accounts.
+- **Support tickets** are raised at
+  [webkul.uvdesk.com](https://webkul.uvdesk.com/), which has its own accounts.
+
+None of those credentials are issued, accepted, or validated by this host.
+
+## Contact
+
+Webkul Software Private Limited, H-28, ARV Park, Sector 63, Noida, Uttar Pradesh
+201301, India — support@webkul.com, +91-9870284067.
+`;
+fs.writeFileSync(path.join(ROOT, "auth.md"), authMd);
+console.log("[root-pages] wrote auth.md");
+
+/* --- MCP server card: only when a real endpoint exists --- */
+// A server card advertises a live transport endpoint. Static hosting cannot
+// serve one, so the card is written only when MCP_ENDPOINT names a deployed
+// server (see mcp-server/). Publishing a card that points at nothing would
+// send agents to a dead URL, so the default is to publish nothing.
+const MCP_ENDPOINT = process.env.MCP_ENDPOINT;
+if (MCP_ENDPOINT) {
+    const card = {
+        serverInfo: { name: "webkul-wordpress-docs", version: "1.0.0" },
+        protocolVersion: "2025-06-18",
+        transport: { type: "streamable-http", endpoint: MCP_ENDPOINT },
+        endpoint: MCP_ENDPOINT,
+        capabilities: { tools: { listChanged: false } },
+        authentication: { type: "none" },
+        description:
+            "Read-only access to Webkul's WooCommerce Multi-Vendor Marketplace documentation: search, list, and fetch pages as markdown.",
+        documentation: `${ORIGIN}/llms.txt`,
+    };
+    fs.mkdirSync(path.join(WK, "mcp"), { recursive: true });
+    fs.writeFileSync(path.join(WK, "mcp", "server-card.json"), `${JSON.stringify(card, null, 2)}\n`);
+    console.log(`[root-pages] wrote .well-known/mcp/server-card.json -> ${MCP_ENDPOINT}`);
+} else {
+    console.log("[root-pages] skipped MCP server card (set MCP_ENDPOINT once the server is deployed)");
+}

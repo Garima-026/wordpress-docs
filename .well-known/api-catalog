@@ -1,0 +1,68 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://wpdoc.webkul.com/",
+      "service-desc": [
+        {
+          "href": "https://wpdoc.webkul.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1",
+          "title": "OpenAPI 3.1 description of the documentation content API"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://wpdoc.webkul.com/llms.txt",
+          "type": "text/markdown",
+          "title": "Portal index for agents"
+        },
+        {
+          "href": "https://wpdoc.webkul.com/",
+          "type": "text/html",
+          "title": "Documentation portal"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://wpdoc.webkul.com/.well-known/ai-catalog.json",
+          "type": "application/json",
+          "title": "ARD capability manifest"
+        }
+      ],
+      "author": [
+        {
+          "href": "https://webkul.com/",
+          "title": "Webkul Software"
+        }
+      ]
+    },
+    {
+      "anchor": "https://wpdoc.webkul.com/woocommerce-marketplace/",
+      "service-desc": [
+        {
+          "href": "https://wpdoc.webkul.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1",
+          "title": "OpenAPI 3.1 description"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://wpdoc.webkul.com/woocommerce-marketplace/llms.txt",
+          "type": "text/markdown",
+          "title": "WooCommerce Multi-Vendor Marketplace documentation index"
+        },
+        {
+          "href": "https://wpdoc.webkul.com/woocommerce-marketplace/",
+          "type": "text/html",
+          "title": "WooCommerce Multi-Vendor Marketplace documentation"
+        }
+      ],
+      "item": [
+        {
+          "href": "https://wpdoc.webkul.com/woocommerce-marketplace/llms-full.txt",
+          "type": "text/markdown",
+          "title": "Full documentation corpus"
+        }
+      ]
+    }
+  ]
+}

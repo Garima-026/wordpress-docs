@@ -1,0 +1,314 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Webkul WordPress Documentation Content API",
+    "version": "1.0.0",
+    "summary": "Read-only HTTP access to Webkul's WordPress and WooCommerce plugin documentation.",
+    "description": "A read-only content API over the documentation published at wpdoc.webkul.com. Every documentation page is retrievable as markdown, and machine-readable indexes list what is available.\n\nThere is no authentication, no registration, and no rate limit to negotiate: every operation is a plain unauthenticated GET over HTTPS, and responses carry `Access-Control-Allow-Origin: *`. There are no write operations — this API cannot create, modify, or delete anything.\n\nThe same content is also reachable by content negotiation: requesting a page's `.html` URL with `Accept: text/markdown` returns the markdown variant.",
+    "contact": {
+      "name": "Webkul Support",
+      "url": "https://webkul.uvdesk.com/",
+      "email": "support@webkul.com"
+    },
+    "license": {
+      "name": "Documentation © Webkul Software",
+      "url": "https://wpdoc.webkul.com/privacy.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://wpdoc.webkul.com",
+      "description": "Production documentation host"
+    }
+  ],
+  "externalDocs": {
+    "description": "Documentation portal",
+    "url": "https://wpdoc.webkul.com/"
+  },
+  "tags": [
+    {
+      "name": "discovery",
+      "description": "Machine-readable indexes of available content."
+    },
+    {
+      "name": "content",
+      "description": "Documentation pages as markdown."
+    }
+  ],
+  "paths": {
+    "/llms.txt": {
+      "get": {
+        "tags": [
+          "discovery"
+        ],
+        "operationId": "getPortalIndex",
+        "summary": "Portal index for agents (llms.txt)",
+        "description": "Index of every plugin guide on the portal, with when-to-use guidance, in llmstxt.org format.",
+        "responses": {
+          "200": {
+            "description": "The portal index.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sitemap.xml": {
+      "get": {
+        "tags": [
+          "discovery"
+        ],
+        "operationId": "getSitemapIndex",
+        "summary": "Sitemap index for the whole portal",
+        "responses": {
+          "200": {
+            "description": "A sitemapindex XML document.",
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/ai-catalog.json": {
+      "get": {
+        "tags": [
+          "discovery"
+        ],
+        "operationId": "getAiCatalog",
+        "summary": "ARD capability manifest",
+        "description": "Lists the machine-readable resources this site publishes.",
+        "responses": {
+          "200": {
+            "description": "An ai-catalog manifest.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{guide}/llms.txt": {
+      "get": {
+        "tags": [
+          "discovery"
+        ],
+        "operationId": "getGuideIndex",
+        "summary": "Index of a single plugin guide",
+        "description": "Annotated list of every page in one plugin guide. Currently published for the woocommerce-marketplace guide.",
+        "parameters": [
+          {
+            "name": "guide",
+            "in": "path",
+            "required": true,
+            "description": "Plugin guide slug.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "advance-import-export-woocommerce",
+                "auctions-for-woocommerce",
+                "bagisto-connector",
+                "erp-for-woocommerce",
+                "import-ean-upc-barcodes",
+                "license-validator",
+                "mcp-server",
+                "pos-for-woocommerce",
+                "pos-globalpay-terminal-payment",
+                "print-barcode-for-woocommerce",
+                "smart-barcode-scan-and-ordering",
+                "square-pos-docs",
+                "tranzila-payment-for-woocommerce-pos",
+                "turnstile-captcha-for-woocommerce",
+                "unopim-connector",
+                "wallet-system",
+                "woocommerce-ebay-connector",
+                "woocommerce-ebay-item-compatibility-doc",
+                "woocommerce-marketplace",
+                "woocommerce-pdf-invoices-packing-slips",
+                "woocommerce-pos-avalara-tax",
+                "woocommerce-power-bi-connector",
+                "woocommerce-pre-order",
+                "woocommerce-quickbooks-connector",
+                "woocommerce-shopify-connector"
+              ]
+            },
+            "example": "woocommerce-marketplace"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The guide index.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "That guide does not publish an index."
+          }
+        }
+      }
+    },
+    "/woocommerce-marketplace/llms-full.txt": {
+      "get": {
+        "tags": [
+          "content"
+        ],
+        "operationId": "getMarketplaceCorpus",
+        "summary": "Entire marketplace documentation in one markdown file",
+        "description": "The complete WooCommerce Multi-Vendor Marketplace documentation concatenated into a single markdown document, for one-shot retrieval instead of fetching pages individually.",
+        "responses": {
+          "200": {
+            "description": "The full corpus.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/woocommerce-marketplace/documentation/{page}.md": {
+      "get": {
+        "tags": [
+          "content"
+        ],
+        "operationId": "getMarketplaceDocPage",
+        "summary": "One marketplace documentation page as markdown",
+        "description": "Returns the raw markdown source of a documentation page, with a frontmatter block carrying its title and canonical source URL.",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "description": "Page slug. Use `index` for the guide's introduction.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "admin-news",
+                "admin-news-vendor",
+                "admin-notifications",
+                "admin-panel-management",
+                "ask-to-admin",
+                "assets-visibility",
+                "commission-management",
+                "configuration-endpoints",
+                "configuration-general-settings",
+                "configuration-google-analytics",
+                "configuration-seller-central",
+                "configuration-vendor-flags",
+                "configuration-vendor-invoice",
+                "configuration-withdrawal",
+                "customer-order-placement",
+                "elementor-shortcodes",
+                "email-configurations",
+                "features",
+                "google-analytics",
+                "index",
+                "installation",
+                "manage-feedback-and-vendor-queries",
+                "product-settings",
+                "vendor-dashboard-menu",
+                "vendor-kyc",
+                "vendor-management-and-product-assignment",
+                "vendor-mangement",
+                "vendor-notification",
+                "vendor-order-management",
+                "vendor-payout-management",
+                "vendor-product-management",
+                "vendor-profile",
+                "vendor-queries-management",
+                "vendor-registration-process",
+                "vendor-shipping-zone-management",
+                "vendor-shop-followers",
+                "vendor-staff",
+                "vendor-transaction-management",
+                "vendor-vacation"
+              ]
+            },
+            "example": "installation"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The page as markdown.",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No such page."
+          }
+        }
+      }
+    },
+    "/woocommerce-marketplace/{page}.md": {
+      "get": {
+        "tags": [
+          "content"
+        ],
+        "operationId": "getMarketplaceTopLevelPage",
+        "summary": "A top-level marketplace page as markdown",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "index",
+                "about",
+                "contact",
+                "privacy"
+              ]
+            },
+            "example": "about"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The page as markdown.",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No such page."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {}
+  },
+  "security": []
+}
