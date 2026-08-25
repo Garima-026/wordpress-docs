@@ -1,169 +1,341 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Webkul WordPress &amp; WooCommerce Plugin Documentation</title>
-        <meta
-            name="description"
-            content="Official documentation for Webkul's WordPress and WooCommerce plugins: multi-vendor marketplace, point of sale, barcode and inventory tools, connectors, payments, and tax integrations."
-        />
-        <link rel="canonical" href="https://wpdoc.webkul.com/" />
-        <link rel="ai-catalog" href="/.well-known/ai-catalog.json">
-        <link rel="service-doc" href="/llms.txt" type="text/markdown">
-        <link rel="service-desc" href="/openapi.json" type="application/vnd.oai.openapi+json;version=3.1">
-        <link rel="api-catalog" href="/.well-known/api-catalog">
-        <link rel="describedby" href="/.well-known/ai-catalog.json" type="application/json">
-        <meta name="google-site-verification" content="yJE_o60JUoXk7z5DEzLaEBgFcFY_iMNMLF2Eieb7ZrU" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordPress &amp; WooCommerce Documentation | Webkul</title>
+  <meta name="description" content="User guides for Webkul's WordPress and WooCommerce plugins. Each guide covers installation, configuration, and day-to-day management.">
+  <link rel="canonical" href="https://wpdoc.webkul.com/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles.css?v=1">
+  <meta name="google-site-verification" content="yJE_o60JUoXk7z5DEzLaEBgFcFY_iMNMLF2Eieb7ZrU">
 
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Webkul WordPress Documentation" />
-        <meta property="og:title" content="Webkul WordPress &amp; WooCommerce Plugin Documentation" />
-        <meta
-            property="og:description"
-            content="Official documentation for Webkul's WordPress and WooCommerce plugins: multi-vendor marketplace, point of sale, barcode and inventory tools, connectors, payments, and tax integrations."
-        />
-        <meta property="og:url" content="https://wpdoc.webkul.com/" />
-        <meta property="og:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Webkul WordPress and WooCommerce documentation" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Webkul WordPress &amp; WooCommerce Plugin Documentation" />
-        <meta
-            name="twitter:description"
-            content="Official documentation for Webkul's WordPress and WooCommerce plugins."
-        />
-        <meta name="twitter:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Webkul WordPress Documentation">
+  <meta property="og:title" content="WordPress &amp; WooCommerce Documentation | Webkul">
+  <meta property="og:description" content="User guides for Webkul's WordPress and WooCommerce plugins. Each guide covers installation, configuration, and day-to-day management.">
+  <meta property="og:url" content="https://wpdoc.webkul.com/">
+  <meta property="og:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Webkul WordPress and WooCommerce documentation">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@webkul">
+  <meta name="twitter:title" content="WordPress &amp; WooCommerce Documentation | Webkul">
+  <meta name="twitter:description" content="User guides for Webkul's WordPress and WooCommerce plugins. Each guide covers installation, configuration, and day-to-day management.">
+  <meta name="twitter:image" content="https://wpdoc.webkul.com/woocommerce-marketplace/og-image.png">
 
-        <script type="application/ld+json">
-            {"@context":"https://schema.org","@type":"WebSite","name":"Webkul WordPress Documentation","alternateName":"wpdoc.webkul.com","url":"https://wpdoc.webkul.com/","description":"Official documentation for Webkul's WordPress and WooCommerce plugins.","inLanguage":"en-US","publisher":{"@id":"https://webkul.com/#organization"}}
-        </script>
-        <script type="application/ld+json">
-            {"@context":"https://schema.org","@type":"Organization","@id":"https://webkul.com/#organization","name":"Webkul Software","legalName":"Webkul Software Private Limited","url":"https://webkul.com/","logo":"https://cdnwebkul.webkul.com/wp-content/uploads/2021/08/webkul-logo-accent-sq.png","description":"Webkul builds B2B and B2C eCommerce, marketplace, hyperlocal, and mobile application products, and develops extensions for WooCommerce, Magento, Shopify, Odoo, and Bagisto.","foundingDate":"2010","address":{"@type":"PostalAddress","streetAddress":"H-28, ARV Park, Sector 63","addressLocality":"Noida","addressRegion":"Uttar Pradesh","postalCode":"201301","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://webkul.uvdesk.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"sales","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://store.webkul.com/contacts/","availableLanguage":["English"]}],"sameAs":["https://www.facebook.com/webkul","https://x.com/webkul","https://www.instagram.com/webkul/","https://in.linkedin.com/company/webkul","https://www.youtube.com/c/webkul","https://codecanyon.net/user/webkul"]}
-        </script>
+  <!-- Agent discovery -->
+  <link rel="ai-catalog" href="/.well-known/ai-catalog.json">
+  <link rel="service-doc" href="/llms.txt" type="text/markdown">
+  <link rel="service-desc" href="/openapi.json" type="application/vnd.oai.openapi+json;version=3.1">
+  <link rel="api-catalog" href="/.well-known/api-catalog">
+  <link rel="describedby" href="/.well-known/ai-catalog.json" type="application/json">
 
-        <style>
-            body {
-                margin: 0px !important;
-            }
-            /* Server-rendered index shown until the extensions component
-               replaces its own contents. Styled to stay readable on its own. */
-            .wk-doc-index {
-                max-width: 56rem;
-                margin: 0 auto;
-                padding: 3rem 1.5rem;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                    Helvetica, Arial, sans-serif;
-                line-height: 1.65;
-                color: #2c3e50;
-            }
-            .wk-doc-index h1 {
-                font-size: 2rem;
-                letter-spacing: -0.02em;
-                margin: 0 0 0.75rem;
-            }
-            .wk-doc-index h2 {
-                font-size: 1.05rem;
-                margin: 2rem 0 0.6rem;
-            }
-            .wk-doc-index ul {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-                gap: 0.3rem 1.5rem;
-                list-style: none;
-                padding: 0;
-            }
-            .wk-doc-index a {
-                color: #2b6be3;
-                text-decoration: none;
-            }
-            .wk-doc-index a:hover {
-                text-decoration: underline;
-            }
-        </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Webkul WordPress Documentation","alternateName":"wpdoc.webkul.com","url":"https://wpdoc.webkul.com/","description":"Official documentation for Webkul's WordPress and WooCommerce plugins.","inLanguage":"en-US","publisher":{"@id":"https://webkul.com/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Webkul Software","legalName":"Webkul Software Private Limited","url":"https://webkul.com/","logo":"https://cdnwebkul.webkul.com/wp-content/uploads/2021/08/webkul-logo-accent-sq.png","description":"Webkul builds B2B and B2C eCommerce, marketplace, hyperlocal, and mobile application products, and develops extensions for WooCommerce, Magento, Shopify, Odoo, and Bagisto.","foundingDate":"2010","address":{"@type":"PostalAddress","streetAddress":"H-28, ARV Park, Sector 63","addressLocality":"Noida","addressRegion":"Uttar Pradesh","postalCode":"201301","addressCountry":"IN"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://webkul.uvdesk.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"sales","email":"support@webkul.com","telephone":"+91-9870284067","url":"https://store.webkul.com/contacts/","availableLanguage":["English"]}],"sameAs":["https://www.facebook.com/webkul","https://x.com/webkul","https://www.instagram.com/webkul/","https://in.linkedin.com/company/webkul","https://www.youtube.com/c/webkul","https://codecanyon.net/user/webkul"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Webkul WordPress and WooCommerce plugin documentation","numberOfItems":24,"itemListElement":[{"@type":"ListItem","position":1,"name":"WooCommerce Multi-Vendor Marketplace","url":"https://wpdoc.webkul.com/woocommerce-marketplace/"},{"@type":"ListItem","position":2,"name":"WooCommerce POS","url":"https://wpdoc.webkul.com/pos-for-woocommerce/"},{"@type":"ListItem","position":3,"name":"Advance Import and Export for WooCommerce","url":"https://wpdoc.webkul.com/advance-import-export-woocommerce/"},{"@type":"ListItem","position":4,"name":"Auctions for WooCommerce","url":"https://wpdoc.webkul.com/auctions-for-woocommerce/"},{"@type":"ListItem","position":5,"name":"WooCommerce to Bagisto Connector","url":"https://wpdoc.webkul.com/bagisto-connector/"},{"@type":"ListItem","position":6,"name":"WooCommerce ERP","url":"https://wpdoc.webkul.com/erp-for-woocommerce/"},{"@type":"ListItem","position":7,"name":"Import EAN UPC Barcodes","url":"https://wpdoc.webkul.com/import-ean-upc-barcodes/"},{"@type":"ListItem","position":8,"name":"License Validator","url":"https://wpdoc.webkul.com/license-validator/"},{"@type":"ListItem","position":9,"name":"POS Globalpay Terminal Payment","url":"https://wpdoc.webkul.com/pos-globalpay-terminal-payment/"},{"@type":"ListItem","position":10,"name":"WooCommerce Print Barcodes","url":"https://wpdoc.webkul.com/print-barcode-for-woocommerce/"},{"@type":"ListItem","position":11,"name":"Smart Barcode Scan and Ordering","url":"https://wpdoc.webkul.com/smart-barcode-scan-and-ordering/"},{"@type":"ListItem","position":12,"name":"WooCommerce POS Square Reader","url":"https://wpdoc.webkul.com/square-pos-docs/"},{"@type":"ListItem","position":13,"name":"Tranzila Payment for Woo POS","url":"https://wpdoc.webkul.com/tranzila-payment-for-woocommerce-pos/"},{"@type":"ListItem","position":14,"name":"Turnstile CAPTCHA For WooCommerce","url":"https://wpdoc.webkul.com/turnstile-captcha-for-woocommerce/"},{"@type":"ListItem","position":15,"name":"UnoPim Connector","url":"https://wpdoc.webkul.com/unopim-connector/"},{"@type":"ListItem","position":16,"name":"Wallet System","url":"https://wpdoc.webkul.com/wallet-system/"},{"@type":"ListItem","position":17,"name":"WooCommerce eBay Connector","url":"https://wpdoc.webkul.com/woocommerce-ebay-connector/"},{"@type":"ListItem","position":18,"name":"eBay Item Compatibility for WooCommerce","url":"https://wpdoc.webkul.com/woocommerce-ebay-item-compatibility-doc/"},{"@type":"ListItem","position":19,"name":"Woo PDF Invoices & Packing Slips","url":"https://wpdoc.webkul.com/woocommerce-pdf-invoices-packing-slips/"},{"@type":"ListItem","position":20,"name":"WooCommerce POS Avalara Tax Integration","url":"https://wpdoc.webkul.com/woocommerce-pos-avalara-tax/"},{"@type":"ListItem","position":21,"name":"WooCommerce Power BI Connector","url":"https://wpdoc.webkul.com/woocommerce-power-bi-connector/"},{"@type":"ListItem","position":22,"name":"WooCommerce Pre-Order","url":"https://wpdoc.webkul.com/woocommerce-pre-order/"},{"@type":"ListItem","position":23,"name":"QuickBooks Connector","url":"https://wpdoc.webkul.com/woocommerce-quickbooks-connector/"},{"@type":"ListItem","position":24,"name":"WooCommerce Shopify Connector","url":"https://wpdoc.webkul.com/woocommerce-shopify-connector/"}]}</script>
 
-        <!-- Webkul Extensions Script -->
-        <script
-            src="https://wpdemo.webkul.com/wk-extensions/client/wk.ext.js"
-            defer
-        ></script>
-        <script src="/webmcp.js" defer></script>
-    </head>
-    <body>
-        <!-- Webkul Custom Element -->
-        <webkul-extensions>
-            <div class="wk-doc-index">
-                <h1>Webkul WordPress &amp; WooCommerce Documentation</h1>
-                <p>
-                    This is the official documentation portal for Webkul's WordPress and
-                    WooCommerce plugins. Each plugin below has its own guide covering
-                    system requirements, installation, configuration, and day-to-day use,
-                    written both for store owners setting up a site and for developers
-                    integrating a plugin into an existing WooCommerce store.
-                </p>
-                <p>
-                    Webkul Software is an eCommerce software company founded in 2010 and
-                    based in Noida, Uttar Pradesh, India. It builds B2B and B2C eCommerce,
-                    marketplace, hyperlocal, and mobile application products, and develops
-                    extensions for WooCommerce, Magento, Shopify, Odoo, Bagisto, and
-                    UnoPim. Plugins are sold through
-                    <a href="https://store.webkul.com/">store.webkul.com</a> and support is
-                    handled through <a href="https://webkul.uvdesk.com/">webkul.uvdesk.com</a>.
-                </p>
+  <script src="/webmcp.js" defer></script>
+</head>
+<body>
 
-                <h2>Documentation by plugin</h2>
-                <ul>
-                    <li><a href="/advance-import-export-woocommerce/">Advance Import and Export for WooCommerce</a></li>
-                    <li><a href="/auctions-for-woocommerce/">Auctions for WooCommerce</a></li>
-                    <li><a href="/bagisto-connector/">WooCommerce to Bagisto Connector</a></li>
-                    <li><a href="/erp-for-woocommerce/">ERP for WooCommerce</a></li>
-                    <li><a href="/import-ean-upc-barcodes/">Import EAN UPC Barcodes</a></li>
-                    <li><a href="/license-validator/">License Validator</a></li>
-                    <li><a href="/pos-for-woocommerce/">WooCommerce POS</a></li>
-                    <li><a href="/pos-globalpay-terminal-payment/">POS GlobalPay Terminal Payment</a></li>
-                    <li><a href="/print-barcode-for-woocommerce/">WooCommerce Print Barcodes</a></li>
-                    <li><a href="/smart-barcode-scan-and-ordering/">Smart Barcode Scan and Ordering</a></li>
-                    <li><a href="/square-pos-docs/">WooCommerce POS Square Reader</a></li>
-                    <li><a href="/tranzila-payment-for-woocommerce-pos/">Tranzila Payment for Woo POS</a></li>
-                    <li><a href="/turnstile-captcha-for-woocommerce/">Turnstile CAPTCHA for WooCommerce</a></li>
-                    <li><a href="/unopim-connector/">UnoPim Connector</a></li>
-                    <li><a href="/wallet-system/">Wallet System</a></li>
-                    <li><a href="/woocommerce-ebay-connector/">WooCommerce eBay Connector</a></li>
-                    <li><a href="/woocommerce-ebay-item-compatibility-doc/">eBay Item Compatibility for WooCommerce</a></li>
-                    <li><a href="/woocommerce-marketplace/">WooCommerce Multi-Vendor Marketplace</a></li>
-                    <li><a href="/woocommerce-pdf-invoices-packing-slips/">Woo PDF Invoices &amp; Packing Slips</a></li>
-                    <li><a href="/woocommerce-pos-avalara-tax/">WooCommerce POS Avalara Tax Integration</a></li>
-                    <li><a href="/woocommerce-power-bi-connector/">WooCommerce Power BI Connector</a></li>
-                    <li><a href="/woocommerce-pre-order/">WooCommerce Pre-Order</a></li>
-                    <li><a href="/woocommerce-quickbooks-connector/">QuickBooks Connector</a></li>
-                    <li><a href="/woocommerce-shopify-connector/">WooCommerce Shopify Connector</a></li>
-                </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Webkul WordPress Docs home">
+        <img class="brand-logo" src="/webkul-logo.png" alt="" width="30" height="20">
+        <span class="brand-name">Webkul</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-context">WordPress Docs</span>
+      </a>
+      <nav class="header-nav" aria-label="External links">
+        <a href="https://store.webkul.com/woocommerce-plugins.html" target="_blank" rel="noopener noreferrer">Store</a>
+        <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer" class="nav-cta">Support</a>
+      </nav>
+    </div>
+  </header>
 
-                <h2>For AI agents</h2>
-                <p>
-                    Machine-readable indexes are published at
-                    <a href="/llms.txt">/llms.txt</a> and
-                    <a href="/sitemap.xml">/sitemap.xml</a>. The WooCommerce Multi-Vendor
-                    Marketplace guide additionally publishes
-                    <a href="/woocommerce-marketplace/llms.txt">its own llms.txt</a> and a
-                    single-file corpus at
-                    <a href="/woocommerce-marketplace/llms-full.txt">llms-full.txt</a>; any
-                    page in that guide is available as raw markdown by appending
-                    <code>.md</code> to its URL.
-                </p>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-label">Documentation</p>
+          <h1>WordPress &amp; WooCommerce <br>Plugin Documentation</h1>
+          <p class="hero-sub">Everything you need to install, configure, customize and run Webkul WordPress and WooCommerce plugins.</p>
+          <div class="hero-actions" aria-label="Primary documentation links">
+            <a class="hero-button hero-button-primary" href="#products">
+              <span>Browse Documentation</span>
+              <span class="button-icon" aria-hidden="true">-&gt;</span>
+            </a>
+            <a class="hero-button hero-button-secondary" href="https://store.webkul.com/woocommerce-plugins.html" target="_blank" rel="noopener noreferrer">
+              <span>View Products</span>
+              <span class="button-icon" aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
+          <p class="hero-proof" aria-label="Trusted by 100,000 plus businesses worldwide">
+            <span class="hero-stars" aria-hidden="true">★★★★★</span>
+            <span>Trusted by 100,000+ businesses worldwide</span>
+          </p>
+        </div>
 
-                <h2>Company</h2>
-                <p>
-                    <a href="/about.html">About</a> ·
-                    <a href="/contact.html">Contact</a> ·
-                    <a href="/privacy.html">Privacy</a> ·
-                    <a href="https://webkul.com/">webkul.com</a><br />
-                    Webkul Software Private Limited, H-28, ARV Park, Sector 63, Noida,
-                    Uttar Pradesh 201301, India · support@webkul.com · +91 9870284067
-                </p>
-            </div>
-        </webkul-extensions>
-    </body>
+        <aside class="hero-doc-panel" aria-label="Documentation categories">
+          <form class="hero-search" role="search" onsubmit="return false;">
+            <svg class="hero-search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.8 17.6a6.8 6.8 0 1 1 0-13.6 6.8 6.8 0 0 1 0 13.6Zm5.1-1.7 4.1 4.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="doc-search" name="q" placeholder="Search documentation..." aria-label="Search documentation" aria-controls="products">
+            <span class="hero-shortcut" aria-hidden="true">⌘ K</span>
+          </form>
+          <div class="hero-categories">
+            <p>Categories</p>
+            <a class="hero-category" href="#products" data-filter="marketplace">
+              <span class="category-icon category-icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 9h14l-1 11H6L5 9Z"/><path d="M8 9V7a4 4 0 0 1 8 0v2M9 13h6"/></svg>
+              </span>
+              <span>Marketplace</span>
+            </a>
+            <a class="hero-category" href="#products" data-filter="pos">
+              <span class="category-icon category-icon-purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+              </span>
+              <span>Point of Sale</span>
+            </a>
+            <a class="hero-category" href="#products" data-filter="connectors">
+              <span class="category-icon category-icon-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l2.3-2.3a4 4 0 0 0-5.7-5.7L11 7.3"/><path d="M14 10a4 4 0 0 0-5.7 0L6 12.3a4 4 0 0 0 5.7 5.7L13 16.7"/></svg>
+              </span>
+              <span>Connectors</span>
+            </a>
+            <a class="hero-category" href="#products" data-filter="store">
+              <span class="category-icon category-icon-orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+              </span>
+              <span>Store Management</span>
+            </a>
+          </div>
+          <a class="hero-panel-link" href="#products" data-filter="all">
+            <span>View all documentation</span>
+            <span aria-hidden="true">-&gt;</span>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats"><div class="stat"><img class="badge-img medium-zoom-image" src="/woocommerce-marketplace/assets/woocommerce-featured-author.webp" alt="CodeCanyon Featured Author"><div class="badge-label">CodeCanyon<br><strong>Featured Author</strong></div></div><a class="stat" href="https://codecanyon.net/user/webkul" target="_blank" rel="noopener"><img class="badge-img" src="/woocommerce-marketplace/assets/author-level-10.webp" alt="CodeCanyon Author Level 10"><div class="badge-label">CodeCanyon<br><strong>Author Level 10</strong></div></a><div class="stat"><img class="badge-img medium-zoom-image" src="/woocommerce-marketplace/assets/github.webp" alt="WooCommerce Core Contributor"><div class="badge-label">WooCommerce<br><strong>Core Contributor</strong></div></div><a class="stat" href="https://www.google.com/search?q=webkul#lrd=0x390ce561c5555555:0xcfb40ae166ce6c21,1" target="_blank" rel="noopener"><svg class="badge-img g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg><div class="badge-label"><span class="g-rating">4.5</span> <span class="stars">★★★★★</span><br><strong>Google Review</strong></div></a></section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products-head">
+          <h2>WordPress &amp; WooCommerce plugin guides</h2>
+          <p>Find setup, configuration, customization and usage documentation for Webkul's WordPress and WooCommerce plugins in one place.</p>
+        </div>
+        <div class="grid" role="list" aria-label="Product documentation">
+          <a class="card" role="listitem" href="/woocommerce-marketplace/" data-cat="marketplace" data-search="woocommerce multi-vendor marketplace complete multi-vendor marketplace documentation to build and manage your own woocommerce marketplace — from installation to vendors, commissions, and payouts.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce Multi-Vendor Marketplace</strong>
+            <span class="card-desc">Complete Multi-Vendor Marketplace documentation to build and manage your own WooCommerce marketplace — from installation to vendors, commissions, and payouts.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/pos-for-woocommerce/" data-cat="pos" data-search="woocommerce pos complete woocommerce point of sale documentation for managing online and physical stores, inventory, outlets, agents, and offline sales.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce POS</strong>
+            <span class="card-desc">Complete WooCommerce Point of Sale documentation for managing online and physical stores, inventory, outlets, agents, and offline sales.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/advance-import-export-woocommerce/" data-cat="store" data-search="advance import and export for woocommerce import and export products, orders, customers, coupons, and more. connect with google sheets, dropbox, amazon s3, ftp. schedule jobs, map columns, and roll back...">
+            <span class="eyebrow">User Guide</span>
+            <strong>Advance Import and Export for WooCommerce</strong>
+            <span class="card-desc">Import and export products, orders, customers, coupons, and more. Connect with Google Sheets, Dropbox, Amazon S3, FTP. Schedule jobs, map columns, and roll back...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/auctions-for-woocommerce/" data-cat="store" data-search="auctions for woocommerce complete documentation for the auctions for woocommerce plugin — live bidding, proxy bidding, anti-sniping, wallet, and every shipped subsystem.">
+            <span class="eyebrow">User Guide</span>
+            <strong>Auctions for WooCommerce</strong>
+            <span class="card-desc">Complete documentation for the Auctions for WooCommerce plugin — live bidding, proxy bidding, anti-sniping, wallet, and every shipped subsystem.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/bagisto-connector/" data-cat="connectors" data-search="woocommerce to bagisto connector complete woocommerce to bagisto connector documentation for managing api connection, synchronization of products, categories, orders, customers, and attributes.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce to Bagisto Connector</strong>
+            <span class="card-desc">Complete WooCommerce to Bagisto Connector documentation for managing API connection, synchronization of products, categories, orders, customers, and attributes.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/erp-for-woocommerce/" data-cat="store" data-search="woocommerce erp warehouse management, stock assignment, order fulfilment, purchasing, rfqs, purchase orders, internal transfers, and supplier and role management.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce ERP</strong>
+            <span class="card-desc">Warehouse management, stock assignment, order fulfilment, purchasing, RFQs, purchase orders, internal transfers, and supplier and role management.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/import-ean-upc-barcodes/" data-cat="store" data-search="import ean upc barcodes complete documentation for generating, importing, and assigning upc, ean, gtin, and gs1 codes for woocommerce products.">
+            <span class="eyebrow">User Guide</span>
+            <strong>Import EAN UPC Barcodes</strong>
+            <span class="card-desc">Complete documentation for generating, importing, and assigning UPC, EAN, GTIN, and GS1 codes for WooCommerce products.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/license-validator/" data-cat="store" data-search="license validator complete guide to license validation flow and management">
+            <span class="eyebrow">User Guide</span>
+            <strong>License Validator</strong>
+            <span class="card-desc">Complete Guide to License Validation Flow and Management</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/pos-globalpay-terminal-payment/" data-cat="pos" data-search="pos globalpay terminal payment complete woocommerce point of sale globalpay terminal payment add-on documentation for physical card readers, node.js socket server, and transaction management.">
+            <span class="eyebrow">User Guide</span>
+            <strong>POS Globalpay Terminal Payment</strong>
+            <span class="card-desc">Complete WooCommerce Point of Sale Globalpay Terminal Payment Add-on documentation for physical card readers, Node.js socket server, and transaction management.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/print-barcode-for-woocommerce/" data-cat="store" data-search="woocommerce print barcodes complete woocommerce print barcodes documentation for generating, customizing, and printing barcode labels for products, orders, and coupons.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce Print Barcodes</strong>
+            <span class="card-desc">Complete WooCommerce Print Barcodes documentation for generating, customizing, and printing barcode labels for products, orders, and coupons.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/smart-barcode-scan-and-ordering/" data-cat="store" data-search="smart barcode scan and ordering store-owner documentation for smart barcode scan and ordering — scan product and order barcodes from the woocommerce admin, correct stock and pricing, build...">
+            <span class="eyebrow">User Guide</span>
+            <strong>Smart Barcode Scan and Ordering</strong>
+            <span class="card-desc">Store-owner documentation for Smart Barcode Scan and Ordering — scan product and order barcodes from the WooCommerce admin, correct stock and pricing, build...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/square-pos-docs/" data-cat="pos" data-search="woocommerce pos square reader complete guide for woocommerce pos square reader native sdk integration">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce POS Square Reader</strong>
+            <span class="card-desc">Complete Guide for WooCommerce POS Square Reader Native SDK Integration</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/tranzila-payment-for-woocommerce-pos/" data-cat="pos" data-search="tranzila payment for woo pos complete tranzila payment for woocommerce pos integration guide. learn how to configure your physical payment terminal, map outlet credentials, and set up...">
+            <span class="eyebrow">User Guide</span>
+            <strong>Tranzila Payment for Woo POS</strong>
+            <span class="card-desc">Complete Tranzila Payment for WooCommerce POS integration guide. Learn how to configure your physical payment terminal, map outlet credentials, and set up...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/turnstile-captcha-for-woocommerce/" data-cat="store" data-search="turnstile captcha for woocommerce cloudflare turnstile on checkout, pay-for-order, login, registration, password reset, wordpress forms, and every major form plugin. privacy-friendly, no puzzles...">
+            <span class="eyebrow">User Guide</span>
+            <strong>Turnstile CAPTCHA For WooCommerce</strong>
+            <span class="card-desc">Cloudflare Turnstile on checkout, pay-for-order, login, registration, password reset, WordPress forms, and every major form plugin. Privacy-friendly, no puzzles...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/unopim-connector/" data-cat="connectors" data-search="unopim connector bidirectionally sync unopim pim with woocommerce — categories, attributes, families, products, variants, references, media, associations. multi-channel...">
+            <span class="eyebrow">User Guide</span>
+            <strong>UnoPim Connector</strong>
+            <span class="card-desc">Bidirectionally sync UnoPim PIM with WooCommerce — categories, attributes, families, products, variants, references, media, associations. Multi-channel...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/wallet-system/" data-cat="store" data-search="wallet system woocommerce wallet, recharge, transfer, withdrawal, cashback, kyc, bnpl, referral program, qr payments, paypal &amp; stripe payouts. hpos + wpml + multisite ready.">
+            <span class="eyebrow">User Guide</span>
+            <strong>Wallet System</strong>
+            <span class="card-desc">WooCommerce wallet, recharge, transfer, withdrawal, cashback, KYC, BNPL, referral program, QR payments, PayPal &amp; Stripe payouts. HPOS + WPML + Multisite ready.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-ebay-connector/" data-cat="connectors" data-search="woocommerce ebay connector woocommerce ebay connector will import or export products, orders or categories between woocommerce and ebay.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce eBay Connector</strong>
+            <span class="card-desc">WooCommerce Ebay Connector will import or export products, orders or categories between WooCommerce and eBay.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-ebay-item-compatibility-doc/" data-cat="connectors" data-search="ebay item compatibility for woocommerce complete ebay item compatibility for woocommerce documentation for managing ebay auto parts compatibility.">
+            <span class="eyebrow">User Guide</span>
+            <strong>eBay Item Compatibility for WooCommerce</strong>
+            <span class="card-desc">Complete eBay Item Compatibility for WooCommerce documentation for managing eBay auto parts compatibility.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-pdf-invoices-packing-slips/" data-cat="store" data-search="woo pdf invoices &amp; packing slips complete guide to configuring, customizing, and automating pdf invoices, packing slips, and compliance documents for woocommerce.">
+            <span class="eyebrow">User Guide</span>
+            <strong>Woo PDF Invoices &amp; Packing Slips</strong>
+            <span class="card-desc">Complete guide to configuring, customizing, and automating PDF Invoices, Packing Slips, and compliance documents for WooCommerce.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-pos-avalara-tax/" data-cat="pos" data-search="woocommerce pos avalara tax integration official documentation for woocommerce pos avalara tax integration plugin. automatically calculate real-time sales tax in your pos terminal using physical outlet...">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce POS Avalara Tax Integration</strong>
+            <span class="card-desc">Official documentation for WooCommerce POS Avalara Tax Integration plugin. Automatically calculate real-time sales tax in your POS terminal using physical outlet...</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-power-bi-connector/" data-cat="connectors" data-search="woocommerce power bi connector connect your woocommerce store to microsoft power bi. sync data, build reports, embed dashboards, and add alerts - all from wordpress.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce Power BI Connector</strong>
+            <span class="card-desc">Connect your WooCommerce store to Microsoft Power BI. Sync data, build reports, embed dashboards, and add alerts - all from WordPress.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-pre-order/" data-cat="store" data-search="woocommerce pre-order complete woocommerce pre-order documentation for managing unreleased products, deposits, campaigns, stripe auto-charges, and back-in-stock waitlists.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce Pre-Order</strong>
+            <span class="card-desc">Complete WooCommerce Pre-Order documentation for managing unreleased products, deposits, campaigns, Stripe auto-charges, and back-in-stock waitlists.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-quickbooks-connector/" data-cat="connectors" data-search="quickbooks connector connect your woocommerce store with intuit quickbooks online — sync customers, products, orders, payments, refunds, and taxes automatically.">
+            <span class="eyebrow">User Guide</span>
+            <strong>QuickBooks Connector</strong>
+            <span class="card-desc">Connect your WooCommerce store with Intuit QuickBooks Online — sync customers, products, orders, payments, refunds, and taxes automatically.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+          <a class="card" role="listitem" href="/woocommerce-shopify-connector/" data-cat="connectors" data-search="woocommerce shopify connector complete woocommerce shopify connector documentation for integrating your woocommerce store with shopify store to synchronize products, categories, and orders.">
+            <span class="eyebrow">User Guide</span>
+            <strong>WooCommerce Shopify Connector</strong>
+            <span class="card-desc">Complete WooCommerce Shopify Connector documentation for integrating your WooCommerce store with Shopify store to synchronize products, categories, and orders.</span>
+            <span class="card-cta">Read the guide &rarr;</span>
+          </a>
+        </div>
+        <p class="no-results" id="no-results" hidden>No guide matches that search. <a href="#products" data-filter="all">Show all 24 guides</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; Copyright 2010-<span id="copyright-year">2026</span></p>
+      <nav aria-label="Footer links">
+        <a href="https://webkul.com/about-us/" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="https://webkul.com/contacts/" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="https://webkul.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+        <a href="https://webkul.com/" target="_blank" rel="noopener noreferrer">Company</a>
+        <a href="https://store.webkul.com/woocommerce-plugins.html" target="_blank" rel="noopener noreferrer">Plugin Store</a>
+        <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer">Get Support</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+
+    // Filter the guide grid by text and by category. Progressive enhancement:
+    // without JavaScript every card is already in the HTML and visible.
+    (function () {
+      var input = document.getElementById("doc-search");
+      var cards = Array.prototype.slice.call(document.querySelectorAll(".card[data-search]"));
+      var empty = document.getElementById("no-results");
+      var cat = "all";
+
+      function apply() {
+        var q = (input && input.value || "").trim().toLowerCase();
+        var shown = 0;
+        cards.forEach(function (c) {
+          var okCat = cat === "all" || c.getAttribute("data-cat") === cat;
+          var okText = !q || c.getAttribute("data-search").indexOf(q) !== -1;
+          var show = okCat && okText;
+          c.hidden = !show;
+          if (show) shown++;
+        });
+        if (empty) empty.hidden = shown !== 0;
+      }
+
+      if (input) input.addEventListener("input", apply);
+
+      document.querySelectorAll("[data-filter]").forEach(function (el) {
+        el.addEventListener("click", function () {
+          cat = el.getAttribute("data-filter");
+          if (input) input.value = "";
+          apply();
+        });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+          e.preventDefault();
+          if (input) input.focus();
+        }
+      });
+    })();
+  </script>
+</body>
 </html>

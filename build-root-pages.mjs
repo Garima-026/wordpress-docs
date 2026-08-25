@@ -23,6 +23,9 @@ import path from "node:path";
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const ORIGIN = "https://wpdoc.webkul.com";
 
+// Directories in this repo that are not plugin documentation.
+const NON_GUIDE_DIRS = ["sitemaps", "mcp-server", "edge", "trust", "node_modules"];
+
 /* ---------------- shared chrome ---------------- */
 
 const STYLE = `
@@ -226,7 +229,15 @@ for (const p of PAGES) {
 // here automatically. Title comes from each guide's own <title>.
 const guides = fs
     .readdirSync(ROOT, { withFileTypes: true })
-    .filter((d) => d.isDirectory() && !d.name.startsWith(".") && d.name !== "sitemaps")
+    // Repo folders that are not plugin guides. Without this, /edge/ and
+    // /mcp-server/ were advertised in llms.txt as documentation and would
+    // send agents to URLs that 404.
+    .filter(
+        (d) =>
+            d.isDirectory() &&
+            !d.name.startsWith(".") &&
+            !NON_GUIDE_DIRS.includes(d.name),
+    )
     .map((d) => d.name)
     .sort()
     .map((slug) => {
@@ -253,7 +264,14 @@ const guides = fs
                 break;
             }
         }
-        return { slug, title: title.replace(/\s+Documentation$/i, "") };
+        // Strip trailing "Documentation" and leftover dangling fragments such
+        // as "— Official" left behind by splitting the page title on "|".
+        title = title
+            .replace(/\s+Documentation\s*$/i, "")
+            .replace(/\s*[—–-]\s*Official\s*$/i, "")
+            .replace(/\s*[—–-]\s*$/, "")
+            .trim();
+        return { slug, title };
     });
 
 const llms = `# Webkul WordPress & WooCommerce Documentation
@@ -285,6 +303,71 @@ Published by Webkul Software Private Limited, an eCommerce software company foun
 `;
 fs.writeFileSync(path.join(ROOT, "llms.txt"), llms);
 console.log(`[root-pages] wrote llms.txt (${guides.length} guides)`);
+
+/* ---------------- site-wide 404 ---------------- */
+// The guide list is generated from the same discovery as llms.txt and the
+// homepage, so a new guide appears here without anyone editing this file.
+const notFoundHtml = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 — Page not found | Webkul WordPress Documentation</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:3rem 1.5rem; background:#fff; color:#2c3e50; line-height:1.6;
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:52rem; margin:0 auto; }
+  h1 { font-size:1.9rem; margin:0 0 .5rem; letter-spacing:-.02em; }
+  h2 { font-size:1rem; text-transform:uppercase; letter-spacing:.06em; color:#6b7785;
+       margin:2.5rem 0 .75rem; font-weight:600; }
+  p { margin:0 0 1rem; }
+  a { color:#2b6be3; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  ul { list-style:none; padding:0; margin:0; }
+  .links li { margin-bottom:.4rem; }
+  .products { display:grid; grid-template-columns:repeat(auto-fill,minmax(20rem,1fr)); gap:.35rem 1.5rem; }
+  code { background:rgba(43,107,227,.09); padding:.12em .4em; border-radius:4px; font-size:.92em; }
+  .muted { color:#6b7785; font-size:.95rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1b1b1f; color:#d6d6d8; } h2,.muted { color:#9aa3ad; } a { color:#6ea1ff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>404 — Page not found</h1>
+  <p>This page does not exist on <strong>wpdoc.webkul.com</strong>, Webkul's documentation site for its WordPress and WooCommerce plugins.</p>
+
+  <h2>Where to look next</h2>
+  <ul class="links">
+    <li><a href="${ORIGIN}/">Documentation home</a> — index of all plugin guides</li>
+    <li><a href="${ORIGIN}/sitemap.xml">sitemap.xml</a> — machine-readable index of every page</li>
+    <li><a href="${ORIGIN}/about.html">About</a>, <a href="${ORIGIN}/contact.html">Contact</a>, <a href="${ORIGIN}/privacy.html">Privacy</a></li>
+    <li><a href="https://store.webkul.com/woocommerce-plugins.html">Webkul store</a> — plugin listings and pricing</li>
+    <li><a href="https://webkul.uvdesk.com/">Support</a> — ticket-based help for licensed users</li>
+  </ul>
+
+  <h2>Documentation by plugin</h2>
+  <ul class="products">
+${guides.map((g) => `    <li><a href="/${g.slug}/">${g.title}</a></li>`).join("\n")}
+  </ul>
+
+  <h2>For AI agents</h2>
+  <p class="muted">Machine-readable indexes are published at
+    <a href="${ORIGIN}/llms.txt">/llms.txt</a> and
+    <a href="${ORIGIN}/.well-known/ai-catalog.json">/.well-known/ai-catalog.json</a>.
+    The WooCommerce Multi-Vendor Marketplace guide additionally publishes
+    <a href="${ORIGIN}/woocommerce-marketplace/llms-full.txt">llms-full.txt</a>; any page
+    in that guide is available as raw markdown by appending <code>.md</code> to its URL.</p>
+</main>
+</body>
+</html>
+`;
+fs.writeFileSync(path.join(ROOT, "404.html"), notFoundHtml);
+console.log(`[root-pages] wrote 404.html (${guides.length} guides listed)`);
 
 /* ---------------- no-redirect shims ---------------- */
 
