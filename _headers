@@ -1,14 +1,25 @@
-# Cloudflare Pages header rules. GitHub Pages ignores this file entirely —
-# on the current host the same effect needs a Cloudflare Transform Rule.
+# Cloudflare Pages header rules.
+#
+# GitHub Pages — the current host — IGNORES this file and serves it as a plain
+# text file. Verified: /_headers returns 200 while none of the directives below
+# appear on any response. It is kept for two reasons: it is the exact value to
+# paste into a Cloudflare Transform Rule, and it becomes live as-is if this site
+# ever moves to Cloudflare Pages.
+#
+# Link relations below are IANA-registered: api-catalog (RFC 9727),
+# service-desc and service-doc (RFC 8631), describedby (W3C).
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Vary: Accept
-  Link: </.well-known/ai-catalog.json>; rel="ai-catalog", </llms.txt>; rel="service-doc"; type="text/markdown", </.well-known/ai-catalog.json>; rel="describedby"; type="application/json", </sitemap.xml>; rel="sitemap"
+  Link: </.well-known/api-catalog>; rel="api-catalog", </openapi.json>; rel="service-desc"; type="application/vnd.oai.openapi+json;version=3.1", </llms.txt>; rel="service-doc"; type="text/markdown", </.well-known/ai-catalog.json>; rel="describedby"; type="application/json"
 
 /.well-known/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json
 
 /.well-known/ai-catalog.json
   Content-Type: application/json
