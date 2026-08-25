@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://wpdoc.webkul.com/</loc>
+    <lastmod>2026-08-25T10:16:08+05:30</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/about.html</loc>
+    <lastmod>2026-08-24T23:03:27+05:30</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/contact.html</loc>
+    <lastmod>2026-08-24T23:03:27+05:30</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/privacy.html</loc>
+    <lastmod>2026-08-24T23:03:27+05:30</lastmod>
+    <priority>0.60</priority>
+  </url>
+</urlset>

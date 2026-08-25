@@ -51,6 +51,21 @@ const page = ({ slug, title, description, jsonld, body }) => `<!doctype html>
 <title>${title} | Webkul WordPress Documentation</title>
 <meta name="description" content="${description}">
 <link rel="canonical" href="${ORIGIN}/${slug}.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Webkul WordPress Documentation">
+<meta property="og:title" content="${title} | Webkul WordPress Documentation">
+<meta property="og:description" content="${description}">
+<meta property="og:url" content="${ORIGIN}/${slug}.html">
+<meta property="og:image" content="${ORIGIN}/woocommerce-marketplace/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Webkul WordPress and WooCommerce documentation">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webkul">
+<meta name="twitter:title" content="${title} | Webkul WordPress Documentation">
+<meta name="twitter:description" content="${description}">
+<meta name="twitter:image" content="${ORIGIN}/woocommerce-marketplace/og-image.png">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 <style>${STYLE}</style>
 </head>
@@ -770,3 +785,124 @@ if (MCP_ENDPOINT) {
 } else {
     console.log("[root-pages] skipped MCP server card (set MCP_ENDPOINT once the server is deployed)");
 }
+
+/* ---------------- publish/modify dates from git history ---------------- */
+// A build timestamp would claim every page changed on every rebuild. Git knows
+// when each page actually first appeared and when it last changed, so use that.
+import { execFileSync } from "node:child_process";
+
+const gitDate = (file, first) => {
+    try {
+        const args = first
+            ? ["log", "--diff-filter=A", "--follow", "--format=%aI", "--", file]
+            : ["log", "-1", "--format=%aI", "--", file];
+        const out = execFileSync("git", args, { cwd: ROOT, encoding: "utf8" }).trim();
+        if (!out) return null;
+        const lines = out.split("\n").filter(Boolean);
+        return first ? lines[lines.length - 1] : lines[0];
+    } catch {
+        return null;
+    }
+};
+
+let dated = 0;
+const htmlFiles = [];
+(function collect(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+        const abs = path.join(dir, e.name);
+        if (e.isDirectory()) collect(abs);
+        else if (e.name.endsWith(".html")) htmlFiles.push(abs);
+    }
+})(path.join(ROOT, "woocommerce-marketplace"));
+
+for (const abs of htmlFiles) {
+    const rel = path.relative(ROOT, abs);
+    if (rel.endsWith("404.html")) continue;
+    const published = gitDate(rel, true);
+    // dateModified comes from the markdown twin, not the HTML. Built HTML
+    // embeds content-hashed asset filenames, so every rebuild rewrites every
+    // page and git would report all 43 as "modified today" — fake freshness.
+    // The .md file changes only when the page's own content changes.
+    const mdRel = rel.replace(/\.html$/, ".md");
+    const modified =
+        (fs.existsSync(path.join(ROOT, mdRel)) && gitDate(mdRel, false)) || gitDate(rel, false);
+    if (!published || !modified) continue;
+
+    let html = fs.readFileSync(abs, "utf8");
+    html = html.replace(/\s*<meta property="article:(published|modified)_time"[^>]*>/g, "");
+    const tags =
+        `<meta property="article:published_time" content="${published}">` +
+        `<meta property="article:modified_time" content="${modified}">`;
+    // Fill the dates into the TechArticle block emitted by the docs build.
+    html = html.replace(
+        /<script type="application\/ld\+json">(\{"@context":"https:\/\/schema\.org","@type":"TechArticle".*?\})<\/script>/,
+        (m, body) => {
+            try {
+                const o = JSON.parse(body);
+                o.datePublished = published;
+                o.dateModified = modified;
+                return `<script type="application/ld+json">${JSON.stringify(o)}</script>`;
+            } catch {
+                return m;
+            }
+        },
+    );
+    html = html.replace("<!--/agent-meta-->", `${tags}<!--/agent-meta-->`);
+    fs.writeFileSync(abs, html);
+    dated++;
+}
+console.log(`[root-pages] stamped git publish/modify dates on ${dated} pages`);
+
+/* ---------------- sitemaps ---------------- */
+// The index referenced sitemaps/woocommerce-marketplace.xml — a crawler export
+// from May 2026 with stale lastmod values and no about/contact/privacy. Rebuild
+// it from the real page list, and give the root pages a sitemap of their own,
+// which they never had.
+const xmlEsc = (u) => u.replace(/&/g, "&amp;");
+const urlset = (entries) =>
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    entries
+        .map(
+            (e) =>
+                `  <url>\n    <loc>${xmlEsc(e.loc)}</loc>\n` +
+                (e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>\n` : "") +
+                (e.priority ? `    <priority>${e.priority}</priority>\n` : "") +
+                `  </url>`,
+        )
+        .join("\n") +
+    `\n</urlset>\n`;
+
+const mkEntries = htmlFiles
+    .filter((f) => !f.endsWith("404.html"))
+    .map((abs) => {
+        const rel = path.relative(ROOT, abs);
+        const loc = `${ORIGIN}/${rel.replace(/index\.html$/, "").replace(/\\/g, "/")}`;
+        const mdRel = rel.replace(/\.html$/, ".md");
+        const lastmod =
+            (fs.existsSync(path.join(ROOT, mdRel)) && gitDate(mdRel, false)) || gitDate(rel, false);
+        const depth = rel.split("/").length;
+        return { loc, lastmod, priority: depth <= 2 ? "1.00" : "0.80" };
+    })
+    .sort((a, b) => a.loc.localeCompare(b.loc));
+fs.writeFileSync(path.join(ROOT, "sitemaps", "woocommerce-marketplace.xml"), urlset(mkEntries));
+console.log(`[root-pages] rebuilt sitemaps/woocommerce-marketplace.xml (${mkEntries.length} urls)`);
+
+const rootEntries = ["index.html", "about.html", "contact.html", "privacy.html"]
+    .filter((f) => fs.existsSync(path.join(ROOT, f)))
+    .map((f) => ({
+        loc: `${ORIGIN}/${f === "index.html" ? "" : f}`,
+        lastmod: gitDate(f, false),
+        priority: f === "index.html" ? "1.00" : "0.60",
+    }));
+fs.writeFileSync(path.join(ROOT, "sitemaps", "root.xml"), urlset(rootEntries));
+console.log(`[root-pages] wrote sitemaps/root.xml (${rootEntries.length} urls)`);
+
+// Make sure the index lists every sitemap that exists, including the new one.
+const smFiles = fs.readdirSync(path.join(ROOT, "sitemaps")).filter((f) => f.endsWith(".xml")).sort();
+fs.writeFileSync(
+    path.join(ROOT, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+        smFiles.map((f) => `  <sitemap>\n    <loc>${ORIGIN}/sitemaps/${f}</loc>\n  </sitemap>`).join("\n") +
+        `\n</sitemapindex>\n`,
+);
+console.log(`[root-pages] rebuilt sitemap.xml index (${smFiles.length} sitemaps)`);
