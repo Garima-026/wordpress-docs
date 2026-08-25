@@ -9,4 +9,3 @@ Disallow: /author/
 Disallow: /trackback/
 
 Sitemap: https://wpdoc.webkul.com/sitemap.xml
-Agentmap: https://wpdoc.webkul.com/.well-known/ai-catalog.json

@@ -478,9 +478,10 @@ if (/^User-agent: \*[^\S\n]*$/m.test(robots)) {
         `$1\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n`,
     );
 }
-if (!/^Agentmap:/m.test(robots)) {
-    robots = `${robots.trimEnd()}\nAgentmap: ${ORIGIN}/.well-known/ai-catalog.json\n`;
-}
+// No Agentmap directive: it is a non-standard extension and Lighthouse reports
+// it as "Unknown directive", a visible SEO error. It is also redundant here —
+// the ARD manifest sits at its standard well-known path and is linked from the
+// homepage head via <link rel="ai-catalog">, which is what scanners read.
 fs.writeFileSync(robotsPath, robots);
 console.log("[root-pages] updated robots.txt (Content-Signal, Agentmap)");
 
