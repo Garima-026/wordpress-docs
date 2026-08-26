@@ -28,6 +28,9 @@
     <loc>https://wpdoc.webkul.com/sitemaps/woocommerce-ebay-connector.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://wpdoc.webkul.com/sitemaps/woocommerce-icecat-connector.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://wpdoc.webkul.com/sitemaps/woocommerce-marketplace.xml</loc>
   </sitemap>
   <sitemap>

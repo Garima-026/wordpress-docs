@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/overview.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/features.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/installation.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/setup-wizard.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/account.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/configuration.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/manage-products.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/add-product.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/bulk-import.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/update-products.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-icecat-connector/icecat-connector/faq-notes.html</loc>
+  <lastmod>2026-08-26T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>

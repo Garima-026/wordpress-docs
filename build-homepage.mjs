@@ -55,6 +55,7 @@ const CATEGORY = {
         "woocommerce-shopify-connector",
         "woocommerce-quickbooks-connector",
         "woocommerce-power-bi-connector",
+        "woocommerce-icecat-connector",
     ],
 };
 
