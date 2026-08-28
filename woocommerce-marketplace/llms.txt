@@ -58,7 +58,7 @@ Do not use this site for WooCommerce core documentation, other marketplace plugi
 
 ## Video tutorials
 
-- [Video Tutorials](https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.md): Watch the full WooCommerce Multi-Vendor Marketplace video playlist — 15 tutorials covering marketplace setup, backend configuration, vendor products...
+- [Video Tutorials](https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.md): Webkul WooCommerce Multi-Vendor Marketplace video tutorials — 15 walkthroughs on marketplace setup, vendor products, orders, commissions, shipping and add-ons.
 
 ## About this publisher
 
