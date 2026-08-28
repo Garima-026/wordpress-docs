@@ -5,7 +5,7 @@ source: https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.html
 
 # Video Tutorials
 
-Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooCommerce Multi-Vendor Marketplace plugin and the add-ons that extend it. Click any thumbnail to play it here on the page.
+Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooCommerce Multi-Vendor Marketplace plugin and the add-ons that extend it. Click any thumbnail to open it in a full-size player.
 
 <div class="vt-bar">
   <div class="vt-bar__stats">
@@ -20,7 +20,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
 <div class="vt-feature">
   <div class="vt-thumb vt-thumb--wide">
-    <img src="https://i.ytimg.com/vi/zhlQx7GQfUg/hqdefault.jpg" alt="" loading="eager" width="480" height="270" data-no-zoom="true" data-video-thumb="zhlQx7GQfUg">
+    <img src="https://i.ytimg.com/vi/zhlQx7GQfUg/hqdefault.jpg" alt="" loading="eager" width="480" height="270" data-no-zoom="true">
     <a class="vt-play" href="https://www.youtube.com/watch?v=zhlQx7GQfUg&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="zhlQx7GQfUg" data-video-title="How to create an Ecommerce Marketplace - WooCommerce" aria-label="Play: How to create an Ecommerce Marketplace - WooCommerce">
       <span class="vt-play__icon"></span>
     </a>
@@ -39,7 +39,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 <div class="vt-grid">
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/lqxBy_wJVyM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="lqxBy_wJVyM">
+      <img src="https://i.ytimg.com/vi/lqxBy_wJVyM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=lqxBy_wJVyM&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="lqxBy_wJVyM" data-video-title="Backend Configuration Options" aria-label="Play: WooCommerce Multi-Vendor Marketplace Plugin — Backend Configuration Options">
         <span class="vt-play__icon"></span>
       </a>
@@ -54,7 +54,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/4p6xrj2h5Tk/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="4p6xrj2h5Tk">
+      <img src="https://i.ytimg.com/vi/4p6xrj2h5Tk/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=4p6xrj2h5Tk&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="4p6xrj2h5Tk" data-video-title="Tutorial To Add Simple Product" aria-label="Play: WooCommerce Marketplace Tutorial To Add Simple Product">
         <span class="vt-play__icon"></span>
       </a>
@@ -69,7 +69,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/ZjbcAtVOd0s/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="ZjbcAtVOd0s">
+      <img src="https://i.ytimg.com/vi/ZjbcAtVOd0s/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=ZjbcAtVOd0s&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="ZjbcAtVOd0s" data-video-title="Language Translation" aria-label="Play: WordPress WooCommerce Marketplace Language Translation">
         <span class="vt-play__icon"></span>
       </a>
@@ -87,7 +87,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 <div class="vt-grid">
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/7hoSqVWbd_E/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="7hoSqVWbd_E">
+      <img src="https://i.ytimg.com/vi/7hoSqVWbd_E/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=7hoSqVWbd_E&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="7hoSqVWbd_E" data-video-title="Split Order Plugin" aria-label="Play: WordPress WooCommerce Marketplace Split Order Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -102,7 +102,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/dCl_mJKVLQ0/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="dCl_mJKVLQ0">
+      <img src="https://i.ytimg.com/vi/dCl_mJKVLQ0/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=dCl_mJKVLQ0&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="dCl_mJKVLQ0" data-video-title="Split Cart Plugin" aria-label="Play: WooCommerce Marketplace Split Cart Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -117,7 +117,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/I4E1_RXsUEI/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="I4E1_RXsUEI">
+      <img src="https://i.ytimg.com/vi/I4E1_RXsUEI/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=I4E1_RXsUEI&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="I4E1_RXsUEI" data-video-title="Quote System Plugin" aria-label="Play: WordPress WooCommerce Marketplace Quote System Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -132,7 +132,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/Vm335ALcgeo/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="Vm335ALcgeo">
+      <img src="https://i.ytimg.com/vi/Vm335ALcgeo/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=Vm335ALcgeo&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="Vm335ALcgeo" data-video-title="Group Buy Overview" aria-label="Play: WooCommerce Marketplace Group Buy — Overview">
         <span class="vt-play__icon"></span>
       </a>
@@ -151,7 +151,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 <div class="vt-grid">
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/C4lFsf_GSLU/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="C4lFsf_GSLU">
+      <img src="https://i.ytimg.com/vi/C4lFsf_GSLU/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=C4lFsf_GSLU&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="C4lFsf_GSLU" data-video-title="Flat Rate Shipping Plugin" aria-label="Play: WordPress WooCommerce Marketplace Flat Rate Shipping Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -166,7 +166,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/DAZoqf0_JR8/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="DAZoqf0_JR8">
+      <img src="https://i.ytimg.com/vi/DAZoqf0_JR8/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=DAZoqf0_JR8&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="DAZoqf0_JR8" data-video-title="Per Product Shipping Plugin" aria-label="Play: WordPress WooCommerce Marketplace Per Product Shipping Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -185,7 +185,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 <div class="vt-grid">
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/XmDGb13xKFM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="XmDGb13xKFM">
+      <img src="https://i.ytimg.com/vi/XmDGb13xKFM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=XmDGb13xKFM&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="XmDGb13xKFM" data-video-title="Advanced Commission Plugin" aria-label="Play: WordPress WooCommerce Marketplace Advanced Commission Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -200,7 +200,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/9aYbdAWbQzs/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="9aYbdAWbQzs">
+      <img src="https://i.ytimg.com/vi/9aYbdAWbQzs/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=9aYbdAWbQzs&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="9aYbdAWbQzs" data-video-title="Seller Price Comparison Plugin" aria-label="Play: WordPress WooCommerce Marketplace Seller Price Comparison Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -215,7 +215,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/uExFz_G5nvM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="uExFz_G5nvM">
+      <img src="https://i.ytimg.com/vi/uExFz_G5nvM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=uExFz_G5nvM&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="uExFz_G5nvM" data-video-title="Reward System Plugin" aria-label="Play: WordPress WooCommerce Marketplace Reward System Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -233,7 +233,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 <div class="vt-grid">
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/65fcofKLJUI/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="65fcofKLJUI">
+      <img src="https://i.ytimg.com/vi/65fcofKLJUI/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=65fcofKLJUI&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="65fcofKLJUI" data-video-title="Buyer Seller Chat Plugin" aria-label="Play: WordPress WooCommerce Marketplace Buyer Seller Chat Plugin">
         <span class="vt-play__icon"></span>
       </a>
@@ -248,7 +248,7 @@ Fifteen walkthroughs from the Webkul YouTube playlist, covering the core WooComm
 
   <article class="vt-card">
     <div class="vt-thumb">
-      <img src="https://i.ytimg.com/vi/vMen7LRa2HM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true" data-video-thumb="vMen7LRa2HM">
+      <img src="https://i.ytimg.com/vi/vMen7LRa2HM/hqdefault.jpg" alt="" loading="lazy" width="480" height="270" data-no-zoom="true">
       <a class="vt-play" href="https://www.youtube.com/watch?v=vMen7LRa2HM&amp;list=PL8h9hTFOactZfCUyenny643EDHONlA7c9" target="_blank" rel="noopener" data-video="vMen7LRa2HM" data-video-title="Marketplace Web Push Notifications" aria-label="Play: How to Boost Your WooCommerce Sales with Marketplace Web Push Notifications">
         <span class="vt-play__icon"></span>
       </a>
