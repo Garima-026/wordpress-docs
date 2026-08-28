@@ -56,6 +56,10 @@ Do not use this site for WooCommerce core documentation, other marketplace plugi
 - [Customer Order Placement](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.md): This guide explains the customer order placement process in the WooCommerce Marketplace and highlights how seller information is displayed at different stages.
 - [Get Google Analytics Measurement ID](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/google-analytics.md): ⬅ Back to Google Analytics Configuration This ID helps you track marketplace activity such as visitor traffic, product views, and user interactions, giving...
 
+## Video tutorials
+
+- [Video Tutorials](https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.md): Watch the full WooCommerce Multi-Vendor Marketplace video playlist — 15 tutorials covering marketplace setup, backend configuration, vendor products...
+
 ## About this publisher
 
 - [About](https://wpdoc.webkul.com/woocommerce-marketplace/about.md): "Webkul Software, founded 2010 in Noida India, publishes the WooCommerce Multi-Vendor Marketplace plugin. About the plugin, the company, and these docs."

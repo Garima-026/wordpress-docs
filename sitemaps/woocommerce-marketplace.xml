@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wpdoc.webkul.com/woocommerce-marketplace/</loc>
-    <lastmod>2026-08-24T22:46:44+05:30</lastmod>
+    <lastmod>2026-08-28T16:33:16+05:30</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -213,6 +213,11 @@
   <url>
     <loc>https://wpdoc.webkul.com/woocommerce-marketplace/privacy.html</loc>
     <lastmod>2026-08-24T23:03:27+05:30</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.html</loc>
+    <lastmod>2026-08-28T16:33:16+05:30</lastmod>
     <priority>1.00</priority>
   </url>
 </urlset>

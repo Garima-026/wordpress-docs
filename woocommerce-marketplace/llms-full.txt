@@ -40,6 +40,7 @@ Canonical site: https://wpdoc.webkul.com/woocommerce-marketplace/
         <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/features.html">Features</a>
         <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html">Installation</a>
         <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-general-settings.html">General settings</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.html">Video Tutorials</a>
       </nav>
     </div>
     <div class="home-guide-card">
