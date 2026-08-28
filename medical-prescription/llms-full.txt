@@ -1,0 +1,1568 @@
+# Medical Prescription Attachment for WooCommerce Documentation (full)
+
+> Official documentation for Webkul's Medical Prescription Attachment for WooCommerce plugin, which turns a WooCommerce store into a compliant online pharmacy by requiring, collecting, and verifying a doctor's prescription before gated medicines can be purchased.
+
+Canonical site: https://wpdoc.webkul.com/medical-prescription/
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/ -->
+
+<section class="home-learn" aria-label="Get started and learn more">
+  <div class="home-learn-grid">
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">1</span>
+        <h2>Set up</h2>
+      </div>
+      <p>Install the plugin, enable it, and choose which products and categories require a prescription.</p>
+      <nav aria-label="Set up guides">
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/">Introduction</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/features.html">Features</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/installation.html">Installation</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html">Product &amp; category setup</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">2</span>
+        <h2>Configure</h2>
+      </div>
+      <p>Tune labels, display positions, upload rules, email alerts, and the optional OCR &amp; AI reader.</p>
+      <nav aria-label="Configure guides">
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html">General settings</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html">Labels &amp; display</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html">OCR &amp; AI</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html">Notifications</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">3</span>
+        <h2>Run day to day</h2>
+      </div>
+      <p>Collect uploads at checkout, review them, and approve or reject each order's prescription.</p>
+      <nav aria-label="Run day to day guides">
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html">Uploading a prescription</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html">Order management</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html">Prescription statuses</a>
+        <a href="https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html">Email notifications</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="stats"><div class="stat"><img class="badge-img medium-zoom-image" src="https://wpdoc.webkul.com/medical-prescription/assets/woocommerce-featured-author.webp" alt="CodeCanyon Featured Author"><div class="badge-label">CodeCanyon<br><strong>Featured Author</strong></div></div><a class="stat" href="https://codecanyon.net/user/webkul" target="_blank" rel="noopener"><img class="badge-img" src="https://wpdoc.webkul.com/medical-prescription/assets/author-level-10.webp" alt="CodeCanyon Author Level 10"><div class="badge-label">CodeCanyon<br><strong>Author Level 10</strong></div></a><div class="stat"><img class="badge-img medium-zoom-image" src="https://wpdoc.webkul.com/medical-prescription/assets/github.webp" alt="WooCommerce Core Contributor"><div class="badge-label">WooCommerce<br><strong>Core Contributor</strong></div></div><a class="stat" href="https://www.google.com/search?q=webkul#lrd=0x390ce561c5555555:0xcfb40ae166ce6c21,1" target="_blank" rel="noopener"><svg class="badge-img g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg><div class="badge-label"><span class="g-rating">4.5</span> <span class="stars">★★★★★</span><br><strong>Google Review</strong></div></a></section>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/ -->
+
+# Introduction
+
+<a class="doc-image-link" href="./assets/storefront-shop.webp"><img src="./assets/storefront-shop.webp" alt="Online pharmacy storefront with prescription-gated products" /></a>
+
+**Medical Prescription Attachment for WooCommerce** lets you run your WooCommerce store like a real pharmacy. It stops customers from buying prescription‑only medicines until they upload a valid doctor's prescription, and it gives your team a simple review desk to **approve or reject** each upload before the order moves forward.
+
+You decide which products need a prescription — a single product, or every product inside chosen categories. Customers see a clear "prescription required" label on those items and are prompted to attach their document at the point of purchase. Nothing ships until an admin has verified the paperwork.
+
+> This documentation covers plugin **version 1.3.x**, including the newer **OCR & AI reader**, **My Pill Box** organizer, and **frontend prescription search** features.
+
+---
+
+## What this plugin does
+
+- **Gates medicines** — mark products (or whole categories) as *prescription required*.
+- **Collects prescriptions** — a drag‑and‑drop upload box on the product, cart, checkout, or order page.
+- **Blocks checkout** — customers can't place a gated order until a file is attached (unless *Attach Later* is enabled).
+- **Verifies uploads** — admins review each prescription and set it to **Approved** or **Rejected**.
+- **Keeps everyone informed** — automatic emails to the customer and the store admin, plus order notes on every status change.
+- **Reads the prescription for you** — optional on‑device OCR extracts doctor, date, and medicines, with an AI fallback for handwriting.
+
+---
+
+## Who it's for
+
+| Store type | Why it fits |
+| --- | --- |
+| Online pharmacies | Enforce a prescription before dispensing scheduled/Rx‑only drugs. |
+| Clinics & wellness stores | Require a doctor's note for regulated supplements or devices. |
+| Veterinary & specialty shops | Collect authorization documents before fulfilment. |
+| Any store needing document approval | Reuse the upload‑and‑approve flow for any "attach a document to buy" scenario. |
+
+---
+
+## Key concepts at a glance
+
+- **Gated product** — a product that requires a prescription, set per‑product or by category.
+- **Prescription** — one or more files (JPG, PNG, PDF, DOC/DOCX) a customer attaches to an order.
+- **Status** — every gated order carries a prescription status: *Attachment Pending → Pending → Approved / Rejected*. See [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html).
+- **Review desk** — the admin **Orders** screen where staff open, read, and decide on each prescription.
+
+---
+
+## Explore the demo
+
+Our [**live demo store**](https://medical-prescription-for-woocommerce.wcdemo.webkul.com/) is a working online pharmacy. Browse the **Prescription Medicines** category to see gated products, add one to your cart, and watch the upload box appear at checkout.
+
+- 🔗 **Live Demo:** <https://medical-prescription-for-woocommerce.wcdemo.webkul.com/>
+- 🛒 **Buy Now:** [CodeCanyon](https://codecanyon.net/item/medical-prescription-attachment-plugin-for-woocommerce/24649311)
+
+---
+
+## Support
+
+Have a question or run into an issue? Raise a ticket and our team will help.
+
+- 🎟 **Support Portal:** <https://webkul.uvdesk.com/>
+- 📧 **Email:** [support@webkul.com](mailto:support@webkul.com)
+- 🎫 **Ticket:** <https://webkul.com/ticket/>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/features.html -->
+
+# Features
+
+<a class="doc-image-link" href="./assets/category-prescription-labels.webp"><img src="./assets/category-prescription-labels.webp" alt="Prescription-required labels on a category listing" /></a>
+
+Everything the **Medical Prescription Attachment for WooCommerce** plugin can do, grouped by area. Each feature links to its full guide.
+
+---
+
+## Product gating
+
+- **Per‑product control** — mark any single product as *prescription required*. See [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html).
+- **Category gating** — require a prescription for **every** product in one or more categories, applied automatically as products are saved.
+- **Storefront labels** — a customizable "Prescription Required" badge with your own text, font color, and background color.
+- **Flexible placement** — choose where the label and upload box appear on the product, shop, cart, checkout, and order pages. See [Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html).
+
+---
+
+## Prescription uploads
+
+- **Drag‑and‑drop upload box** — customers attach files without leaving the page.
+- **Multiple file formats** — allow any of **JPG/JPEG, PNG, PDF, DOC/DOCX**; you choose which formats are accepted.
+- **Single or multiple files** — let customers attach several pages of a prescription, up to a limit you set.
+- **Checkout enforcement** — gated orders can't be placed until a prescription is attached.
+- **Secure validation** — uploads are checked by content (magic‑byte sniffing + image decode), not just file extension, to block disguised files.
+
+See [Uploading a Prescription](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html).
+
+---
+
+## Flexible customer flows
+
+- **Attach Later** — let logged‑in customers place the order first and upload the prescription afterwards from their account.
+- **Re‑upload if rejected** — when an upload is rejected, allow the customer to submit a new one.
+- **My Prescriptions vault** — a *My Account* area where customers see the history and status of every prescription they've submitted.
+
+See [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html) and [My Prescriptions Vault](https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.html).
+
+---
+
+## OCR &amp; AI reading *(v1.3.x)*
+
+- **On‑device OCR** — extracts text from uploaded prescriptions in the browser using Tesseract, with configurable languages and a confidence threshold.
+- **AI fallback (Gemini Vision)** — when OCR is weak (blank, low confidence, or handwriting), the image is escalated to Google Gemini to read it and return structured details.
+- **AI OCR analysis workspace** — inside the prescription viewer, staff see extracted doctor, registration number, date, patient, and detected medicines with in‑stock matching.
+
+See [OCR & AI](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html).
+
+---
+
+## Optional storefront features *(v1.3.x)*
+
+- **My Pill Box** — customers create named "family health folders" of medicines and re‑order them in one click.
+- **Prescription search** — shoppers upload a prescription and the product listing is filtered to the medicines it mentions.
+
+See [My Pill Box](https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.html) and [Prescription Search](https://wpdoc.webkul.com/medical-prescription/documentation/frontend-search.html).
+
+---
+
+## Admin review &amp; notifications
+
+- **Orders review desk** — a dedicated admin screen listing every prescription order, filterable by prescription status.
+- **One‑click approve / reject** — decide on each prescription from the list or the order detail.
+- **Order notes** — optionally log every status change as an order note for a full audit trail.
+- **Three email notifications** — new‑order alert to admin, order confirmation to customer, and a status update to the customer.
+
+See [Order Management](https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html) and [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html).
+
+---
+
+## Compatibility
+
+| Requirement | Supported |
+| --- | --- |
+| WordPress | 6.7 – 6.9 |
+| WooCommerce | 10.0 – 10.7 |
+| PHP | 7.4 – 8.3 |
+| HPOS (High‑Performance Order Storage) | ✅ Yes |
+| Cart & Checkout **Blocks** | ✅ Yes |
+| Classic Cart & Checkout | ✅ Yes |
+
+> Compatible with standard WooCommerce themes. The live demo runs on the Voguish theme.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/installation.html -->
+
+# Installation
+
+Get the plugin installed, activated, and switched on in a few minutes.
+
+---
+
+## Requirements
+
+Before you begin, make sure your store meets these minimums:
+
+| Component | Version |
+| --- | --- |
+| WordPress | 6.7 or newer |
+| WooCommerce | 10.0 or newer (installed &amp; active) |
+| PHP | 7.4 or newer (8.x recommended) |
+
+WooCommerce **must be installed and active** first — the plugin lists it as a required plugin and will not run without it.
+
+---
+
+## Install from the WordPress admin
+
+1. Download the plugin ZIP from your [CodeCanyon](https://codecanyon.net/item/medical-prescription-attachment-plugin-for-woocommerce/24649311) purchase.
+2. In WordPress, go to **Plugins → Add New → Upload Plugin**.
+3. Choose the `medical-prescription-for-woocommerce.zip` file and click **Install Now**.
+4. Click **Activate Plugin**.
+
+## Install manually (FTP)
+
+1. Unzip the package.
+2. Upload the `medical-prescription-for-woocommerce` folder to `wp-content/plugins/`.
+3. In WordPress, open **Plugins**, find **Medical Prescription Attachment for WooCommerce**, and click **Activate**.
+
+---
+
+## First‑run steps
+
+After activation:
+
+1. **Open the configuration.** Go to the plugin's **Configuration** screen (under the WooCommerce Prescription menu, at `admin.php?page=wkwc-pa-products&tab=wkwc-pa-configuration`).
+2. **Enable the module.** Turn on **Enable Medical Prescription Attachment** on the **General** tab. Nothing appears on the storefront until this master switch is on. See [General Settings](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html).
+3. **Choose what needs a prescription.** Either mark individual products or select **Allowed Categories**. See [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html).
+4. **Pick where the upload box appears.** Set the display positions for the product, cart, checkout, and order pages. See [Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html).
+5. **Turn on emails (optional).** Enable admin and customer notifications on the **Notifications** tab. See [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html).
+
+---
+
+## Verify it's working
+
+1. On the storefront, open a product you marked as prescription‑required.
+2. Confirm the **Prescription Required** label shows.
+3. Add it to the cart and go to checkout — the **Attach Prescription** box should appear, and **Place Order** should be blocked until you attach a file.
+
+If the label or box doesn't appear, re‑check that the **master toggle is on**, the product/category is gated, and a **display position** is selected for that page.
+
+---
+
+## Updating
+
+When a new version is released, deactivate and delete the old plugin folder (your settings and existing prescriptions are preserved in the database), then upload and activate the new version. The plugin automatically refreshes its *My Account* endpoints after an update, so customer‑facing links keep working.
+
+::: tip Rewrite rules
+If a *My Account* tab (My Prescriptions, My Pill Box) ever 404s right after an update, go to **Settings → Permalinks** and click **Save Changes** once to flush WordPress rewrite rules.
+:::
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/how-it-works.html -->
+
+# How It Works
+
+A quick tour of the end‑to‑end flow, from a gated product to a fulfilled order.
+
+---
+
+## The lifecycle of a prescription order
+
+```mermaid
+flowchart TD
+    A[Admin marks product or category<br/>as Prescription Required] --> B[Customer adds gated item to cart]
+    B --> C{Attach box at checkout}
+    C -->|Uploads file| D[Order placed<br/>Status: Pending]
+    C -->|Attach Later enabled| E[Order placed<br/>Status: Attachment Pending]
+    E -->|Customer uploads later<br/>from My Account| D
+    D --> F[Admin reviews prescription]
+    F -->|Looks valid| G[Approved]
+    F -->|Not valid| H[Rejected]
+    H -->|Re-upload enabled| D
+    G --> I[Order fulfilled]
+```
+
+---
+
+## Step by step
+
+### 1. You decide what needs a prescription
+Mark individual products, or select whole categories, as *prescription required*. Gated products show a customizable label on the storefront.
+
+➡ [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html)
+
+### 2. The customer shops normally
+Freely purchasable items (masks, vitamins, devices) behave like any WooCommerce product. Gated items display the **Prescription Required** label wherever you've placed it.
+
+### 3. The customer attaches a prescription
+When a gated item is in the cart, an **Attach Prescription** box appears at the position you chose (product, cart, checkout, or order page). The customer drags in a file — JPG, PNG, PDF, or DOC/DOCX.
+
+➡ [Uploading a Prescription](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html)
+
+### 4. Checkout is enforced
+The order **cannot be placed** until a file is attached. The customer sees a reminder: *"Kindly upload the medical prescription first in order to place an order."*
+
+If you've enabled **Attach Later**, logged‑in customers can skip this and upload from **My Account** afterwards; the order is held with an *Attachment Pending* status.
+
+➡ [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html)
+
+### 5. Your team reviews it
+Every prescription order appears on the admin **Orders** review desk. Staff open the upload, read it (optionally with OCR/AI assistance), and set it to **Approved** or **Rejected**.
+
+➡ [Order Management](https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html)
+
+### 6. Everyone is notified
+Depending on your settings, the customer and admin receive emails, and each status change is logged as an order note.
+
+➡ [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html)
+
+### 7. Rejections can be retried
+If a prescription is rejected and **Re‑upload if rejected** is enabled, the customer can submit a fresh file, returning the order to *Pending* for another review.
+
+---
+
+## Where the pieces live
+
+| Area | Who uses it | What it's for |
+| --- | --- | --- |
+| **Configuration** screen | Admin | Master switch, upload rules, labels, positions, emails, OCR/AI. |
+| Product edit → **Prescription** meta | Admin | Mark one product as gated. |
+| **Orders** review desk | Admin / staff | Read and approve/reject each prescription. |
+| Product / cart / checkout **Attach box** | Customer | Upload the prescription. |
+| **My Account → My Prescriptions** | Customer | Track submitted prescriptions and their status. |
+
+---
+
+## Prescription statuses in brief
+
+| Status | Meaning |
+| --- | --- |
+| **Attachment Pending** | Order placed via *Attach Later*; no file uploaded yet. |
+| **Pending** | File(s) uploaded, waiting for admin review. |
+| **Approved** | Admin verified the prescription. |
+| **Rejected** | Admin rejected it; customer may re‑upload if enabled. |
+
+Full details in [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html -->
+
+# General Settings
+
+The **General** tab holds the master switch and the core rules for how prescriptions are collected. Find it on the plugin's **Configuration** screen (**WooCommerce Prescription → Configuration → General**).
+
+> All storefront behaviour depends on the master toggle below. If prescriptions aren't showing anywhere, check this first.
+
+---
+
+## Settings
+
+### Enable Medical Prescription Attachment
+The master on/off switch for the entire module. When off, no labels, upload boxes, or enforcement appear on the storefront.
+
+> **Default:** Off — turn this on after installation.
+
+---
+
+### Allowed Categories
+Select one or more product categories whose products should **automatically require a prescription**. The rule is applied when a product is saved.
+
+::: warning Empty does *not* mean "all products"
+Leaving this empty does **not** gate every product. With no categories selected, only products you've individually marked *Prescription required* are gated. See [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html).
+:::
+
+---
+
+### Enable Multiple Files Upload
+Allow customers to attach **more than one file** as a single prescription (for example, a multi‑page script).
+
+> **Default:** Enabled.
+
+### Number of Files Allowed
+The maximum number of files a customer may upload when *Multiple Files Upload* is on. Accepts **1–10**.
+
+> **Default:** 1. Only applies when *Multiple Files Upload* is enabled.
+
+---
+
+### Allowed Prescription File Formats
+Choose which file types customers may submit. Only the selected formats appear in the file picker, and they're validated both in the browser **and** on the server.
+
+| Format group | Extensions |
+| --- | --- |
+| Image (JPG) | `.jpg`, `.jpeg` |
+| Image (PNG) | `.png` |
+| PDF | `.pdf` |
+| Document | `.doc`, `.docx` |
+
+> At least one format must stay selected. **Default:** all formats allowed. Maximum file size is **10 MB** per file.
+
+---
+
+### Enable Attach Later (Logged‑in Customers)
+Let **logged‑in** customers place a gated order *without* uploading first, then attach the prescription afterwards from **My Account**. The order is held with an *Attachment Pending* status until they do.
+
+> **Default:** Off. See [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html).
+
+### Enable Re‑Upload If Rejected
+When a prescription is rejected by an admin, allow the customer to submit a **new** file instead of being stuck.
+
+> **Default:** Off.
+
+---
+
+### Enable Order Notes on Status Change
+Add a WooCommerce **order note** every time a prescription's status changes (uploaded, approved, rejected). This gives you a full audit trail on the order.
+
+> **Default:** Off. Recommended on for compliance/record‑keeping.
+
+---
+
+## Recommended starting point
+
+For a typical pharmacy:
+
+1. **Enable Medical Prescription Attachment** — On.
+2. **Allowed Categories** — select your Rx categories (e.g. *Prescription Medicines*).
+3. **Allowed File Formats** — keep JPG, PNG, PDF (drop DOC if you only want scans/photos).
+4. **Enable Order Notes on Status Change** — On (audit trail).
+5. **Attach Later** and **Re‑upload if rejected** — On, for a smoother customer experience.
+
+Then set where things appear in [Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html -->
+
+# Labels &amp; Display
+
+The **Labels & Display** tab controls the storefront label on gated products and **where** the prescription box appears across the shop, product, cart, checkout, and order pages.
+
+<a class="doc-image-link" href="./assets/product-prescription-required.webp"><img src="./assets/product-prescription-required.webp" alt="Prescription Required label on a single product page" /></a>
+
+---
+
+## The label
+
+### Product Page Label
+The text shown on prescription‑required products (for example, *"Prescription Required"* or *"Prescription required — please attach a valid doctor's prescription…"*). Leave meaningful and short.
+
+### Label Font Color
+The text color of the label — a standard color picker (hex).
+
+### Label Background Color
+The background color behind the label — a standard color picker (hex).
+
+### Description
+Optional longer text shown to customers on the single product page, beneath the label. If left blank, no description is shown.
+
+<a class="doc-image-link" href="./assets/product-label.webp"><img src="./assets/product-label.webp" alt="Customizable prescription label with color styling" /></a>
+
+---
+
+## Display positions
+
+Each storefront surface has its own position selector, so you can place the label/box exactly where it fits your theme. Setting any of these to **Disabled** hides the plugin on that page.
+
+### Product Page
+Where the prescription info appears on the **single product** page:
+
+| Option | Placement |
+| --- | --- |
+| Disabled | Not shown |
+| Default | Standard position in the summary |
+| After Product Image | Directly under the gallery |
+| After Product Title | Below the product name |
+| Before Product Title | Above the product name |
+| After Short Description | Below the excerpt |
+| After Add To Cart Button | Under the add‑to‑cart area |
+| Before Tab Information | Above the product tabs |
+
+### Shop / Category Page
+Where the label appears on **listing** pages (shop and category archives):
+
+| Option | Placement |
+| --- | --- |
+| Disabled | Not shown |
+| Before Product Title | Above each product name |
+| After Product Title | Below each product name |
+| Before Add to Cart Button | Above the listing's add‑to‑cart |
+| After Add to Cart Button | Below the listing's add‑to‑cart |
+
+### Cart Page
+Where the **attach box** appears on the classic cart page:
+
+| Option | Placement |
+| --- | --- |
+| Disabled | Not shown |
+| Before Cart Products Table | Above the cart items |
+| After Cart Products Table | Below the cart items |
+| Before Proceed To Checkout Button | Above the checkout button |
+| After Proceed To Checkout Button | Below the checkout button |
+
+### Checkout Page
+Where the **attach box** appears on the classic checkout page:
+
+| Option | Placement |
+| --- | --- |
+| Disabled | Not shown |
+| Before Checkout Form | Above the billing form |
+| After Checkout Form | Below the billing form |
+| Before Place Order Button | Just above *Place Order* |
+| After Place Order Button | Just below *Place Order* |
+
+### Order / Thank You Page
+Where the **attach box** appears on the order‑received and *My Account* order‑view pages:
+
+| Option | Placement |
+| --- | --- |
+| Disabled | Not shown |
+| Before Order Details Table | Above the order summary |
+| After Order Details Table | Below the order summary |
+
+---
+
+## Where the box actually lands
+
+In the [live demo](https://medical-prescription-for-woocommerce.wcdemo.webkul.com/), the product page shows the **label**, and the **Attach Prescription** box is placed on the **checkout** page:
+
+<a class="doc-image-link" href="./assets/checkout-page.webp"><img src="./assets/checkout-page.webp" alt="Attach Prescription box on the checkout page" /></a>
+
+::: tip Blocks vs. classic
+The **Cart Page** and **Checkout Page** position options target WooCommerce's **classic** shortcode cart/checkout. When you use the newer **Cart/Checkout Blocks**, the plugin automatically injects the box into the block layout and enforces the upload there too — see [Uploading a Prescription](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html).
+:::
+
+---
+
+## Tips
+
+- Pick **one** clear position per page — don't rely on customers scrolling to find the box.
+- For most themes, **After Add To Cart Button** (product) and **Before Place Order Button** (checkout) read most naturally.
+- Use a high‑contrast **label background** so the "Prescription Required" badge is impossible to miss on busy listings.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html -->
+
+# Notifications
+
+The **Notifications** tab controls the automatic emails sent when a prescription is uploaded or approved. These toggles work together with the plugin's WooCommerce email templates — see [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html) for the full list and how to customize each email.
+
+---
+
+## Settings
+
+### Enable Admin Email Notifications
+Send an email to the store admin whenever a customer **uploads a prescription** on an order. Use this so your review team knows a new prescription is waiting.
+
+> **Default:** Off. Sends the *"New Order with Prescription Attached"* email to the admin address.
+
+### Enable Customer Email Notifications
+Send an email to the **customer** when the admin **approves** their prescription (and for order confirmation of a prescription order). Keeps buyers informed that their order can now proceed.
+
+> **Default:** Off. Sends the customer‑facing prescription status / order emails.
+
+---
+
+## How the emails fit together
+
+| Toggle | Email sent | Recipient | Trigger |
+| --- | --- | --- | --- |
+| Admin Email Notifications | New Order with Prescription Attached | Store admin | A gated order is placed with a prescription |
+| Customer Email Notifications | Processing Prescription Attached order | Customer | Gated order placed |
+| Customer Email Notifications | Medical Prescription Attachment Notification | Customer | Admin changes the prescription status (e.g. approved) |
+
+All three templates live under **WooCommerce → Settings → Emails**, where you can edit the subject, heading, and content. Details in [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html).
+
+---
+
+## Recommended
+
+- **Admin notifications: On** — so no prescription sits unreviewed.
+- **Customer notifications: On** — so buyers know when they're approved (or need to re‑upload after a rejection).
+- Pair with **Enable Order Notes on Status Change** (on the [General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) tab) for an internal audit trail in addition to the emails.
+
+::: tip Deliverability
+Prescription emails rely on your WordPress mail setup. If emails aren't arriving, install a transactional SMTP plugin so WooCommerce mail is delivered reliably.
+:::
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html -->
+
+# OCR &amp; AI
+
+*(Version 1.3.x)* The **OCR & AI** tab turns on automatic **text recognition** for uploaded prescriptions, so your review team can read the doctor, date, patient, and prescribed medicines without deciphering every scan by hand. For difficult or handwritten prescriptions, an optional **AI fallback** escalates the image to Google Gemini.
+
+::: tip Optional feature
+OCR and AI are **completely optional**. The plugin works fully without them — they exist to speed up and assist manual review, not replace it. A human still approves or rejects every prescription.
+:::
+
+---
+
+## How reading works
+
+1. When a prescription is opened in the viewer, **on‑device OCR** (Tesseract) runs in the browser and extracts text — no server round‑trip, no image sent anywhere.
+2. The plugin pulls out structured fields (doctor name, registration/licence number, date, patient) and any medicine names it can match.
+3. If the result is **weak** — blank text, confidence below your threshold, or missing fields — and the **AI fallback** is enabled, the image is sent to **Gemini Vision** to read it (including handwriting) and return structured details.
+4. Staff see the extracted fields and detected medicines (with in‑stock matching) in the **AI OCR analysis workspace**, edit anything that's off, and then approve or reject.
+
+---
+
+## Settings
+
+### Enable AI OCR Analysis Workspace
+Turns on the AI‑powered OCR workspace inside the prescription viewer, where extracted text and detected medicines are shown for each upload.
+
+> **Default:** Off.
+
+### OCR Languages
+The Tesseract language code(s) used for recognition, joined with `+`. For example `eng` for English, or `eng+hin` for English and Hindi. The matching language data must be available to the OCR engine.
+
+> **Default:** `eng`.
+
+### OCR Confidence Threshold
+A score from **0–100**. Results below this overall confidence are flagged for manual review (and, if enabled, trigger the AI fallback). Lower values trust the OCR more; higher values demand cleaner scans.
+
+> **Default:** `60`.
+
+---
+
+## AI fallback (handwriting)
+
+### Enable AI Fallback (Gemini Vision)
+When on‑device OCR is weak, send the prescription image to **Google Gemini** to read handwriting and extract structured details. The image leaves your server **only** in that case.
+
+> **Default:** Off. Requires a Gemini API key.
+
+### Gemini API Key
+Your Google AI Studio (Gemini) API key. A **free tier** is available at [aistudio.google.com](https://aistudio.google.com). The key is stored server‑side and is **never** sent to the browser — the settings field shows a masked "saved" placeholder once set, and you leave it blank to keep the existing key.
+
+### AI Model
+The Gemini model id used to read prescriptions. Change only if your key targets a different model.
+
+> **Default:** `gemini-2.0-flash`.
+
+---
+
+## What the AI extracts
+
+The AI returns structured JSON for the viewer, including:
+
+- **Doctor** name and **registration / licence number**
+- **Date** as written on the script
+- **Patient** name
+- **Medicines** — each with *name*, *dose*, and *frequency*
+- A **confidence** score and an **illegible** flag when the image can't be read reliably
+
+The prompt instructs the model to extract **only what is visibly written** and never to invent drug names — anything uncertain is left blank and flagged, so review stays trustworthy.
+
+---
+
+## Privacy &amp; cost
+
+- **On‑device OCR** runs in the customer's / admin's browser — nothing is uploaded to a third party.
+- **AI fallback** sends the image to Google Gemini **only** when OCR is weak and the fallback is enabled. Review your obligations before enabling it for real patient data.
+- Gemini has a free tier; heavy volumes may incur cost per Google's pricing. The plugin retries transient errors (rate limits, temporary server errors) automatically.
+
+::: warning Assistive, not authoritative
+OCR and AI output is a **reading aid**. Always confirm the prescription visually before approving. The plugin is designed so a human makes the final decision on every order.
+:::
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html -->
+
+# Optional Features
+
+*(Version 1.3.x)* The **Features** tab enables two extra storefront tools that go beyond basic prescription collection: the **My Pill Box** organizer and the **frontend prescription search**. Both are off by default.
+
+---
+
+## Settings
+
+### Enable Chronic Disease Pill Organizer (My Pill Box)
+Adds a **My Pill Box** area to *My Account* where customers create custom "family health folders" — named groups of medicines they can re‑order in one click. Ideal for repeat and chronic‑disease purchases.
+
+> **Default:** Off. Full guide: [My Pill Box](https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.html).
+
+---
+
+### Enable Frontend Prescription Search Engine
+Turns on a quick prescription‑scanning block on the storefront. A shopper uploads a prescription image and the product listing is filtered to the medicines the prescription mentions.
+
+> **Default:** Off. Full guide: [Prescription Search](https://wpdoc.webkul.com/medical-prescription/documentation/frontend-search.html).
+
+### Search Layout Display Location
+Where the search block appears for patients:
+
+| Option | Placement |
+| --- | --- |
+| Display on Shop &amp; Product Category Pages | Above the product grid on shop and category archives |
+| Display Above WooCommerce Cart Table | Above the items on the cart page |
+
+> **Default:** *Display on Shop & Product Category Pages*. Only applies when the search engine is enabled.
+
+---
+
+## When to use these
+
+| Feature | Best for |
+| --- | --- |
+| **My Pill Box** | Stores with repeat customers on ongoing medication — makes re‑ordering a saved set of medicines effortless. |
+| **Prescription Search** | Larger catalogs where shoppers want to jump straight to the products named on their script. |
+
+Both are self‑contained: enabling them won't change how prescription gating or approval works — they simply add convenience for shoppers.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html -->
+
+# Product &amp; Category Setup
+
+There are two ways to make a product require a prescription: mark it **individually**, or gate an entire **category**. You can mix both.
+
+<a class="doc-image-link" href="./assets/product-full.webp"><img src="./assets/product-full.webp" alt="A prescription-required product on the storefront" /></a>
+
+---
+
+## Option 1 — Mark a single product
+
+Use this when only specific products need a prescription.
+
+1. Open the product in **Products → All Products → *(edit)***.
+2. Find the plugin's **Prescription** option in the product data / meta area.
+3. Turn on **Prescription required** for that product.
+4. *(Optional)* Add "what counts as a valid prescription" guidance text that shows on the product page.
+5. **Update** the product.
+
+The product now shows the **Prescription Required** label on the storefront and triggers the attach box for gated checkout.
+
+---
+
+## Option 2 — Gate a whole category
+
+Use this when every product in a category is prescription‑only (e.g. *Prescription Medicines*, *Antibiotics*, *Insulin*).
+
+1. Go to the plugin's **Configuration → General** tab.
+2. In **Allowed Categories**, select one or more categories.
+3. **Save Changes**.
+
+Every product in those categories is treated as prescription‑required. The rule is applied as each product is saved, so newly added products in a gated category are covered automatically.
+
+➡ See [General Settings](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html).
+
+::: warning Empty ≠ all
+Leaving **Allowed Categories** empty does **not** gate all products. With no categories chosen, only products you've individually marked as *Prescription required* are gated.
+:::
+
+---
+
+## How the two rules interact
+
+| Product marked required? | In a gated category? | Result |
+| --- | --- | --- |
+| Yes | — | **Gated** |
+| — | Yes | **Gated** |
+| Yes | Yes | **Gated** |
+| No | No | Freely purchasable |
+
+A product only needs to match **one** rule to require a prescription.
+
+---
+
+## Gated vs. free products side by side
+
+In the demo pharmacy, antibiotics, inhalers, insulin, and blood thinners are gated, while PPE and vitamins are not:
+
+<a class="doc-image-link" href="./assets/category-prescription-labels.webp"><img src="./assets/category-prescription-labels.webp" alt="Gated products showing Requires a Valid Prescription" /></a>
+
+<a class="doc-image-link" href="./assets/product-normal.webp"><img src="./assets/product-normal.webp" alt="A freely purchasable product with no prescription requirement" /></a>
+
+---
+
+## Verifying a product is gated
+
+1. Open the product on the storefront.
+2. Confirm the **Prescription Required** label appears (per your [Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html) positions).
+3. Add it to the cart and go to checkout — the **Attach Prescription** box should appear and block **Place Order** until a file is attached.
+
+If the label doesn't appear, check: the **master toggle** is on, the product is marked or in a gated category, and a **display position** is set for that page.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html -->
+
+# Uploading a Prescription
+
+This is what your customers see and do when they buy a gated medicine — from the label on the product to attaching a file and placing the order.
+
+<a class="doc-image-link" href="./assets/prescription-upload-box.webp"><img src="./assets/prescription-upload-box.webp" alt="Drag-and-drop prescription upload box" /></a>
+
+---
+
+## 1. The prescription label
+
+On gated products, customers see the **Prescription Required** label wherever you've placed it (product page, shop listings). On the single product page they may also see your description text explaining what a valid prescription is.
+
+<a class="doc-image-link" href="./assets/product-prescription-required.webp"><img src="./assets/product-prescription-required.webp" alt="Prescription required label and note on a product page" /></a>
+
+---
+
+## 2. The attach box
+
+When a gated item is in the cart, the **Attach Prescription** box appears at the position you configured (product, cart, checkout, or order page). It offers:
+
+- **Drag & drop** — drop a file straight onto the box, or click **Browse files**.
+- **Accepted formats** — shown right on the box, e.g. *JPG, JPEG, PNG, PDF, DOC, DOCX*.
+- **Size limit** — up to **10 MB** per file.
+- **Multiple files** — if enabled, the customer can add several files up to your limit, each with a preview and a remove button.
+
+<a class="doc-image-link" href="./assets/checkout-page.webp"><img src="./assets/checkout-page.webp" alt="Attach Prescription card on the checkout page with enforcement notice" /></a>
+
+---
+
+## 3. Checkout is enforced
+
+If a gated item is in the order and no file is attached, the customer **cannot** place the order. They see a clear prompt:
+
+> *"Kindly upload the medical prescription first in order to place an order."*
+
+Once a valid file is attached, **Place Order** unlocks and the order is submitted with a prescription status of **Pending**, ready for your team to review.
+
+::: tip Classic and Block checkout
+The box works on both the **classic** shortcode checkout and the newer **Checkout Block**. On the block checkout the plugin injects the box into the layout and enforces the upload at the API level, so the requirement can't be bypassed.
+:::
+
+---
+
+## 4. File safety
+
+Every upload is validated on the server — not just by its extension:
+
+- **Content sniffing** — the real file type is detected from its bytes, then cross‑checked against the extension.
+- **Image decode check** — images must actually decode as images, blocking files that only *look* like a picture.
+- **Format allow‑list** — only the formats you enabled on the [General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) tab are accepted.
+
+This keeps disguised or malicious files out of your order data.
+
+---
+
+## 5. After the order
+
+- The customer's order is placed with the prescription **Pending** review.
+- If you enabled emails, they receive an order confirmation; your admin gets a "new prescription order" alert. See [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html).
+- The customer can track the prescription's status any time under **My Account → My Prescriptions**. See [My Prescriptions Vault](https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.html).
+- If it's approved, the order proceeds. If it's rejected, and re‑upload is enabled, they can submit a new file. See [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html).
+
+---
+
+## What if the customer doesn't have the prescription yet?
+
+If you've enabled **Attach Later** for logged‑in customers, they can place the order first and upload from their account afterwards. The order is held as **Attachment Pending** until they do. See [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html -->
+
+# Attach Later &amp; Re‑Upload
+
+Two settings make the prescription flow friendlier for customers: letting them **upload after** placing the order, and letting them **try again** if an upload is rejected. Both are enabled on the [General Settings](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) tab.
+
+---
+
+## Attach Later
+
+**What it does:** lets **logged‑in** customers place a gated order *without* attaching a prescription first, then upload it later from **My Account**.
+
+### How it works
+
+1. At checkout, a logged‑in customer chooses the *attach later* option instead of uploading immediately.
+2. The order is placed and held with the **Attachment Pending** status (the order is set to *on‑hold*).
+3. The customer returns to **My Account → My Prescriptions** (or the order's view page) and uploads the file when they have it.
+4. The prescription moves to **Pending**, and your team reviews it as normal.
+
+### When to use it
+
+- Customers who are still waiting on their doctor's script but want to reserve stock or lock in a price.
+- Repeat customers you trust to follow up.
+
+::: warning Logged‑in only
+Attach Later is only available to logged‑in customers, because the follow‑up upload happens in their account. Guests must attach at checkout.
+:::
+
+::: tip Keep control
+Even with Attach Later, **no order is approved without a prescription** — it simply defers *when* the file is collected, not *whether*. The order stays on hold until a prescription is uploaded and approved.
+:::
+
+---
+
+## Re‑Upload If Rejected
+
+**What it does:** when an admin **rejects** a prescription, the customer can submit a **new** file instead of being stuck with a dead order.
+
+### How it works
+
+1. An admin reviews a prescription and sets it to **Rejected** (for example, wrong document, expired, or unreadable).
+2. If **Enable Re‑Upload If Rejected** is on, the customer sees the rejected status and an option to upload again.
+3. The customer attaches a fresh file; the prescription returns to **Pending** for another review.
+
+### When to use it
+
+- Almost always — it turns a rejection into a fix instead of a lost sale and a support ticket.
+- Pair it with **customer email notifications** so the buyer knows immediately that they need to re‑upload. See [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html).
+
+---
+
+## Putting it together
+
+```mermaid
+flowchart LR
+    A[Checkout] -->|Attach now| B[Pending]
+    A -->|Attach Later| C[Attachment Pending]
+    C -->|Upload from My Account| B
+    B --> D{Admin review}
+    D -->|Approve| E[Approved]
+    D -->|Reject| F[Rejected]
+    F -->|Re-upload enabled| B
+```
+
+Both options are optional and independent — enable whichever fits your store. See the statuses they produce in [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.html -->
+
+# My Prescriptions Vault
+
+The plugin adds customer‑facing areas to **My Account** so shoppers can track everything they've submitted and manage prescriptions after ordering.
+
+<a class="doc-image-link" href="./assets/my-account-login.webp"><img src="./assets/my-account-login.webp" alt="WooCommerce My Account area" /></a>
+
+---
+
+## My Account tabs added
+
+Depending on which features you've enabled, the plugin adds these tabs to the WooCommerce **My Account** menu:
+
+| Tab | Endpoint | Purpose |
+| --- | --- | --- |
+| **My Prescriptions** | `my-prescriptions` | The prescription vault — history and status of every prescription the customer has uploaded. |
+| **Medical Records** | `wkwc-medical-records` | A medical‑records area for the customer's documents. |
+| **My Pill Box** | `my-pill-box` | Family health folders for one‑click re‑ordering *(only when the [Pill Box feature](https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.html) is enabled)*. |
+
+---
+
+## What customers can do in the vault
+
+- **See every prescription** they've submitted, across all their orders.
+- **Check the status** of each — *Attachment Pending, Pending, Approved,* or *Rejected*. See [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html).
+- **Upload a pending prescription** for orders placed with [Attach Later](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html).
+- **Re‑upload** a new file when a prescription was rejected (if re‑upload is enabled).
+
+This gives customers a single, self‑service place to manage their prescriptions — reducing "where's my order?" support tickets while a prescription is under review.
+
+---
+
+## Endpoints &amp; permalinks
+
+The tabs above are WordPress **rewrite endpoints** registered under your My Account page. The plugin refreshes them automatically on activation and after updates.
+
+::: tip If a tab shows a 404
+Right after installing or updating, go to **Settings → Permalinks** and click **Save Changes** once. This flushes WordPress rewrite rules so the new endpoints resolve.
+:::
+
+---
+
+## Related
+
+- Collecting the upload in the first place → [Uploading a Prescription](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html)
+- Uploading after ordering → [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html)
+- One‑click re‑ordering of saved medicines → [My Pill Box](https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.html -->
+
+# My Pill Box
+
+*(Version 1.3.x)* **My Pill Box** — also called the *Chronic Disease Pill Organizer* — lets customers save named groups of medicines ("family health folders") and re‑order them in a single click. It's ideal for repeat and long‑term medication.
+
+Enable it on the [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html) tab (**Enable Chronic Disease Pill Organizer**). Once on, a **My Pill Box** tab appears under **My Account**.
+
+---
+
+## What a customer can do
+
+### Create a folder
+1. Go to **My Account → My Pill Box**.
+2. Enter a **Folder Name** — for example, *"Father's Monthly Meds"* or *"Diabetes Kit"*.
+3. **Select medicines** using the searchable multi‑select ("Type or choose medicines…").
+4. Click **Save My Pill Box**.
+
+### Manage saved folders
+Saved folders are listed in a table showing:
+
+| Column | Contents |
+| --- | --- |
+| **Folder Name** | The name the customer gave the folder |
+| **Medicines Inside** | The medicines saved in that folder |
+| **Action** | *1‑Click Buy* and *Delete* buttons |
+
+### 1‑Click Buy
+Clicking **1‑Click Buy** loads all the medicines from that folder into the cart and takes the customer straight to checkout — turning a recurring multi‑item order into a single tap.
+
+### Delete
+Removes a folder the customer no longer needs (with a confirmation prompt).
+
+---
+
+## Why it's useful
+
+- **Chronic conditions** — patients on ongoing treatment re‑order the same set of medicines every month without hunting for each product.
+- **Caregivers** — someone managing medication for family members keeps a separate folder per person.
+- **Faster repeat orders** — fewer steps means fewer abandoned carts for your most loyal customers.
+
+::: tip Works with gating
+Pill Box is a convenience layer on top of normal shopping. If any medicine in a folder is prescription‑required, the usual [upload and approval flow](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html) still applies at checkout — Pill Box doesn't bypass gating.
+:::
+
+---
+
+## Related
+
+- Turn it on → [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html)
+- Customer account areas → [My Prescriptions Vault](https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/frontend-search.html -->
+
+# Prescription Search
+
+*(Version 1.3.x)* The **frontend prescription search** lets a shopper upload a prescription image on the storefront and instantly **filter the product listing** down to the medicines their prescription mentions — so they can find and buy exactly what the doctor prescribed.
+
+Enable it on the [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html) tab (**Enable Frontend Prescription Search Engine**) and choose where it appears.
+
+---
+
+## How it works
+
+1. The customer uploads a prescription image into the search block.
+2. **On‑device OCR** (Tesseract) reads the image right in the browser — no server upload for the scan itself.
+3. The plugin extracts medicine names from the recognized text.
+4. The visible product listing is **filtered** to show the matching, in‑stock medicines.
+
+The customer sees friendly status messages along the way, such as:
+
+- *"Please select a prescription image first."*
+- *"Prescription processed successfully! Items filtered below."*
+- *"Prescription processed! No matching products found on screen."*
+- *"Could not read any text from this prescription."*
+
+---
+
+## Where it appears
+
+Set the location on the [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html) tab:
+
+| Option | Placement |
+| --- | --- |
+| Display on Shop &amp; Product Category Pages | Above the product grid on shop/category archives |
+| Display Above WooCommerce Cart Table | Above the items on the cart page |
+
+---
+
+## When to use it
+
+- **Large catalogs** — shoppers skip the search bar and jump straight to what's on their script.
+- **Pharmacy UX** — mirrors the "hand over your prescription and we'll find it" experience of a physical pharmacy.
+
+::: tip Discovery aid, not a bypass
+Search only *filters what's shown*. Prescription‑required products still go through the normal [upload and approval flow](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.html) at checkout — search helps customers find products, it doesn't grant purchase without a valid prescription.
+:::
+
+::: warning Reading accuracy
+Because recognition runs on a photo of a prescription, results depend on image quality. Clear, well‑lit scans match best; blurry or heavily handwritten scripts may return few or no matches.
+:::
+
+---
+
+## Related
+
+- Turn it on → [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.html)
+- How OCR works → [OCR & AI](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html -->
+
+# Order Management
+
+The admin side of the plugin is a **review desk**: a screen listing every prescription order, and a viewer for reading each upload and deciding **Approve** or **Reject**.
+
+> The screens below live in your **WordPress admin**. This guide describes them in detail; screenshots are storefront‑only in this documentation.
+
+---
+
+## Where to find it
+
+Open the plugin's admin area (**WooCommerce Prescription**). It has three tabs:
+
+| Tab | What it shows |
+| --- | --- |
+| **Prescription Products** | Every product, with its prescription‑required status; bulk enable/disable gating. |
+| **Orders** | The review desk — all orders that carry a prescription. |
+| **Configuration** | All plugin settings (General, Notifications, OCR & AI, Labels & Display, Features). |
+
+The Configuration tab opens at `admin.php?page=wkwc-pa-products&tab=wkwc-pa-configuration`.
+
+---
+
+## The Orders review desk
+
+The **Orders** tab lists prescription orders with, for each:
+
+- **Order number** and **date**
+- **Order status** (WooCommerce)
+- **Prescription status** — *Attachment Pending, Pending, Approved,* or *Rejected*
+- **Order total**
+- A **View / review** action to open the prescription
+
+You can **filter** the list by order status and by prescription status (e.g. show only *Pending* to work through your review queue), **search** by order, and **sort** by date or status. **Bulk actions** let you approve or reject several at once.
+
+---
+
+## Reviewing a prescription
+
+1. Open a **Pending** order from the review desk (or from the order detail page).
+2. The **prescription viewer** shows the uploaded file(s) — images inline, PDFs/documents as attachments.
+3. If the [OCR & AI workspace](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html) is enabled, you also see extracted **doctor, registration number, date, patient,** and **detected medicines** (with in‑stock matching and confidence). Edit any field that's off.
+4. Decide:
+   - **Approve** — the prescription is valid; the order can proceed.
+   - **Reject** — the document is invalid, expired, or unreadable.
+
+Your decision updates the order's prescription status immediately.
+
+---
+
+## Approving &amp; rejecting
+
+- **Approve** sets the prescription to **Approved**. If [customer emails](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html) are on, the customer is notified their order can proceed.
+- **Reject** sets it to **Rejected**. If [re‑upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html) is enabled, the customer can submit a new file, which returns the order to **Pending**.
+
+You can act from the **order list** (including in bulk) or from an individual **order detail** page.
+
+---
+
+## Order notes (audit trail)
+
+When **Enable Order Notes on Status Change** is on (see [General Settings](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html)), every change is logged as a WooCommerce order note, for example:
+
+- *"Prescription approved by admin from list table."*
+- *"Prescription rejected by admin."*
+- *"Prescription unapproved (set to pending) by admin from list table."*
+
+These notes appear in the order's activity panel, giving you a timestamped record of who changed what — useful for compliance and dispute resolution.
+
+---
+
+## Product gating from the admin
+
+On the **Prescription Products** tab you can see which products require a prescription and **bulk enable or disable** the requirement, without editing each product one by one. To gate by category instead, use **Allowed Categories** on the [General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) tab. Full guidance in [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html).
+
+---
+
+## A typical review workflow
+
+1. Get the "new prescription order" [email](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html) (or check the desk).
+2. Open the **Orders** tab, filter to **Pending**.
+3. Open each order, read the prescription (OCR/AI assists if enabled).
+4. **Approve** valid ones; **Reject** invalid ones.
+5. Fulfil approved orders as normal; rejected customers re‑upload if enabled.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html -->
+
+# Prescription Statuses
+
+Every gated order carries a **prescription status** that's separate from the WooCommerce order status. It tells you exactly where the order sits in the review process.
+
+---
+
+## The four statuses
+
+| Status | Badge | Meaning | Set when |
+| --- | --- | --- | --- |
+| **Attachment Pending** | `ATTACHMENT PENDING` | Order placed but no prescription uploaded yet. | Customer used [Attach Later](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html); the order is held *on‑hold*. |
+| **Pending** | `Pending` | Prescription uploaded, waiting for admin review. | Customer attaches file(s) at checkout, or uploads later from My Account. |
+| **Approved** | `Approved` | Admin verified the prescription. | Admin clicks **Approve**. |
+| **Rejected** | `Rejected` | Admin rejected the prescription. | Admin clicks **Reject**. |
+
+---
+
+## How statuses flow
+
+```mermaid
+stateDiagram-v2
+    [*] --> AttachmentPending: Attach Later
+    [*] --> Pending: Uploaded at checkout
+    AttachmentPending --> Pending: Customer uploads later
+    Pending --> Approved: Admin approves
+    Pending --> Rejected: Admin rejects
+    Rejected --> Pending: Customer re-uploads (if enabled)
+    Approved --> [*]: Order proceeds
+```
+
+---
+
+## What each status means for you
+
+### Attachment Pending
+The customer committed to the order but hasn't provided the prescription. The order is **on hold** — don't fulfil it. It becomes **Pending** the moment they upload from their account. Only appears when [Attach Later](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html) is enabled.
+
+### Pending
+Your action is needed. Open the order on the [review desk](https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html), read the prescription, and approve or reject it.
+
+### Approved
+The prescription is valid and the order can be fulfilled like any other WooCommerce order. If [customer emails](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html) are on, the buyer has been notified.
+
+### Rejected
+The prescription wasn't acceptable. If [re‑upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html) is enabled, the customer can submit a new file (returning the order to **Pending**). Otherwise, follow up with the customer directly.
+
+---
+
+## Where statuses appear
+
+- **Admin → Orders** review desk — filter and sort by prescription status.
+- **Order detail** page — shown next to the prescription viewer.
+- **Customer → My Account → My Prescriptions** — customers see their own statuses. See [My Prescriptions Vault](https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.html).
+- **Order notes** — each change is logged when [order notes](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) are enabled.
+
+---
+
+## Status vs. WooCommerce order status
+
+The **prescription status** is independent of the WooCommerce **order status** (Processing, On‑hold, Completed, etc.). A common pattern:
+
+| Prescription status | Typical order status |
+| --- | --- |
+| Attachment Pending | On‑hold |
+| Pending | On‑hold / Processing |
+| Approved | Processing → Completed |
+| Rejected | On‑hold (awaiting re‑upload) or Cancelled |
+
+Use the prescription status to drive your fulfilment decision: **never ship an order whose prescription isn't Approved.**
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html -->
+
+# Email Notifications
+
+The plugin ships **three** WooCommerce emails that keep customers and your team in the loop. Turn them on with the toggles on the [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html) tab, and customize their wording under **WooCommerce → Settings → Emails**.
+
+---
+
+## The three emails
+
+### 1. New Order with Prescription Attached → *Admin*
+Alerts your store that a gated order has been placed, so a reviewer can pick it up.
+
+| | |
+| --- | --- |
+| **Recipient** | Store admin address |
+| **Trigger** | A prescription order is placed |
+| **Enabled by** | *Enable Admin Email Notifications* |
+| **Default subject** | *New order #{order_number} Received With Attached Medical Prescription* |
+| **Default heading** | *New Order: #{order_number} With Attached Medical Prescription* |
+
+### 2. Processing Prescription Attached Order → *Customer*
+Confirms to the buyer that their prescription order was received.
+
+| | |
+| --- | --- |
+| **Recipient** | Customer (billing email) |
+| **Trigger** | A prescription order is placed |
+| **Enabled by** | *Enable Customer Email Notifications* |
+| **Default subject** | *Your order has been received!* |
+| **Default heading** | *Thank you for your order* |
+
+### 3. Medical Prescription Attachment Notification → *Customer*
+Tells the customer when their prescription's **status changes** — most importantly, when it's **approved**.
+
+| | |
+| --- | --- |
+| **Recipient** | Customer |
+| **Trigger** | Admin changes the prescription status |
+| **Enabled by** | *Enable Customer Email Notifications* |
+| **Default subject** | *Medical Prescription Status* |
+| **Default heading** | *Medical Prescription Attachment Notification* |
+
+> Each email is sent **once** per event (the plugin marks the order to avoid duplicates).
+
+---
+
+## Turning them on
+
+1. Go to the plugin's **Configuration → [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html)** tab.
+2. Enable **Admin Email Notifications** and/or **Customer Email Notifications**.
+3. Save.
+
+---
+
+## Customizing the emails
+
+All three appear under **WooCommerce → Settings → Emails**, alongside WooCommerce's own emails. For each you can edit:
+
+- **Subject** and **heading**
+- **Email type** (HTML / plain text)
+- **Additional content**
+
+They use WooCommerce's standard email template, so they automatically match the header, footer, and colors you've set for all store emails.
+
+---
+
+## Recommended setup
+
+- **Admin notifications: On** — nothing sits unreviewed.
+- **Customer notifications: On** — buyers know when they're approved, or when they need to [re‑upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html) after a rejection.
+- Enable **[order notes](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html)** too, so status changes are also recorded on the order itself.
+
+::: tip Not receiving emails?
+WordPress' default mail can be unreliable. If emails don't arrive, set up a transactional **SMTP** plugin so WooCommerce mail is delivered dependably, then re‑test with a real order.
+:::
+
+---
+
+## Related
+
+- Toggles and recommendations → [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html)
+- What drives status‑change emails → [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/documentation/faq.html -->
+
+# FAQ &amp; Troubleshooting
+
+Common questions and quick fixes. If you're stuck, [raise a ticket](https://webkul.uvdesk.com/) and our team will help.
+
+---
+
+## Setup
+
+### The prescription label / upload box isn't showing. Why?
+Check, in order:
+1. **Master toggle** — *Enable Medical Prescription Attachment* is on ([General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html)).
+2. **Product is gated** — it's individually marked *Prescription required*, or it's in an **Allowed Category** ([Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html)).
+3. **Display position** — a position is selected (not *Disabled*) for that page ([Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.html)).
+
+### I selected no categories — why aren't all products gated?
+Empty **Allowed Categories** does **not** mean "all products." With nothing selected, only products individually marked *Prescription required* are gated. See [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.html).
+
+### A My Account tab (My Prescriptions / My Pill Box) shows a 404.
+Flush rewrite rules: go to **Settings → Permalinks** and click **Save Changes** once. This usually happens right after install or an update.
+
+---
+
+## Uploads
+
+### Which file types can customers upload?
+Any of **JPG/JPEG, PNG, PDF, DOC/DOCX** — you choose which are allowed on the [General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html) tab. Max **10 MB** per file.
+
+### Can a customer upload more than one file?
+Yes, if **Enable Multiple Files Upload** is on. Set the maximum with **Number of Files Allowed** (1–10).
+
+### Does it work with the new Cart/Checkout Blocks?
+Yes. The box is injected into the block layout and the upload requirement is enforced at the API level, as well as on the classic shortcode cart/checkout.
+
+### Can customers bypass the requirement?
+No. On a gated order, checkout is blocked until a file is attached (or, with [Attach Later](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html), the order is held until they upload). Uploads are also validated by content, not just extension.
+
+---
+
+## Review &amp; approval
+
+### Where do I review prescriptions?
+On the admin **Orders** review desk. Filter to **Pending**, open each order, read the upload, and **Approve** or **Reject**. See [Order Management](https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.html).
+
+### What happens when I reject one?
+The order's prescription status becomes **Rejected**. If **Re‑Upload If Rejected** is enabled, the customer can submit a new file, returning it to **Pending**. See [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.html).
+
+### Can I keep an audit trail?
+Yes — enable **Order Notes on Status Change** ([General](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.html)) to log every approve/reject/upload as an order note.
+
+---
+
+## OCR &amp; AI
+
+### Do I have to use OCR or AI?
+No. Both are **optional** aids. The plugin works fully without them, and a human still approves every prescription. See [OCR & AI](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.html).
+
+### Is the prescription image sent to a third party?
+On‑device OCR runs in the browser — nothing leaves your server. The **AI fallback** sends the image to Google Gemini **only** when it's enabled *and* OCR is weak. Review your data‑privacy obligations before enabling AI for real patient data.
+
+### Do I need to pay for the AI?
+Gemini has a **free tier** (get a key at [aistudio.google.com](https://aistudio.google.com)). High volumes may incur cost per Google's pricing.
+
+---
+
+## Emails
+
+### Customers/admin aren't getting emails.
+1. Confirm the toggles are on ([Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.html)).
+2. WordPress default mail is often unreliable — install a transactional **SMTP** plugin and re‑test. See [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.html).
+
+---
+
+## Compatibility
+
+### What versions are supported?
+WordPress **6.7–6.9**, WooCommerce **10.0–10.7**, PHP **7.4–8.3**. HPOS and Cart/Checkout Blocks are supported.
+
+### Will it work with my theme?
+It's built for standard WooCommerce themes. If your theme heavily customizes the product/cart/checkout templates, use the **display position** options to place the box where it fits, or [contact support](https://webkul.uvdesk.com/).
+
+---
+
+## Still need help?
+
+- 🎟 **Support Portal:** <https://webkul.uvdesk.com/>
+- 📧 **Email:** [support@webkul.com](mailto:support@webkul.com)
+- 🎫 **Ticket:** <https://webkul.com/ticket/>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/about.html -->
+
+# About
+
+This site is the official user documentation for the **Medical Prescription Attachment for WooCommerce** plugin, published and maintained by Webkul Software.
+
+## About the plugin
+
+Medical Prescription Attachment for WooCommerce is a WordPress plugin that turns a standard WooCommerce store into a compliant online pharmacy. It lets a store owner mark individual products, or whole categories, as requiring a doctor's prescription. Customers buying those products must attach a prescription file before checkout will complete; the order is then held until a store administrator has reviewed the upload and approved or rejected it.
+
+Around that core gate the plugin adds the workflow a real pharmacy needs: configurable upload rules (file formats, file counts, multiple uploads), an *Attach Later* flow for logged-in customers who do not have the document to hand, a re-upload path after a rejection, four prescription statuses with an order-note audit trail, and three WooCommerce emails that keep the administrator and the customer informed. Version 1.3.x adds optional OCR and AI reading of uploaded prescriptions — including a Google Gemini Vision fallback for handwriting — plus a customer-facing prescription vault, a chronic-disease pill organizer, and a frontend prescription search.
+
+The plugin is sold on [CodeCanyon](https://codecanyon.net/item/medical-prescription-attachment-plugin-for-woocommerce/24649311) and a working [live demo](https://medical-prescription-for-woocommerce.wcdemo.webkul.com/) is available, stocked with prescription-gated medicines alongside freely purchasable items so both paths can be tried.
+
+## About Webkul
+
+Webkul Software is an eCommerce software company founded in **2010** by Vipin Sahu, Vinay Yadav, and Prakash Sahu, headquartered in **Noida, Uttar Pradesh, India**. Webkul builds B2B and B2C eCommerce, marketplace, hyperlocal, and mobile application products, and develops extensions for platforms including WooCommerce, Magento, Shopify, Odoo, Bagisto, and UnoPim.
+
+Webkul is a CodeCanyon Featured Author at Author Level 10 and contributes to WooCommerce core. Company details, the full product catalogue, and corporate information are published at [webkul.com](https://webkul.com/).
+
+## About this documentation
+
+These guides cover installation, configuration, the customer experience, and the store owner's review workflow. They are written for pharmacy and healthcare store operators setting the plugin up, and for developers integrating it into an existing WooCommerce site.
+
+**These pages document software behaviour only.** They are not medical, pharmaceutical, or legal advice. Deciding which medicines may be sold online, what constitutes a valid prescription, who may verify one, and how long records must be kept is governed by the law of your jurisdiction and remains the responsibility of the store operator.
+
+The documentation is a static site. Every page is also published as raw markdown for AI agents and automated tools — append `.md` to any page URL, or start from [llms.txt](https://wpdoc.webkul.com/medical-prescription/llms.txt).
+
+For questions about the plugin, see [Contact](https://wpdoc.webkul.com/medical-prescription/contact.html). For how this site handles data, see [Privacy](https://wpdoc.webkul.com/medical-prescription/privacy.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/contact.html -->
+
+# Contact
+
+The Medical Prescription Attachment for WooCommerce plugin is published and supported by **Webkul Software**.
+
+## Support
+
+Support for this plugin is handled through Webkul's ticket system. Licensed customers get support included with their purchase.
+
+- **Support portal:** [webkul.uvdesk.com](https://webkul.uvdesk.com/) — raise a ticket for installation problems, configuration questions, or bug reports
+- **Email:** [support@webkul.com](mailto:support@webkul.com)
+- **Store contact form:** [store.webkul.com/contacts](https://store.webkul.com/contacts/)
+
+When reporting a problem, include your WordPress and WooCommerce versions, the plugin version, your active theme, whether you are using the classic cart/checkout or the Cart/Checkout Blocks, and the exact steps that reproduce it. The [Installation guide](./documentation/installation.md) lists the minimum supported versions, and [FAQ & Troubleshooting](./documentation/faq.md) covers the problems reported most often — a missing prescription label, an empty Allowed Categories list, and a 404 on the My Account tabs.
+
+If the problem involves an uploaded prescription, **do not attach a real customer's prescription to a support ticket.** Reproduce it with a dummy file instead; a real one carries patient health data.
+
+## Sales and licensing
+
+- **Product page:** [Medical Prescription Attachment for WooCommerce](https://codecanyon.net/item/medical-prescription-attachment-plugin-for-woocommerce/24649311) — pricing, license terms, and purchase
+- **Live demo:** [medical-prescription-for-woocommerce.wcdemo.webkul.com](https://medical-prescription-for-woocommerce.wcdemo.webkul.com/) — a working online-pharmacy store with prescription-gated products
+- **More extensions:** payment gateways, shipping methods, marketplace, and mobile app products are listed on the [Webkul store](https://store.webkul.com/)
+
+## Company
+
+**Webkul Software Private Limited**
+
+- **Address:** H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India
+- **Phone:** [+91 9870284067](tel:+919870284067)
+- **Website:** [webkul.com](https://webkul.com/)
+
+Webkul is also on [LinkedIn](https://in.linkedin.com/company/webkul), [X](https://x.com/webkul), [Facebook](https://www.facebook.com/webkul), [Instagram](https://www.instagram.com/webkul/), and [YouTube](https://www.youtube.com/c/webkul).
+
+## Documentation feedback
+
+If a page in this documentation is wrong, unclear, or out of date, raise it through the [support portal](https://webkul.uvdesk.com/) and mention the page URL.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/medical-prescription/privacy.html -->
+
+# Privacy
+
+This page describes how **this documentation site** (`wpdoc.webkul.com/medical-prescription/`) handles data. It does not describe the Medical Prescription Attachment for WooCommerce plugin itself, which runs on your own WordPress installation and stores its data in your own database, under your control.
+
+## What this site collects
+
+This documentation is a **static website**. It has no accounts, no login, no comment system, no contact form, and no newsletter signup. There is nothing on these pages that asks you to submit personal information, and nothing that transmits information about you to Webkul.
+
+**No analytics or advertising trackers are loaded.** These pages do not include Google Analytics, Google Tag Manager, advertising pixels, session recording, or any third-party tracking script.
+
+## Browser storage
+
+The site stores exactly one value in your browser's `localStorage`, under the key `vuepress-color-scheme`. It records whether you chose the light or dark theme so your preference survives page navigation. It stays in your browser, is never transmitted anywhere, and you can clear it at any time through your browser's site-data settings. No advertising or identification cookies are set.
+
+## Server logs
+
+The site is served through standard web hosting and content delivery infrastructure. As with any website, those providers process ordinary technical request data — IP address, timestamp, requested URL, user agent, and referrer — for the purpose of delivering pages, caching, and protecting against abuse. Webkul does not use these logs to build a profile of you.
+
+## Links to other sites
+
+These pages link to external sites including CodeCanyon, the live demo, the Webkul store, and the support portal. Once you follow a link, the privacy practices of that destination apply. This page does not cover them.
+
+## Prescription data and the plugin
+
+This is the part that matters most for a prescription plugin, so it is stated plainly.
+
+If you install the plugin, **every uploaded prescription file is stored on your own WordPress site**, in your own uploads directory and database, alongside the order it belongs to. Webkul does not receive, proxy, or have access to those files through the plugin, and they are never sent to this documentation site.
+
+Prescription uploads are health data about an identifiable person. As the site operator you are the data controller for them: securing the uploads directory, restricting which administrators can view a prescription, honouring access and erasure requests, and meeting the retention rules that apply to prescription records in your jurisdiction are all your responsibility. Applicable law may include the GDPR in the EU/UK, HIPAA in the United States, and national pharmacy regulations that govern who may dispense prescription-only medicines and how long the prescription must be retained.
+
+**The optional OCR and AI features send data off-site when you enable them.** The AI fallback for handwritten prescriptions transmits the uploaded prescription image to Google's Gemini Vision API for analysis, using the API key you supply. If you turn that feature on, a third party processes prescription images on your behalf, and you are responsible for the lawful basis, the customer disclosure, and the data-processing agreement that requires. The feature is off by default; see [OCR & AI](./documentation/configuration-ocr-ai.md) before enabling it.
+
+## Company privacy policy
+
+Webkul Software's corporate privacy policy, covering purchases, support tickets, and other direct interactions with Webkul, is published at [webkul.com/privacy-policy](https://webkul.com/privacy-policy/).
+
+## Questions
+
+Privacy questions about this documentation site or about Webkul's handling of your data can be sent to [support@webkul.com](mailto:support@webkul.com) or raised through the [support portal](https://webkul.uvdesk.com/). Postal address: Webkul Software, H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India.

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmedical_prescription_for_woocommerce_docs=self.webpackChunkmedical_prescription_for_woocommerce_docs||[]).push([[615],{615(c,e,o){o.d(e,{diagram:()=>r.c});var r=o(9526);o(4028),o(526),o(8955),o(3708),o(1199),o(8299),o(8319),o(2970),o(6072),o(4020),o(9309),o(5079),o(6741),o(184),o(4942),o(1710),o(5509),o(104),o(3800)}}]);

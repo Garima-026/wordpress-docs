@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmedical_prescription_for_woocommerce_docs=self.webpackChunkmedical_prescription_for_woocommerce_docs||[]).push([[7559],{7559(e,c,r){r.d(c,{createTreemapServices:()=>o.b});var o=r(5761);r(9372),r(3800)}}]);

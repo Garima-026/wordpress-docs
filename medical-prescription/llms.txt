@@ -1,0 +1,53 @@
+# Medical Prescription Attachment for WooCommerce Documentation
+
+> Official documentation for Webkul's Medical Prescription Attachment for WooCommerce plugin, which turns a WooCommerce store into a compliant online pharmacy by requiring, collecting, and verifying a doctor's prescription before gated medicines can be purchased.
+
+**When to use this documentation.** Use this site when you need to:
+
+- Install or update the Medical Prescription Attachment for WooCommerce plugin on a WordPress site (requirements, upload, activation, first-run setup).
+- Decide which products or categories require a doctor's prescription, and configure how the "Prescription Required" label and upload box appear on product, shop, cart, checkout, and order pages.
+- Configure plugin behaviour: allowed file formats and counts, multiple uploads, Attach Later, Re-Upload If Rejected, order notes, admin and customer email notifications.
+- Set up the optional OCR and AI reading of uploaded prescriptions, including OCR languages, the confidence threshold, and the Google Gemini Vision fallback for handwriting.
+- Answer how-to questions about the customer experience: uploading a prescription, attaching one later, the My Prescriptions vault, My Pill Box, and the frontend prescription search.
+- Answer how-to questions about store-owner workflows: reviewing an upload, approving or rejecting it, the four prescription statuses, the audit trail, and the three plugin emails.
+- Troubleshoot prescription gating on an existing WooCommerce store using this specific Webkul plugin.
+
+Do not use this site for WooCommerce core documentation, for other prescription or pharmacy plugins, or for Webkul's Magento, Shopify, or Odoo products. It is not medical, pharmaceutical, or legal advice: it documents software behaviour only, and compliance with the prescription-medicine rules of your jurisdiction remains the store operator's responsibility.
+
+**How to consume this site.** Every documentation page is available as raw markdown: append `.md` to the page URL (e.g. `https://wpdoc.webkul.com/medical-prescription/documentation/installation.md`), or request any HTML URL with `Accept: text/markdown`. The full corpus in one file: [llms-full.txt](https://wpdoc.webkul.com/medical-prescription/llms-full.txt). Machine-readable page list: [sitemap.xml](https://wpdoc.webkul.com/medical-prescription/sitemap.xml).
+
+## Documentation
+
+- [Introduction](https://wpdoc.webkul.com/medical-prescription/documentation/index.md): What the Medical Prescription Attachment plugin does: block prescription-only medicines in WooCommerce until a doctor's prescription is uploaded and approved.
+- [Features](https://wpdoc.webkul.com/medical-prescription/documentation/features.md): Every feature of the WooCommerce prescription plugin: product and category gating, upload rules, OCR and AI reading, admin review, emails, and compatibility.
+- [Installation](https://wpdoc.webkul.com/medical-prescription/documentation/installation.md): Install Medical Prescription Attachment for WooCommerce: requirements, upload from the WordPress admin or by FTP, first-run setup, verification, and updating.
+- [How It Works](https://wpdoc.webkul.com/medical-prescription/documentation/how-it-works.md): The lifecycle of a prescription order in WooCommerce, from gating a product to customer upload, blocked checkout, admin review, approval, and rejection retry.
+- [General Settings](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-general.md): The General settings tab: master toggle, Allowed Categories, multiple file uploads, file count and formats, Attach Later, Re-Upload If Rejected, order notes.
+- [Labels & Display](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-labels-display.md): Customise the Prescription Required label text and colours, and choose where the label and upload box appear on product, shop, cart, checkout, and order pages.
+- [Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-notifications.md): Turn admin and customer prescription emails on or off, see how they map to the three WooCommerce templates, and get the recommended notification setup.
+- [OCR & AI](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-ocr-ai.md): Set up optional OCR and AI reading of prescriptions: OCR languages, confidence threshold, Gemini Vision fallback for handwriting, plus privacy and cost notes.
+- [Optional Features](https://wpdoc.webkul.com/medical-prescription/documentation/configuration-features.md): Enable the optional v1.3.x extras: the My Pill Box chronic disease organiser and the frontend prescription search engine, plus its layout display location.
+- [Product & Category Setup](https://wpdoc.webkul.com/medical-prescription/documentation/product-setup.md): Two ways to require a prescription in WooCommerce: mark a single product, or gate a whole category with Allowed Categories, and how the two rules interact.
+- [Uploading a Prescription](https://wpdoc.webkul.com/medical-prescription/documentation/customer-upload-flow.md): How a customer uploads a prescription: the label, the drag-and-drop attach box, checkout enforcement on classic and Blocks, file validation, and what follows.
+- [Attach Later & Re‑Upload](https://wpdoc.webkul.com/medical-prescription/documentation/attach-later-reupload.md): Two optional prescription flows: let logged-in customers order now and upload later from My Account, and let them resubmit a new file after a rejection.
+- [My Prescriptions Vault](https://wpdoc.webkul.com/medical-prescription/documentation/my-prescriptions-vault.md): The My Prescriptions vault in WooCommerce My Account: customers view submitted prescriptions, check status, and upload pending ones. Includes endpoint setup.
+- [My Pill Box](https://wpdoc.webkul.com/medical-prescription/documentation/my-pill-box.md): My Pill Box, the chronic disease pill organiser: customers save named health folders of medicines and re-order them in one click, with gating still enforced.
+- [Prescription Search](https://wpdoc.webkul.com/medical-prescription/documentation/frontend-search.md): The frontend prescription search: a shopper uploads a prescription image and the storefront filters products to the medicines it mentions. A discovery aid only.
+- [Order Management](https://wpdoc.webkul.com/medical-prescription/documentation/admin-order-management.md): The admin review desk for prescription orders: read an upload with OCR-extracted details, approve or reject it, and follow the order-note audit trail.
+- [Prescription Statuses](https://wpdoc.webkul.com/medical-prescription/documentation/prescription-statuses.md): The four prescription statuses, Attachment Pending, Pending, Approved and Rejected: how they flow, where they appear, and how they differ from order status.
+- [Email Notifications](https://wpdoc.webkul.com/medical-prescription/documentation/email-notifications.md): The three WooCommerce emails this plugin ships for prescription orders, who receives each one, how to enable them, and how to customise the templates.
+- [FAQ & Troubleshooting](https://wpdoc.webkul.com/medical-prescription/documentation/faq.md): Answers to common Medical Prescription for WooCommerce questions: missing labels, allowed categories, file types, Blocks checkout, OCR accuracy, and emails.
+
+## About this publisher
+
+- [About](https://wpdoc.webkul.com/medical-prescription/about.md): Webkul, founded 2010 in Noida India, publishes the Medical Prescription Attachment for WooCommerce plugin. About the plugin, the company, and these docs.
+- [Contact](https://wpdoc.webkul.com/medical-prescription/contact.md): Contact Webkul for Medical Prescription for WooCommerce support, sales, and licensing: ticket portal, email, phone, and the company address in Noida, India.
+- [Privacy](https://wpdoc.webkul.com/medical-prescription/privacy.md): How this documentation site handles data: no accounts, no forms, no trackers. Prescription files stay on your own WordPress site, never on Webkul's servers.
+
+Published by Webkul Software Private Limited, an eCommerce software company founded in 2010 and based at H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India. Support: support@webkul.com, +91-9870284067, https://webkul.uvdesk.com/.
+
+## Optional
+
+- [Product page](https://codecanyon.net/item/medical-prescription-attachment-plugin-for-woocommerce/24649311): Buy the plugin on CodeCanyon.
+- [Live demo](https://medical-prescription-for-woocommerce.wcdemo.webkul.com/): Working online-pharmacy demo store with prescription-gated products.
+- [Webkul support](https://webkul.uvdesk.com/): Ticket-based support for licensed users.

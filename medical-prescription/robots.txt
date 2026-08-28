@@ -1,0 +1,40 @@
+# Medical Prescription Attachment for WooCommerce documentation
+User-agent: *
+Allow: /
+
+# AI crawlers are welcome: this documentation exists to be quoted accurately.
+# See https://wpdoc.webkul.com/medical-prescription/llms.txt for a machine-readable index of every page.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://wpdoc.webkul.com/medical-prescription/sitemap.xml
