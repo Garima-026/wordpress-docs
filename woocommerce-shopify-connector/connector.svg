@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="100%" height="100%">
+  <defs>
+    <!-- Compact drop shadow for the card -->
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+    
+    <!-- Subtle shadow for the middle sync icon -->
+    <filter id="sync-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- The white pill/card container -->
+  <rect x="4" y="4" width="232" height="62" rx="12" fill="#ffffff" stroke="rgba(0, 0, 0, 0.03)" stroke-width="0.75" filter="url(#card-shadow)" />
+
+  <!-- Dotted Connection Lines -->
+  <!-- Left connection line (WooCommerce to Sync) -->
+  <line x1="68" y1="35" x2="101" y2="35" stroke="#9b6fb0" stroke-width="3" stroke-dasharray="0 6.5" stroke-linecap="round" />
+  <!-- Right connection line (Sync to Shopify) -->
+  <line x1="139" y1="35" x2="172" y2="35" stroke="#82b440" stroke-width="3" stroke-dasharray="0 6.5" stroke-linecap="round" />
+
+  <!-- WooCommerce Chat Bubble Icon (Left) -->
+  <!-- Center is at (45, 35). Radius is 18. -->
+  <path d="M 45 17 C 54.94 17 63 25.06 63 35 C 63 44.94 54.94 53 45 53 C 40.96 53 37.35 51.67 34.4 49.44 L 25 51.5 L 28.5 44.55 C 26.46 41.99 25.2 38.62 25.2 35 C 25.2 25.06 33.26 17 45 17 Z" fill="#9b6fb0" />
+  
+  <!-- WooCommerce Tag Logo inside bubble -->
+  <path d="M 35 30 L 48 30 L 53 35 L 48 40 L 35 40 C 33.5 40 32.5 39 32.5 37.5 L 32.5 32.5 C 32.5 31 33.5 30 35 30 Z" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+  <circle cx="49" cy="35" r="1.1" fill="#ffffff" />
+  <text x="40.5" y="37.5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-weight="900" font-size="7.5" fill="#ffffff" font-style="italic" letter-spacing="-0.2px">Woo</text>
+
+  <!-- Sync Icon (Middle) -->
+  <!-- White circular button -->
+  <circle cx="120" cy="35" r="14" fill="#ffffff" stroke="rgba(0,0,0,0.02)" stroke-width="0.5" filter="url(#sync-shadow)" />
+  
+  <!-- Clockwise circular arrows -->
+  <!-- Purple Arrow (Top) -->
+  <path d="M 111.5 33.5 A 8.5 8.5 0 0 1 128.5 31.5" fill="none" stroke="#9b6fb0" stroke-width="2" stroke-linecap="round" />
+  <polygon points="127,27.5 132,32 125.5,34" fill="#9b6fb0" />
+  
+  <!-- Green Arrow (Bottom) -->
+  <path d="M 128.5 36.5 A 8.5 8.5 0 0 1 111.5 38.5" fill="none" stroke="#82b440" stroke-width="2" stroke-linecap="round" />
+  <polygon points="113,42.5 108,38 114.5,36" fill="#82b440" />
+
+  <!-- Shopify Icon (Right) -->
+  <!-- Center is at (195, 35). Radius is 18. -->
+  <circle cx="195" cy="35" r="18" fill="#82b440" />
+  
+  <!-- Shopify Shopping Bag -->
+  <!-- Bag Handle -->
+  <path d="M 191.5 28 C 191.5 24, 198.5 24, 198.5 28" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+  <!-- Bag Body -->
+  <path d="M 187 29.5 L 203 29.5 C 204 29.5, 204.5 30.5, 204.2 31.5 L 201 42 C 200.7 42.7, 199.7 43.5, 198.7 43.5 L 191.3 43.5 C 190.3 43.5, 189.3 42.7, 189 42 L 185.8 31.5 C 185.5 30.5, 186 29.5, 187 29.5 Z" fill="#ffffff" />
+  <!-- Accent Leaf on Bag -->
+  <path d="M 193 37 C 193 34.5, 196.5 33.5, 197.5 33 C 197.5 34.5, 195 38, 193 37 Z" fill="#82b440" />
+  <path d="M 197 35.5 C 197 33.5, 195.5 33, 194.8 33 C 194.8 34, 196 36, 197 35.5 Z" fill="#82b440" />
+</svg>
