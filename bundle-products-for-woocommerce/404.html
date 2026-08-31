@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.30" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/bundle-products-for-woocommerce/images/product-bundle/favicon.png"><meta name="application-name" content="Bundle Products for WooCommerce Documentation"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#2b6be3"><link rel="manifest" href="/bundle-products-for-woocommerce/manifest.webmanifest" crossorigin="use-credentials"><link rel="apple-touch-icon" href="/bundle-products-for-woocommerce/images/product-bundle/48.png"><title>Bundle Products for WooCommerce Documentation</title><meta name="description" content="Create fixed-price and dynamic-price product bundles with optional items, discounts and purchase limits in WooCommerce">
+    <link rel="preload" href="/bundle-products-for-woocommerce/assets/style-DhdJhtF8.css" as="style"><link rel="stylesheet" href="/bundle-products-for-woocommerce/assets/style-DhdJhtF8.css">
+    <link rel="modulepreload" href="/bundle-products-for-woocommerce/assets/app-CzF5nuYP.js"><link rel="modulepreload" href="/bundle-products-for-woocommerce/assets/404.html-BQy6iR9U.js">
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-3fac1c72><main class="page" data-v-3fac1c72><div vp-content data-v-3fac1c72><h1 data-v-3fac1c72>404</h1><blockquote data-v-3fac1c72>There&#39;s nothing here.</blockquote><a class="route-link" href="/bundle-products-for-woocommerce/" data-v-3fac1c72>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/bundle-products-for-woocommerce/assets/app-CzF5nuYP.js" defer></script>
+  </body>
+</html>

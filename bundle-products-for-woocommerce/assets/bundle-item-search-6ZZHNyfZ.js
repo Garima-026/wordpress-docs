@@ -1,0 +1,1 @@
+var e=`/bundle-products-for-woocommerce/images/product-bundle/bundle-item-search.webp`;export{e as t};

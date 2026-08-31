@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/cart-checkout-orders.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/creating-a-bundle.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/customer-experience.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/developer-reference.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/examples.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/faq-notes.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/features.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/installation.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/overview.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/pricing-and-discounts.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/stock-quantity-limits.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/bundle-products-for-woocommerce/product-bundle/troubleshooting.html</loc>
+  <lastmod>2026-08-31T12:25:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

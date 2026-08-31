@@ -1,0 +1,1 @@
+var e=`/bundle-products-for-woocommerce/images/product-bundle/inventory-tab-bundle.webp`;export{e as t};

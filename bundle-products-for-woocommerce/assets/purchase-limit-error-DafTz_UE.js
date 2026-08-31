@@ -1,0 +1,1 @@
+var e=`/bundle-products-for-woocommerce/images/product-bundle/purchase-limit-error.webp`;export{e as t};

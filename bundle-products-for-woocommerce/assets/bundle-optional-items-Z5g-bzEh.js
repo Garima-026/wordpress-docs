@@ -1,0 +1,1 @@
+var e=`/bundle-products-for-woocommerce/images/product-bundle/bundle-fixed-price-page.webp`,t=`/bundle-products-for-woocommerce/images/product-bundle/bundle-optional-items.webp`;export{e as n,t};
