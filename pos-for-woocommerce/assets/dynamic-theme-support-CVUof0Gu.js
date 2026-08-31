@@ -1,0 +1,1 @@
+var e=`/pos-for-woocommerce/images/woocommerce-pos/dynamic-theme-support.webp`;export{e as t};

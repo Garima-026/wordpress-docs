@@ -1,0 +1,1 @@
+var e=`/pos-for-woocommerce/images/woocommerce-pos/reports.webp`;export{e as t};
