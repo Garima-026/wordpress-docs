@@ -1,0 +1,1 @@
+var e=`/pos-for-woocommerce/images/woocommerce-pos/get-wc-pos-on-device.webp`;export{e as t};
