@@ -4,124 +4,170 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/get-started.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/overview.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/cart-experience.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/features.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/checkout-discounts-coupons.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/installation.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/checkout-fees.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/notification-tones.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/stock-visibility.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/variation-layouts.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/guide/z-report.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/pos-doc.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/admin-configuration.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/outlets-users.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/reports.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/pos-agent-guide.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/products-inventory.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/hardware-support.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/payment-terminal.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/payment-terminal-integration.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/cash-drawer.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/multisite.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/orders-drawers.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/hold-cart.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/whatsappnot.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/dynamic-theme.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/cash-manage.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/comparison.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/custom-products.html</loc>
-  <lastmod>2026-05-20T16:34:50+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/desktop-mobile.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/dynamic-theme.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/faq-notes.html</loc>
-  <lastmod>2026-05-20T16:34:51+00:00</lastmod>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/features.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/hardware-support.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/hold-cart.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/installation.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/multisite.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/orders-drawers.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/outlets-users.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/overview.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/payment-terminal-integration.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/payment-terminal.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/pos-agent-guide.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/products-inventory.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/reports.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wpdoc.webkul.com/pos-for-woocommerce/woocommerce-pos/whatsappnot.html</loc>
+  <lastmod>2026-09-01T07:44:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>

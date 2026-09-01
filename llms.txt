@@ -23,7 +23,7 @@ Do not use this site for WooCommerce or WordPress core documentation, for plugin
 - [Import EAN UPC Barcodes](https://wpdoc.webkul.com/import-ean-upc-barcodes/)
 - [License Validator](https://wpdoc.webkul.com/license-validator/)
 - [Medical Prescription for WooCommerce Docs](https://wpdoc.webkul.com/medical-prescription/)
-- [WooCommerce POS](https://wpdoc.webkul.com/pos-for-woocommerce/)
+- [POS For WooCommerce](https://wpdoc.webkul.com/pos-for-woocommerce/)
 - [POS Globalpay Terminal Payment](https://wpdoc.webkul.com/pos-globalpay-terminal-payment/)
 - [WooCommerce Print Barcodes](https://wpdoc.webkul.com/print-barcode-for-woocommerce/)
 - [Smart Barcode Scan and Ordering](https://wpdoc.webkul.com/smart-barcode-scan-and-ordering/)
