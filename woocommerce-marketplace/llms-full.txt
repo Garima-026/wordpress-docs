@@ -4068,6 +4068,493 @@ You can add the Google Analytics Measurement ID at a later stage as well, after 
 
 ---
 
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/customer-help-center/ -->
+
+<section class="hc-hero">
+  <h1 class="hc-hero__title">Hi. How can we help?</h1>
+  <p class="hc-hero__sub">Search the documentation and help articles, or pick a topic below.</p>
+  <button type="button" class="hc-search" aria-label="Search the documentation">
+    <svg class="hc-search__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.3-4.3M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/></svg>
+    <span class="hc-search__label">Search the docs and help articles…</span>
+    <kbd class="hc-search__key">/</kbd>
+  </button>
+</section>
+
+<section class="hc-section" aria-label="Find help by role">
+  <h2 class="hc-section__title">I need help as…</h2>
+  <div class="hc-grid hc-grid--3">
+    <div class="hc-card">
+      <h3 class="hc-card__title">A store owner</h3>
+      <p class="hc-card__desc">Set up and run the marketplace.</p>
+      <nav class="hc-card__links" aria-label="Store owner links">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html">Installation</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/configuration-general-settings.html">General settings</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/commission-management.html">Commission management</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/admin-panel-management.html">Admin panel</a>
+      </nav>
+    </div>
+    <div class="hc-card">
+      <h3 class="hc-card__title">A vendor / seller</h3>
+      <p class="hc-card__desc">Sell, manage products, and get paid.</p>
+      <nav class="hc-card__links" aria-label="Vendor links">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-registration-process.html">Register as a vendor</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-dashboard-menu.html">Vendor dashboard</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-product-management.html">Manage products</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-payout-management.html">Payouts</a>
+      </nav>
+    </div>
+    <div class="hc-card">
+      <h3 class="hc-card__title">A buyer</h3>
+      <p class="hc-card__desc">Shop across vendors on the marketplace.</p>
+      <nav class="hc-card__links" aria-label="Buyer links">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.html">Placing an order</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-shop-followers.html">Following shops</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.html">Buyer FAQ</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="hc-section" aria-label="Browse help topics">
+  <h2 class="hc-section__title">Browse topics</h2>
+  <div class="hc-grid hc-grid--3">
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/">
+      <span class="hc-topic__name">Getting started</span>
+      <span class="hc-topic__desc">Install, configure, and launch your marketplace.</span>
+    </a>
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.html">
+      <span class="hc-topic__name">FAQ</span>
+      <span class="hc-topic__desc">Quick answers to the most common questions.</span>
+    </a>
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/marketplace-menu-missing.html">
+      <span class="hc-topic__name">Troubleshooting</span>
+      <span class="hc-topic__desc">Fixes for menu, 404, activation, and license issues.</span>
+    </a>
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/requirements.html">
+      <span class="hc-topic__name">Requirements</span>
+      <span class="hc-topic__desc">WordPress, WooCommerce, PHP, and memory minimums.</span>
+    </a>
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/install-and-activate.html">
+      <span class="hc-topic__name">Install &amp; activate</span>
+      <span class="hc-topic__desc">Set up the plugin and activate your license.</span>
+    </a>
+    <a class="hc-topic" href="https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.html">
+      <span class="hc-topic__name">Video tutorials</span>
+      <span class="hc-topic__desc">15 walkthroughs of setup, products, and add-ons.</span>
+    </a>
+  </div>
+</section>
+
+<section class="hc-help" aria-label="Still need help">
+  <div class="hc-help__body">
+    <h2 class="hc-help__title">Still need help?</h2>
+    <p class="hc-help__desc">If you purchased the plugin and can't find your answer, our team is here. Please <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.html">read this first</a> so we can help you faster.</p>
+  </div>
+  <div class="hc-help__actions">
+    <a class="hc-btn hc-btn--primary" href="https://webkul.uvdesk.com/" target="_blank" rel="noopener">Submit a ticket</a>
+    <a class="hc-btn" href="mailto:support@webkul.com">Email support</a>
+  </div>
+</section>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/ -->
+
+<section class="hc-hero">
+  <h1 class="hc-hero__title">Knowledge Base</h1>
+  <p class="hc-hero__sub">Short, single-topic answers. For step-by-step guides with screenshots, see the <a href="https://wpdoc.webkul.com/woocommerce-marketplace/documentation/">documentation</a>.</p>
+  <button type="button" class="hc-search" aria-label="Search the knowledge base">
+    <svg class="hc-search__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.3-4.3M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/></svg>
+    <span class="hc-search__label">Search help articles…</span>
+    <kbd class="hc-search__key">/</kbd>
+  </button>
+</section>
+
+<section class="hc-section" aria-label="Browse the knowledge base">
+  <div class="hc-grid hc-grid--3">
+    <div class="hc-card">
+      <h3 class="hc-card__title">Getting Started</h3>
+      <p class="hc-card__desc">Install, activate, and launch.</p>
+      <nav class="hc-card__links" aria-label="Getting Started articles">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/requirements.html">Requirements</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/install-and-activate.html">Install &amp; activate</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/update-permalinks.html">Update permalinks</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.html">Pre-sale FAQs</a>
+      </nav>
+    </div>
+    <div class="hc-card">
+      <h3 class="hc-card__title">Troubleshooting</h3>
+      <p class="hc-card__desc">Fixes for the most common issues.</p>
+      <nav class="hc-card__links" aria-label="Troubleshooting articles">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/marketplace-menu-missing.html">Marketplace menu missing</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/vendor-pages-404.html">Vendor pages return 404</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/fatal-error-on-activation.html">Fatal error on activation</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/license-activation-failed.html">License activation failed</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/shop-url-already-exists.html">Shop URL "Already Exists"</a>
+      </nav>
+    </div>
+    <div class="hc-card">
+      <h3 class="hc-card__title">Vendors &amp; Selling</h3>
+      <p class="hc-card__desc">For sellers on the marketplace.</p>
+      <nav class="hc-card__links" aria-label="Vendors articles">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/how-vendors-register.html">How vendors register</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/commission-basics.html">How commissions work</a>
+      </nav>
+    </div>
+    <div class="hc-card">
+      <h3 class="hc-card__title">Billing &amp; Support</h3>
+      <p class="hc-card__desc">Getting help and account questions.</p>
+      <nav class="hc-card__links" aria-label="Billing and support articles">
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.html">Before you open a ticket</a>
+        <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/pricing-refunds-support.html">Pricing, refunds &amp; support</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="hc-help" aria-label="Still need help">
+  <div class="hc-help__body">
+    <h2 class="hc-help__title">Can't find your answer?</h2>
+    <p class="hc-help__desc">Search from the <a href="https://wpdoc.webkul.com/woocommerce-marketplace/customer-help-center/">Help Center</a>, or open a ticket. Please <a href="https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.html">read this first</a>.</p>
+  </div>
+  <div class="hc-help__actions">
+    <a class="hc-btn hc-btn--primary" href="https://webkul.uvdesk.com/" target="_blank" rel="noopener">Submit a ticket</a>
+    <a class="hc-btn" href="mailto:support@webkul.com">Email support</a>
+  </div>
+</section>
+
+---
+
+::: details For the docs team: content status (click to expand)
+Every article declares a `source:` in its frontmatter. **Nothing is published as a guessed fact.** Unverified items show a "⏳ Pending verified answer" block until you supply the source.
+
+| Article | Source | Status |
+|---|---|---|
+| Getting Started → all four | `docs` | ✅ Complete |
+| Troubleshooting → all five | `docs` | ✅ Complete |
+| Vendors → How vendors register | `docs` | ✅ Complete |
+| Vendors → How commissions work | `docs` | 🟡 Partial (tax/refund/coupon examples) |
+| Billing & Support → Before you open a ticket | `docs` | ✅ Complete |
+| Billing & Support → Pricing, refunds & support | `todo` | 🔴 Needs policy |
+| Getting Started → Pre-sale FAQs | `docs` | 🟡 Partial (pricing) |
+
+**To complete an article:** replace its `⏳ Pending` block with real content and set `source: ticket` when the answer comes from a support case.
+:::
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/requirements.html -->
+
+# What are the requirements?
+
+Before installing, confirm your site meets these minimums. Our support team checks these first.
+
+| Requirement | Minimum / Recommended |
+|---|---|
+| WordPress | 6.7 or higher |
+| WooCommerce | 10.0 or higher |
+| PHP | 7.4 or higher |
+| Memory limit | 256 MB or higher |
+| SSL | Enabled (recommended) |
+
+**Where to check:** *WooCommerce → Status → Server environment* shows your PHP version and memory limit; *Dashboard → Updates* shows WordPress and WooCommerce versions.
+
+::: tip Still need help?
+A memory limit under 256 MB is the top cause of activation errors. See [Fatal error when activating](../troubleshooting/fatal-error-on-activation.html). Otherwise [open a ticket](https://webkul.uvdesk.com/).
+:::
+
+**Related:** [Install & activate](./install-and-activate.html) · [Update permalinks](./update-permalinks.html) · [Full installation guide](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/install-and-activate.html -->
+
+# How do I install and activate the plugin?
+
+Three short steps. For screenshots, see the full [Installation guide](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html).
+
+## Install
+
+1. In WordPress, go to **Plugins → Add New → Upload Plugin**.
+2. Choose the plugin **ZIP** (do not unzip it) and click **Install Now**, then **Activate**.
+
+## Activate your license
+
+1. Go to **Marketplace → Settings**. The activation wizard appears.
+2. Enter your **License Key** and click **Activate License**.
+
+## One required step after activating
+
+Go to **Settings → Permalinks**, choose **Post Name**, and save. This prevents 404s on vendor pages. See [Update permalinks](./update-permalinks.html).
+
+::: tip Still need help?
+If the license won't activate, see [License activation failed](../troubleshooting/license-activation-failed.html), or [open a ticket](https://webkul.uvdesk.com/).
+:::
+
+**Related:** [Requirements](./requirements.html) · [Update permalinks](./update-permalinks.html) · [License Activation Guide](https://wpdoc.webkul.com/license-validator/)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/update-permalinks.html -->
+
+# Do I need to update permalinks?
+
+**Yes, it's mandatory.** The plugin adds vendor, shop, and Seller Central pages that only work once the rewrite rules are refreshed.
+
+## What to do
+
+1. Go to **Settings → Permalinks**.
+2. Set the structure to **Post Name**.
+3. Click **Save Changes** (this refreshes the rules even if the setting already looked correct).
+
+Skip this and vendor pages return **404 Not Found**.
+
+::: tip Still need help?
+Already seeing 404s? See [Vendor pages return 404](../troubleshooting/vendor-pages-404.html), or [open a ticket](https://webkul.uvdesk.com/).
+:::
+
+**Related:** [Install & activate](./install-and-activate.html) · [Vendor pages return 404](../troubleshooting/vendor-pages-404.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.html -->
+
+# Pre-sale FAQs
+
+Short answers to the questions people ask before buying.
+
+## What does the plugin do?
+
+It turns a standard WooCommerce store into a **multi-vendor marketplace**: vendors register, open shop pages, list and manage products, handle their own orders, and request payouts, while you control approval, commissions, and settings. More in [About](https://wpdoc.webkul.com/woocommerce-marketplace/about.html) and [Features](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/features.html).
+
+## What kind of marketplace can I build?
+
+Any multi-seller marketplace modeled on the big platforms. You supply the vendors, catalog, and branding. Common builds include:
+
+- **Amazon**-style general marketplace (many vendors, one catalog)
+- **eBay**-style listings marketplace
+- **Etsy**-style handmade / creator marketplace
+- **Souq / Noon**-style regional marketplace
+- **Flipkart**-style multi-category marketplace
+
+The plugin provides the vendor onboarding, shop pages, commissions, and payouts; the look and niche are yours.
+
+## Is there a live demo?
+
+Yes. Try the [live marketplace demo](https://wpdemo.webkul.com/woocommerce-marketplace/) before buying.
+
+## Can I extend it with add-ons?
+
+Yes. Payment gateways, shipping, tax, mobile apps, POS, split cart, quote system and more are sold separately on the [Webkul store](https://store.webkul.com/).
+
+## Is support included?
+
+Yes. Support comes with your purchase through [uvDesk](https://webkul.uvdesk.com/). Please read [Before you open a ticket](../billing-support/before-you-open-a-ticket.html) first.
+
+::: warning ⏳ Pending verified answer
+**Pricing, what a license includes, and the refund policy** will be added from your official policy. See [Pricing, refunds & support](../billing-support/pricing-refunds-support.html).
+:::
+
+**Related:** [Requirements](./requirements.html) · [Install & activate](./install-and-activate.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/marketplace-menu-missing.html -->
+
+# Marketplace menu is missing after activation
+
+You activated the plugin but there's no **Marketplace** item in the WordPress admin sidebar. Usually the plugin isn't fully active or the license step isn't complete.
+
+## Fix
+
+1. Open **Plugins** and confirm both *WooCommerce Multi-Vendor Marketplace* **and** *WooCommerce* are **Active**.
+2. Go to **Marketplace → Settings** and finish the license wizard. See [Install & activate](../getting-started/install-and-activate.html).
+3. Still nothing? Deactivate and reactivate the plugin, then reload the admin.
+
+::: tip Still need help?
+[Open a ticket](https://webkul.uvdesk.com/), and read [Before you open a ticket](../billing-support/before-you-open-a-ticket.html) first.
+:::
+
+**Related:** [License activation failed](./license-activation-failed.html) · [Requirements](../getting-started/requirements.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/vendor-pages-404.html -->
+
+# Vendor / marketplace pages return 404
+
+Vendor dashboard, shop, or Seller Central URLs show **404 Not Found**. This means the permalink rewrite rules haven't been refreshed since installation.
+
+## Fix
+
+1. Go to **Settings → Permalinks**.
+2. Set the structure to **Post Name**.
+3. Click **Save Changes**. This flushes the rules even if the setting already looked right.
+
+::: tip Still need help?
+If pages still 404 after this, [open a ticket](https://webkul.uvdesk.com/) with the exact URL that fails.
+:::
+
+**Related:** [Do I need to update permalinks?](../getting-started/update-permalinks.html) · [Installation guide](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/installation.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/fatal-error-on-activation.html -->
+
+# Fatal error or white screen when activating
+
+Activation produces a fatal error, a blank white screen, or a memory-limit message. The usual cause is a **PHP memory limit below 256 MB** (or an environment under the minimums).
+
+## Fix
+
+1. Check **WooCommerce → Status → Server environment** for **PHP Memory Limit** and **PHP Version**.
+2. Confirm you meet the [Requirements](../getting-started/requirements.html).
+3. Raise the memory limit (or ask your host). If you edit `wp-config.php`:
+   ```php
+   define( 'WP_MEMORY_LIMIT', '256M' );
+   ```
+4. Retry activation.
+
+::: tip Still need help?
+If it still fails, [open a ticket](https://webkul.uvdesk.com/) and paste the exact error text.
+:::
+
+**Related:** [Requirements](../getting-started/requirements.html) · [Before you open a ticket](../billing-support/before-you-open-a-ticket.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/license-activation-failed.html -->
+
+# License activation fails
+
+Entering your key in **Marketplace → Settings** doesn't activate, or returns an error. Usually it's a mistyped key, a domain mismatch, or the server blocking the validation request.
+
+## Fix
+
+1. Re-copy the **full license key** with no leading or trailing spaces.
+2. Confirm the site **domain matches the license** (staging and live domains are often licensed separately).
+3. Follow the official [License Activation Guide](https://wpdoc.webkul.com/license-validator/) step by step.
+4. Still failing? [Open a ticket](https://webkul.uvdesk.com/) with the exact error text.
+
+::: tip Still need help?
+Include your WordPress, WooCommerce, and plugin versions in the ticket. See [Before you open a ticket](../billing-support/before-you-open-a-ticket.html).
+:::
+
+**Related:** [Install & activate](../getting-started/install-and-activate.html) · [Marketplace menu missing](./marketplace-menu-missing.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/shop-url-already-exists.html -->
+
+# Shop URL always shows "Already Exists" at registration
+
+During vendor registration the **Shop URL** field reports *Already Exists* for every value. The field uses a live **AJAX availability check**. So a real duplicate, or a request that can't reach `admin-ajax.php`, will report the URL as unavailable.
+
+## Fix
+
+1. Try a clearly unique Shop URL to rule out a genuine duplicate.
+2. Confirm permalinks are set (see [Vendor pages 404](./vendor-pages-404.html)) and that no security plugin or firewall blocks `admin-ajax.php`.
+3. Review the expected behavior in [Vendor Registration Process](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-registration-process.html).
+
+::: tip Still need help?
+[Open a ticket](https://webkul.uvdesk.com/) and mention any security/firewall plugins you run.
+:::
+
+**Related:** [How vendors register](../vendors/how-vendors-register.html) · [Vendor pages return 404](./vendor-pages-404.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/how-vendors-register.html -->
+
+# How do vendors register?
+
+Sellers can become vendors in a few ways. The store owner controls approval.
+
+- **Vendor menu** → *Register* on the vendor registration page.
+- **Seller Central page** → **Become a Seller**.
+- **My Account sign-up** (if the admin enables it) → choose **"I am a Vendor"** to reveal vendor fields.
+- **Existing customer** → **Become a Vendor** from the My Account panel.
+
+The form collects email, password, name, **Shop Name**, **Shop URL** (checked live for availability), phone, and terms acceptance. Full walkthrough: [Vendor Registration Process](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-registration-process.html).
+
+::: tip Still need help?
+Shop URL rejected for every value? See [Shop URL "Already Exists"](../troubleshooting/shop-url-already-exists.html).
+:::
+
+**Related:** [Commission basics](./commission-basics.html) · [Vendor dashboard](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-dashboard-menu.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/commission-basics.html -->
+
+# How are commissions handled?
+
+You set the marketplace commission from the admin, and per-vendor rules are supported. When an order is placed, each vendor's earning is the sale amount minus your commission.
+
+- Configure it under the plugin's commission settings. See [Commission Management](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/commission-management.html).
+- For rules beyond a single marketplace-wide rate, the [Advanced Commission add-on](https://store.webkul.com/woocommerce-multi-vendor-commission.html) adds tiered and category-based rules.
+
+::: warning ⏳ Pending verified answer
+Exact **calculation examples and edge cases** (tax handling, refunds, coupons) will be added from real support cases so nothing here is guessed.
+:::
+
+**Related:** [How vendors register](./how-vendors-register.html) · [Vendor payouts](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-payout-management.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.html -->
+
+# Before you open a ticket
+
+A minute of prep gets you a faster, more accurate answer.
+
+## 1. Check self-service first
+
+Search the [Help Center](https://wpdoc.webkul.com/woocommerce-marketplace/customer-help-center/), or scan [Troubleshooting](../troubleshooting/marketplace-menu-missing.html) and [Getting Started](../getting-started/requirements.html).
+
+## 2. Run the quick checks
+
+- Confirm the [Requirements](../getting-started/requirements.html) (WooCommerce → Status).
+- Confirm the plugin **and** WooCommerce are active.
+- Re-save **Settings → Permalinks** as **Post Name** (fixes most 404s).
+
+## 3. Include this in the ticket
+
+- WordPress, WooCommerce, and **plugin versions**
+- **PHP version** and **memory limit**
+- The **exact steps** and the **exact error text** (or a screenshot)
+- Whether it happens as **admin, vendor, or customer**
+
+## Open a ticket
+
+- **Portal:** [webkul.uvdesk.com](https://webkul.uvdesk.com/)
+- **Email:** [support@webkul.com](mailto:support@webkul.com)
+
+**Related:** [Pricing, refunds & support](./pricing-refunds-support.html) · [Contact](https://wpdoc.webkul.com/woocommerce-marketplace/contact.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/pricing-refunds-support.html -->
+
+# Pricing, refunds & support
+
+This article covers what a license includes, renewals, refunds, and support hours.
+
+::: warning ⏳ Pending verified answer
+To avoid publishing anything incorrect, the details below are **not yet written**. They will be filled from Webkul's official policy:
+
+- **Pricing and what a license includes**
+- **License renewal, re-download, and transfer** steps
+- **Refund policy**
+- **Support hours and response times** (YITH, for reference, publishes "Mon to Fri, 9am to 5pm CET")
+
+For any of these now, please [contact us](https://wpdoc.webkul.com/woocommerce-marketplace/contact.html) or [open a ticket](https://webkul.uvdesk.com/).
+:::
+
+**Related:** [Before you open a ticket](./before-you-open-a-ticket.html) · [Install & activate](../getting-started/install-and-activate.html)
+
+---
+
 <!-- source: https://wpdoc.webkul.com/woocommerce-marketplace/about.html -->
 
 # About
