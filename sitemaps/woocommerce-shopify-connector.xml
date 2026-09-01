@@ -7,133 +7,139 @@
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/overview.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/features.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/comparison.html</loc>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/installation.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/setup-wizard.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/shopify-api-credentials.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/connect-shopify-account.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/manage-accounts.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/general-configuration.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/category-mapping.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/product-import.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/product-export.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/order-import.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/order-export.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/import-store-data.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/shipping-tax.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/price-rules.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/webhooks-real-time-sync.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/analytics-dashboard.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/troubleshooting.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://wpdoc.webkul.com/woocommerce-shopify-connector/shopify-connector/faq-notes.html</loc>
-  <lastmod>2026-08-31T00:00:00+00:00</lastmod>
+  <lastmod>2026-09-01T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

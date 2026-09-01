@@ -901,7 +901,10 @@ const htmlFiles = [];
 
 for (const abs of htmlFiles) {
     const rel = path.relative(ROOT, abs);
-    if (rel.endsWith("404.html")) continue;
+    // Anchor to the path separator so real articles named "*-404.html"
+    // (e.g. knowledge-base/troubleshooting/vendor-pages-404.html) are not
+    // mistaken for the site's 404 error page.
+    if (rel === "404.html" || rel.endsWith("/404.html")) continue;
     const published = gitDate(rel, true);
     // dateModified comes from the markdown twin, not the HTML. Built HTML
     // embeds content-hashed asset filenames, so every rebuild rewrites every
@@ -957,7 +960,7 @@ const urlset = (entries) =>
     `\n</urlset>\n`;
 
 const mkEntries = htmlFiles
-    .filter((f) => !f.endsWith("404.html"))
+    .filter((f) => !f.endsWith("/404.html"))
     .map((abs) => {
         const rel = path.relative(ROOT, abs);
         const loc = `${ORIGIN}/${rel.replace(/index\.html$/, "").replace(/\\/g, "/")}`;

@@ -56,6 +56,24 @@ Do not use this site for WooCommerce core documentation, other marketplace plugi
 - [Customer Order Placement](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/customer-order-placement.md): This guide explains the customer order placement process in the WooCommerce Marketplace and highlights how seller information is displayed at different stages.
 - [Get Google Analytics Measurement ID](https://wpdoc.webkul.com/woocommerce-marketplace/documentation/google-analytics.md): ⬅ Back to Google Analytics Configuration This ID helps you track marketplace activity such as visitor traffic, product views, and user interactions, giving...
 
+## Help center and knowledge base
+
+- [Help Center](https://wpdoc.webkul.com/woocommerce-marketplace/customer-help-center/index.md): "Help Center for the Webkul WooCommerce Multi-Vendor Marketplace plugin: search docs, FAQ, troubleshooting, video tutorials, and open a support ticket."
+- [Knowledge Base](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/index.md): "Short, single-topic help articles for the Webkul WooCommerce Multi-Vendor Marketplace plugin: getting started, troubleshooting, vendors, billing and support."
+- [What are the requirements?](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/requirements.md): "Minimum WordPress, WooCommerce, PHP, memory, and SSL versions for the WooCommerce Multi-Vendor Marketplace plugin."
+- [How do I install and activate the plugin?](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/install-and-activate.md): "Short steps to install the WooCommerce Multi-Vendor Marketplace plugin ZIP and activate your license."
+- [Do I need to update permalinks?](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/update-permalinks.md): "Why you must re-save permalinks as Post Name after installing the WooCommerce Multi-Vendor Marketplace plugin."
+- [Pre-sale FAQs](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.md): "Quick answers before you buy the WooCommerce Multi-Vendor Marketplace plugin: what it does, demo, add-ons, and support."
+- [Marketplace menu is missing after activation](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/marketplace-menu-missing.md): "Fix for the missing Marketplace admin menu after activating the WooCommerce Multi-Vendor Marketplace plugin."
+- [Vendor / marketplace pages return 404](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/vendor-pages-404.md): "Fix 404 Not Found errors on vendor dashboard, shop, and Seller Central pages by re-saving permalinks."
+- [Fatal error or white screen when activating](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/fatal-error-on-activation.md): "Fix a fatal error, white screen, or memory error when activating the WooCommerce Multi-Vendor Marketplace plugin."
+- [License activation fails](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/license-activation-failed.md): "Fix license key activation errors for the WooCommerce Multi-Vendor Marketplace plugin."
+- [Shop URL always shows "Already Exists" at registration](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/shop-url-already-exists.md): "Fix the vendor registration Shop URL field reporting Already Exists for every value."
+- [How do vendors register?](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/how-vendors-register.md): "The ways a seller can register as a vendor on the WooCommerce Multi-Vendor Marketplace."
+- [How are commissions handled?](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/commission-basics.md): "A short overview of marketplace commissions in the WooCommerce Multi-Vendor Marketplace plugin."
+- [Before you open a ticket](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.md): "A short checklist to get a faster answer from Webkul support for the WooCommerce Multi-Vendor Marketplace plugin."
+- [Pricing, refunds & support](https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/pricing-refunds-support.md): "Pricing, license, refund policy, and support hours for the WooCommerce Multi-Vendor Marketplace plugin."
+
 ## Video tutorials
 
 - [Video Tutorials](https://wpdoc.webkul.com/woocommerce-marketplace/video-tutorials.md): Webkul WooCommerce Multi-Vendor Marketplace video tutorials — 15 walkthroughs on marketplace setup, vendor products, orders, commissions, shipping and add-ons.
