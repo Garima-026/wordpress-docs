@@ -70,21 +70,25 @@ This section helps the admin track:
 
 ## Vendor-Specific Commission
 
-The admin can configure commission rates for individual vendors from the **Vendor Management** section.
+The admin can set a commission rate for an individual vendor from that vendor's own management view.
 
 ### Navigation Path
 
 - Go to **Marketplace → Vendors**
-- The list of all registered vendors will be displayed
-- Click on the **Vendor Name** to manage commission settings
+- The list of all registered vendors is displayed
+- Click the **Manage** button next to the vendor you want to update
+- In the vendor's management view (their profile), open the **Commissions** section
+
+For the full vendor management view, see [Manage Vendor](./vendor-management-and-product-assignment.html#manage-vendor).
 
 ### Vendor Commission Configuration
 
-- Clicking on the **Vendor Name** redirects the admin to the **Vendor Profile / Commission page**
-- From here, the admin can:
-  - Set a **vendor-specific fixed commission**
-  - Set a **vendor-specific percentage commission**
-  - Override the **global commission settings** if required
+From the vendor's **Commissions** page, the admin can:
+
+- Set a **vendor-specific fixed commission**
+- Set a **vendor-specific percentage commission**
+- Override the **global commission settings** for this vendor
+- View the vendor's total sales and the admin commission earned
 
 > **Note:** Vendor-specific commission settings take precedence over global commission settings.
 
