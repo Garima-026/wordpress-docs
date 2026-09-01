@@ -16,6 +16,11 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/customer-help-center/</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://wpdoc.webkul.com/woocommerce-marketplace/documentation/</loc>
     <lastmod>2026-08-24T22:46:44+05:30</lastmod>
     <priority>0.80</priority>
@@ -208,6 +213,71 @@
   <url>
     <loc>https://wpdoc.webkul.com/woocommerce-marketplace/documentation/vendor-vacation.html</loc>
     <lastmod>2026-08-24T22:46:44+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/before-you-open-a-ticket.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/billing-support/pricing-refunds-support.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/install-and-activate.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/pre-sale-faqs.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/requirements.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/getting-started/update-permalinks.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/fatal-error-on-activation.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/license-activation-failed.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/marketplace-menu-missing.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/troubleshooting/shop-url-already-exists.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/commission-basics.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://wpdoc.webkul.com/woocommerce-marketplace/knowledge-base/vendors/how-vendors-register.html</loc>
+    <lastmod>2026-09-01T15:53:23+05:30</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
