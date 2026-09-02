@@ -253,6 +253,7 @@ const guides = fs
             .replace(/\bEan Upc\b/g, "EAN UPC")
             .replace(/\bPdf\b/g, "PDF")
             .replace(/\bUnopim\b/g, "UnoPim")
+            .replace(/\bWcfm\b/g, "WCFM")
             .replace(/\bEbay\b/g, "eBay");
         for (const rel of [`${slug}/index.html`, `${slug}/documentation/index.html`]) {
             const p = path.join(ROOT, rel);

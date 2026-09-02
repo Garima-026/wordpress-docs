@@ -53,6 +53,7 @@ const CATEGORY = {
         "woocommerce-ebay-connector",
         "woocommerce-ebay-item-compatibility-doc",
         "woocommerce-shopify-connector",
+        "woocommerce-wcfm-marketplace-shopify-connector",
         "woocommerce-quickbooks-connector",
         "woocommerce-power-bi-connector",
         "woocommerce-icecat-connector",
@@ -85,6 +86,7 @@ const titleCase = (slug) =>
         .replace(/\bEan Upc\b/g, "EAN UPC")
         .replace(/\bPdf\b/g, "PDF")
         .replace(/\bUnopim\b/g, "UnoPim")
+        .replace(/\bWcfm\b/g, "WCFM")
         .replace(/\bEbay\b/g, "eBay")
         .replace(/\bDoc$/, "");
 

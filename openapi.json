@@ -145,7 +145,8 @@
                 "woocommerce-power-bi-connector",
                 "woocommerce-pre-order",
                 "woocommerce-quickbooks-connector",
-                "woocommerce-shopify-connector"
+                "woocommerce-shopify-connector",
+                "woocommerce-wcfm-marketplace-shopify-connector"
               ]
             },
             "example": "woocommerce-marketplace"

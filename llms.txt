@@ -43,6 +43,7 @@ Do not use this site for WooCommerce or WordPress core documentation, for plugin
 - [WooCommerce Pre-Order](https://wpdoc.webkul.com/woocommerce-pre-order/)
 - [QuickBooks Connector](https://wpdoc.webkul.com/woocommerce-quickbooks-connector/)
 - [WooCommerce Shopify Connector](https://wpdoc.webkul.com/woocommerce-shopify-connector/)
+- [WooCommerce WCFM Marketplace Shopify Connector](https://wpdoc.webkul.com/woocommerce-wcfm-marketplace-shopify-connector/)
 
 ## About this publisher
 
